@@ -1,0 +1,68 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1762266170
+icon.svg::CompressedTexture2D::6887605255659731483::1744011743::1762266171::1::::<><><>0<>0<>2e6d8f37b864d36f3838ef09252ea972<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1762265995::0::1::::<><><>0<>0<><>::
+::res://Assets/::1761291161
+::res://Assets/Hana Caraka - Base Character [sample]/::1761291161
+color palette.png::CompressedTexture2D::3632246400495121406::1747902292::1762266171::1::::<><><>0<>0<>41cbd1c8f54206668d618a442de87625<>res://.godot/imported/color palette.png-9f1d5e242fc16cbf489054866304da3d.ctex::
+death.png::CompressedTexture2D::8360648589142157010::1747901704::1762266171::1::::<><><>0<>0<>e31ca17efcc48fffc26f38d0a4700abb<>res://.godot/imported/death.png-9d77b56f917f4bf737819c056a08262e.ctex::
+hurt.png::CompressedTexture2D::1534641292914145779::1747901708::1762266171::1::::<><><>0<>0<>cc61cc1090b09e9ff87fc87de476e207<>res://.godot/imported/hurt.png-0b1abb043c20fdebc524820ec1e86ebf.ctex::
+idle.png::CompressedTexture2D::4114064105875033860::1747901714::1762266171::1::::<><><>0<>0<>ced6d63bc479633919f1751a88e9bf83<>res://.godot/imported/idle.png-d15e93da4024523cf7dd990909c43ad6.ctex::
+jump.png::CompressedTexture2D::5568610649918058968::1747901726::1762266171::1::::<><><>0<>0<>548a2e60d210b2f73c918c2f96017a76<>res://.godot/imported/jump.png-78e9f0d15f5d48a42a7e45a40ce2d790.ctex::
+Read Me.txt::TextFile::-1::1747902178::0::1::::<><><>0<>0<><>::
+run.png::CompressedTexture2D::1729710241827419006::1747901742::1762266171::1::::<><><>0<>0<>2a020875e48a18944fe5c6d4a2e764d5<>res://.godot/imported/run.png-b23c6f3a805a8963c87f5603820c724b.ctex::
+walk.png::CompressedTexture2D::1889851639402948871::1747901754::1762266171::1::::<><><>0<>0<>1850b27c2d69e5f65363f4ba828dbd12<>res://.godot/imported/walk.png-01840208eecb02bf00dc63e487b143a1.ctex::
+::res://Assets/Hana Caraka - Livestock & Fish [Sample]/::1757660772
+Fish.png::CompressedTexture2D::3953160123897567231::1740753172::1762266171::1::::<><><>0<>0<>16e4c90af576fb54bc27af8a3536c56c<>res://.godot/imported/Fish.png-efff3c50e309bd363c40337f1728d043.ctex::
+Icons.png::CompressedTexture2D::2102463729137815452::1740753156::1762266171::1::::<><><>0<>0<>45684c35910a89ebcb17d860b737e789<>res://.godot/imported/Icons.png-48d4c7b55df3e02cb00ee3361931a09d.ctex::
+Read Me.txt::TextFile::-1::1740753036::0::1::::<><><>0<>0<><>::
+::res://Assets/Hana Caraka - Livestock & Fish [Sample]/Chicken/::1757660772
+Chick.png::CompressedTexture2D::2240318645027828801::1740753212::1762266171::1::::<><><>0<>0<>98b66ccb95c28e014c738a666624fee5<>res://.godot/imported/Chick.png-664c65750e89d0a231a845addd46b63f.ctex::
+Chicken.png::CompressedTexture2D::5573748612028929391::1740753196::1762266171::1::::<><><>0<>0<>d2f3cb83a3d6aee3c400003df4d9d782<>res://.godot/imported/Chicken.png-77e2254435dfaa9b790513def452f281.ctex::
+::res://Assets/Hana Caraka - Livestock & Fish [Sample]/Cow/::1757660772
+Calf.png::CompressedTexture2D::6808216652914175990::1740753264::1762266171::1::::<><><>0<>0<>8341987b0e02f4c71ec80988ad28c07a<>res://.godot/imported/Calf.png-be010f2a9ca3a7045ff6be049ebd543a.ctex::
+Cow.png::CompressedTexture2D::5266175406278798706::1740753310::1762266171::1::::<><><>0<>0<>24618b6d6d49aa2c201f67ea2a30657b<>res://.godot/imported/Cow.png-c2afd65ad29e7e82cd05520adc626838.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/::1757661121
+License.txt::TextFile::-1::1492237736::0::1::::<><><>0<>0<><>::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Angler/::1757661104
+Attack.png::CompressedTexture2D::5739317623564462244::1672487466::1762266171::1::::<><><>0<>0<>901e4c4b3df557f2c74b350f9231b8c3<>res://.godot/imported/Attack.png-1f6d7be08d349c9f79c838ab07d60e03.ctex::
+Death.png::CompressedTexture2D::1644024102399771021::1672487472::1762266171::1::::<><><>0<>0<>6f213ade77d101c5ab9453ffce9c523a<>res://.godot/imported/Death.png-adccf06c3cba403c5f6f2d2c5037bb1f.ctex::
+Hurt.png::CompressedTexture2D::589577211642485817::1672487480::1762266171::1::::<><><>0<>0<>b3a4717909f986e0ce37ead1eb4ccf03<>res://.godot/imported/Hurt.png-539eb69cb6238b5633dd9d6284436ea9.ctex::
+Idle.png::CompressedTexture2D::4721682536824470103::1672487490::1762266171::1::::<><><>0<>0<>f1d04b76da530ed488488a909e803dd4<>res://.godot/imported/Idle.png-fc1393a4377e725320d69fbc51dc6a18.ctex::
+Walk.png::CompressedTexture2D::8414253046336840699::1672487498::1762266171::1::::<><><>0<>0<>150d094753d40545a69860430d6273d3<>res://.godot/imported/Walk.png-bde70bf449863d691cabacf8264bd623.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Eel/::1757661112
+Attack.png::CompressedTexture2D::6468591882840247958::1672487852::1762266171::1::::<><><>0<>0<>1e0d75fc920fe5a7468c01e38730b44f<>res://.godot/imported/Attack.png-9b4407e329c8010104ffcf647779d249.ctex::
+Death.png::CompressedTexture2D::6437447592771173844::1672487862::1762266171::1::::<><><>0<>0<>b88cf3ee4fce66c72b9b6c1276e3117c<>res://.godot/imported/Death.png-0113c60836265b3c1d876bc5d72f7c6f.ctex::
+Hurt.png::CompressedTexture2D::9180120858818385266::1672487870::1762266171::1::::<><><>0<>0<>6e5f0b122537968f7a226b27092102e5<>res://.godot/imported/Hurt.png-4977fe4ced068cbe3bccface8f30f545.ctex::
+Idle.png::CompressedTexture2D::3852417297895103660::1672487880::1762266171::1::::<><><>0<>0<>70930a02deb5356c7ec33df565b5d570<>res://.godot/imported/Idle.png-55c82087aa6f0c17cc342bfd36be08ea.ctex::
+Walk.png::CompressedTexture2D::1466649852084260488::1672487886::1762266171::1::::<><><>0<>0<>33910bfc8d20175a9079f28d04a3da01<>res://.godot/imported/Walk.png-f59d95c5ed29e296fb8d29a2bad587ba.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Jelly/::1757661074
+Attack.png::CompressedTexture2D::4461050256311112684::1672486306::1762266171::1::::<><><>0<>0<>38e937a801156ac4ba4ad3b7a2f553f5<>res://.godot/imported/Attack.png-211e98f3dc008f87d725440f8e88a6f5.ctex::
+Death.png::CompressedTexture2D::7476569444018111188::1672486342::1762266171::1::::<><><>0<>0<>0feaabf7b206d455e596f3e85455066a<>res://.godot/imported/Death.png-46c57cac8009815dc2478aa6dc892872.ctex::
+Hurt.png::CompressedTexture2D::1816696779658919515::1672486352::1762266171::1::::<><><>0<>0<>5ba26f41132106885cca6d7b5ddf8e47<>res://.godot/imported/Hurt.png-88e362f4b7ffa7a22acce30a0e567c0a.ctex::
+Idle.png::CompressedTexture2D::4816003502452723524::1672486360::1762266171::1::::<><><>0<>0<>31d71c4f2c3912c04915bae3831fb022<>res://.godot/imported/Idle.png-43134e96e563fd0e6048de12cdccda92.ctex::
+Walk.png::CompressedTexture2D::8313663850217561469::1672486368::1762266171::1::::<><><>0<>0<>c899bc45cf26d628c3eb81d10e523426<>res://.godot/imported/Walk.png-e24abc1c9a695bea2849ce37c8f2cb3a.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/::1757661122
+Attack.png::CompressedTexture2D::808028013596372181::1672488194::1762266171::1::::<><><>0<>0<>fa5fe272fc15d99e03f4e8966305977e<>res://.godot/imported/Attack.png-5c35a90854014c3a721cc6ec134041c4.ctex::
+Death.png::CompressedTexture2D::1809134148450762467::1672488206::1762266171::1::::<><><>0<>0<>58a4329fa5d39adce33efc4fc658b67d<>res://.godot/imported/Death.png-bd5a6c8ad55e09b6981f47375173146e.ctex::
+Hurt.png::CompressedTexture2D::4091467942485881904::1672488214::1762266171::1::::<><><>0<>0<>02266092361c7d5713a2956971f0751f<>res://.godot/imported/Hurt.png-aab4c9412aaddfe2fc79cb00859328b3.ctex::
+Idle.png::CompressedTexture2D::3776351274309047931::1672488222::1762266171::1::::<><><>0<>0<>d653c4a90a4cda92da40c40324acb3f1<>res://.godot/imported/Idle.png-aa6eedf5760bc013f3dfa3e22c5b0f6b.ctex::
+Walk.png::CompressedTexture2D::3749613975436833261::1672488230::1762266171::1::::<><><>0<>0<>ed75c70d1094f8f73dd5785ab1784b1f<>res://.godot/imported/Walk.png-db7a3bc07567abc8c3b523c79b7f56b1.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Shark/::1757661093
+Attack.png::CompressedTexture2D::2414309669581991739::1672487050::1762266171::1::::<><><>0<>0<>431ab2827515a4bae9d5ad628dd1616e<>res://.godot/imported/Attack.png-f48813fd9d7b6aadfba7f49e931fd23c.ctex::
+Death.png::CompressedTexture2D::6354643533122056602::1672487058::1762266171::1::::<><><>0<>0<>d579f805f334f49ba9c1f0d12c6a1950<>res://.godot/imported/Death.png-b99ce5c99e1953f4611a15d782d3196a.ctex::
+Hurt.png::CompressedTexture2D::7634833398791598001::1672487066::1762266171::1::::<><><>0<>0<>e7430a76976db01fcbe8137c9a490514<>res://.godot/imported/Hurt.png-cf7a6258292cd11370929c3769555f3f.ctex::
+Idle.png::CompressedTexture2D::4573661757416498908::1672487074::1762266171::1::::<><><>0<>0<>f28a609ac0b60ffe988f4bb5e40400dc<>res://.godot/imported/Idle.png-95e48a3c37648bd997985ec4f575d7ff.ctex::
+Walk.png::CompressedTexture2D::5254428849652057400::1672487082::1762266171::1::::<><><>0<>0<>8fea9fe4b1fdf250ac3d88fcdc8c40d1<>res://.godot/imported/Walk.png-1245343f98e7d67e9ac249977c6ac768.ctex::
+::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Turtle/::1757661085
+Attack.png::CompressedTexture2D::2090852467375447178::1672486730::1762266171::1::::<><><>0<>0<>14a044e9e0cff587ccb73873d4e97e21<>res://.godot/imported/Attack.png-ad627ec8d20109b68038998894bd5566.ctex::
+Death.png::CompressedTexture2D::8155384591554405918::1672486736::1762266171::1::::<><><>0<>0<>abf4a8aabd1516ef2f19293b69099ecd<>res://.godot/imported/Death.png-4a611c7b3edf60441db0667b83480141.ctex::
+Hurt.png::CompressedTexture2D::1184531928573361645::1672486746::1762266171::1::::<><><>0<>0<>54d81d9942021c1afbe3c53121dd980e<>res://.godot/imported/Hurt.png-ea08caa3e3406a6dbcbb51fe76784c25.ctex::
+Idle.png::CompressedTexture2D::2317043009072424412::1672486754::1762266171::1::::<><><>0<>0<>43a7073c65f9ecd1f4426b6f9603f89a<>res://.godot/imported/Idle.png-b8a2f8b28d151f852e9ca0eb78c734c2.ctex::
+Walk.png::CompressedTexture2D::1339304877685987673::1672486762::1762266171::1::::<><><>0<>0<>7127578114319cfee097ecb094ef5626<>res://.godot/imported/Walk.png-e5eec156faa9d859c7bb5046efad258f.ctex::
+::res://Scenes/::1762266030
+node_2d.tscn::PackedScene::4452293076745561330::1762266030::0::1::::<><><>0<>0<><>::uid://bwk6777f3w4hn::::res://Assets/Hana Caraka - Livestock & Fish [Sample]/Fish.png
+octo_boss.tscn::PackedScene::6401295544508998686::1762266021::0::1::::<><><>0<>0<><>::uid://bt2j7ososiot4::::res://Assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Idle.png
+player.tscn::PackedScene::1696742413813291619::1762266027::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://16pty6wkhe6b::::res://Assets/Hana Caraka - Base Character [sample]/walk.png
+::res://Scripts/::1762264044
+player.gd::GDScript::881550977576973895::1762264044::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
