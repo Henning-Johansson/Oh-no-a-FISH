@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://c1k5a0ilp0n60"]
+
+[ext_resource type="Texture2D" uid="uid://07liybjsqf5f" path="res://Assets/Fishing/Fishes_48x48.png" id="1_kssy2"]
+[ext_resource type="Texture2D" uid="uid://byn0q4fivk8e6" path="res://Assets/Fishing/fishing_icon_pack/fishes.png" id="2_si8vr"]
+[ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/fishing_free/global_free_recoloured.png" id="3_3j722"]
+[ext_resource type="Texture2D" uid="uid://d0msqx0s7r5g" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png" id="4_2hpox"]
+[ext_resource type="Texture2D" uid="uid://c44kwl1tqda45" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE B - Pixel Gnome Fish Pack - Fresh Water Sprite Sheet.png" id="5_xw1i1"]
+[ext_resource type="Texture2D" uid="uid://c0vhrmatlnt6m" path="res://Assets/Fishing/fishing_icon_pack/objects.png" id="6_47wor"]
+[ext_resource type="Texture2D" uid="uid://bwk6777f3w4hn" path="res://Assets/Fishing/Fish.png" id="7_qfvpx"]
+[ext_resource type="Texture2D" uid="uid://bynp1hnedpxq6" path="res://Assets/Fishing/ItemsFishingA.png" id="8_nkitc"]
+
+[node name="FishableItems" type="Node2D"]
+
+[node name="Fishables_1-120" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_kssy2")
+hframes = 10
+vframes = 12
+
+[node name="Fishables_121-264" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_si8vr")
+flip_h = true
+hframes = 12
+vframes = 12
+
+[node name="Fishables_265-285" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("3_3j722")
+flip_h = true
+hframes = 4
+vframes = 4
+
+[node name="Fishables_286-290" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("4_2hpox")
+hframes = 5
+
+[node name="Fishables_291-295" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("5_xw1i1")
+hframes = 5
+
+[node name="Fishables_296-315" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("6_47wor")
+flip_h = true
+hframes = 5
+vframes = 4
+
+[node name="Fishables_316-328" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(2, 2)
+texture = ExtResource("7_qfvpx")
+hframes = 4
+vframes = 3
+
+[node name="Fishables_329-361" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("8_nkitc")
+hframes = 16
+vframes = 2

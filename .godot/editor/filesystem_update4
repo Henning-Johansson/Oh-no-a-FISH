@@ -1,0 +1,6 @@
+res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/village_map.tscn
+res://Scenes/octo_boss.tscn
+res://Scenes/fishable_items.tscn
+res://Scenes/game.tscn

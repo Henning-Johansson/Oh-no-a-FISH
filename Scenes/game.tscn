@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://da83hmm1c25xq"]
+
+[ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="1_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://yf6dng8a0jct" path="res://Scenes/player.tscn" id="2_wrm1d"]
+
+[node name="Game" type="Node2D"]
+
+[node name="VillageMap" parent="." instance=ExtResource("1_qxrlw")]
+
+[node name="Player" parent="." instance=ExtResource("2_wrm1d")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
