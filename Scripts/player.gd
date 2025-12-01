@@ -2,7 +2,8 @@ extends CharacterBody2D
 class_name Player
 
 #Dictionaries
-enum {IDLE, WALK, FISHING, BATTLE, DAMAGE, DEAD,}
+enum {IDLE, WALK, FISHING,}
+enum {FISHINGCAST, FISHINGIDLE, FISHINGREEL, FISHINGCATCH}
 
 #Variable values
 var state = WALK
@@ -13,7 +14,7 @@ var is_dead: bool = false
 @onready var sprite: Sprite2D = $Sprite2D
 
 #Exported variable
-@export var speed = 400
+@export var speed = 600
 
 "GAME LOOP"#The code that runs the game
 #Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,12 +26,7 @@ func _physics_process(delta: float) -> void:
 			_walk_state(delta)
 		FISHING:
 			_fishing_state(delta)
-		BATTLE:
-			_battle_state(delta)
-		DAMAGE:
-			_damage_state(delta)
-		DEAD:
-			_dead_state(delta)
+
 
 "GENERAL HELP FUNCTIONS"#Functions that help with general pieces of data
 func get_input():
@@ -72,22 +68,8 @@ func _enter_walk_state():
 
 func _enter_fishing_state():
 	state = FISHING
-	anim.play("FISHING")
-
-func _enter_battle_state():
-	state = BATTLE
-	anim.play("Battle")
-
-func _enter_damage_state():
-	state = DAMAGE
-	anim.play("Damage")
 
 "PUBLIC FUNCTIONS"#Functions visible to other scripts
-func enter_dead_state(dir: Vector2) -> void:
-	if not is_dead:
-		is_dead = true
-		state = DEAD
-		anim.play("Dead")
-		$CollisionShape2D.set_deferred("disabled", true)
+
 
 "SIGNALS"#Signals emited by the script

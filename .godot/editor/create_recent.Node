@@ -1,3 +1,5 @@
+TileMapLayer
+Node2D
 Camera2D
 ColorRect
 CanvasLayer
@@ -5,4 +7,3 @@ CanvasModulate
 CollisionShape3D
 Sprite2D
 AnimatedSprite2D
-TileMapLayer

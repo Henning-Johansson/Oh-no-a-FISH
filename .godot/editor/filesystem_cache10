@@ -1,14 +1,107 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763105689
+::res://::1764594461
 icon.svg::CompressedTexture2D/CompressedTexture2D::6887605255659731483::1744011743::1762266171::1::::<><><>0<>0<>2e6d8f37b864d36f3838ef09252ea972<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1762265995::0::1::::<><><>0<>0<><>::
-game.tscn::PackedScene::7229099743321016142::1763108593::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://yf6dng8a0jct::::res://Scenes/player.tscn
 ::res://Assets/::1762504091
-::res://Assets/Characters/::1762869634
-CharacterSpriteSheet.png::CompressedTexture2D/CompressedTexture2D::6291618529313340202::1762869587::1762869634::1::::<><><>0<>0<>1496743cdebfa37e580e7d7ed62029fb<>res://.godot/imported/CharacterSpriteSheet.png-5dd8f9748a678527ae3b4ecc54762008.ctex::
+::res://Assets/Characters/::1764081578
+angler_full.png::CompressedTexture2D/CompressedTexture2D::6216275093748565562::1764081514::1764081578::1::::<><><>0<>0<>90ae91bab7e48f1a995046d66ed7e43a<>res://.godot/imported/angler_full.png-18c5a9ed305be3a1005ee5b94f5d4aa3.ctex::
 ::res://Assets/Characters/Character Customizer/::1762502753
 Character-Customizer-Photoshop.png::CompressedTexture2D/CompressedTexture2D::7022683351761452025::1671890698::1762502753::1::::<><><>0<>0<>4c757a03a6bfaa7d18d5ad2864b1ddb9<>res://.godot/imported/Character-Customizer-Photoshop.png-73f97fee13b3bf4d60934697d9a1262e.ctex::
 ReadMe.txt::TextFile/TextFile::-1::1762267646::0::1::::<><><>0<>0<><>::
+::res://Assets/Characters/Hana Caraka - Base Character/::1764081090
+color palette.png::CompressedTexture2D/CompressedTexture2D::4390239410545857107::1747902292::1763410933::1::::<><><>0<>0<>ce164036a6a1e93f0d3d61ff5573c715<>res://.godot/imported/color palette.png-503bc6d0ef0d689061a4f0d70c315887.ctex::
+Read Me.txt::TextFile/TextFile::-1::1756806144::0::1::::<><><>0<>0<><>::
+::res://Assets/Characters/Hana Caraka - Base Character/Attack/::1763410933
+bow.png::CompressedTexture2D/CompressedTexture2D::2353604062246755646::1747901018::1763410933::1::::<><><>0<>0<>cb6f6462ad2d345088e10ae3591ae2fd<>res://.godot/imported/bow.png-34b51726bc9e8e272a44b59907fc13d8.ctex::
+crossbow.png::CompressedTexture2D/CompressedTexture2D::5457198479973578897::1747901076::1763410933::1::::<><><>0<>0<>fa637a518aa4c2d8d9bf82a4b297458b<>res://.godot/imported/crossbow.png-d05a32ba2ea5fa6ab1972bdc813d86ea.ctex::
+spear 2.png::CompressedTexture2D/CompressedTexture2D::3393565566363750824::1732286278::1763410933::1::::<><><>0<>0<>460f3cf288f2017dace44f4bbf335d32<>res://.godot/imported/spear 2.png-d05d47c42e5e0d06c6c90dd839dcf99b.ctex::
+spear.png::CompressedTexture2D/CompressedTexture2D::2251646277763302546::1732286336::1763410933::1::::<><><>0<>0<>0949d74a92aa0dfc4d71385d9a3815de<>res://.godot/imported/spear.png-e9afb2e7dd378ba1da8b2c54277144db.ctex::
+sword 2.png::CompressedTexture2D/CompressedTexture2D::6825673431430944933::1732285962::1763410933::1::::<><><>0<>0<>1bdf4805c614098feb3d853bafc2263b<>res://.godot/imported/sword 2.png-e12a81ebca6a076fe6df9f67635a8e60.ctex::
+sword.png::CompressedTexture2D/CompressedTexture2D::6065318215621390703::1732285866::1763410933::1::::<><><>0<>0<>ad80d9c0557d2973b205d9648fcf26fb<>res://.godot/imported/sword.png-96c9a60ecac4cf1d2eedd54dc6dc7ed0.ctex::
+wand.png::CompressedTexture2D/CompressedTexture2D::3558774332611197077::1741096178::1763410933::1::::<><><>0<>0<>ec322eb4e4547a814ca4755998f040ca<>res://.godot/imported/wand.png-4c92e19ba7d8470be88d980f5c534c1e.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Basic/::1763410933
+death.png::CompressedTexture2D/CompressedTexture2D::5311727655782958705::1747901704::1763410933::1::::<><><>0<>0<>291cecdaabc3e0ee7a4c22c1ac14684d<>res://.godot/imported/death.png-c534c19ac173f22759296ae9e6818187.ctex::
+hurt.png::CompressedTexture2D/CompressedTexture2D::4437837648007568618::1747901708::1763410933::1::::<><><>0<>0<>9381b5e87e70a36ec12c14fbd7aea325<>res://.godot/imported/hurt.png-e9fe1531fb9a8e7d8d7da557e4adbfce.ctex::
+idle.png::CompressedTexture2D/CompressedTexture2D::503583647006377407::1747901714::1763410933::1::::<><><>0<>0<>26651f373a35c96f15701e585aeeb4e2<>res://.godot/imported/idle.png-5b2f56c3b6e132271355c0f5c4f9433d.ctex::
+jump.png::CompressedTexture2D/CompressedTexture2D::1992681159852996155::1747901726::1763410933::1::::<><><>0<>0<>3f229bf7a45148e0731f6d7899ceaae7<>res://.godot/imported/jump.png-6d761178cf9924a28d30e9f01f0e01a9.ctex::
+run.png::CompressedTexture2D/CompressedTexture2D::7960693560269922339::1747901742::1763410933::1::::<><><>0<>0<>86ad96410d7b61a9f12d57cc337dcbf8<>res://.godot/imported/run.png-fe5df2dd680fa50f598f9201384995cd.ctex::
+swim - idle.png::CompressedTexture2D/CompressedTexture2D::3241121713932083837::1756806110::1763410933::1::::<><><>0<>0<>a0914f032b4f1ceec1659b91c3280e32<>res://.godot/imported/swim - idle.png-2b352dbd12f9c6c6ab81a06f57cab426.ctex::
+swim - move.png::CompressedTexture2D/CompressedTexture2D::791307269927563218::1756805988::1763410933::1::::<><><>0<>0<>062dea5880117c84f899fb92b88b7a61<>res://.godot/imported/swim - move.png-f31b3ba6bda7e3644c8059f5d631f384.ctex::
+walk.png::CompressedTexture2D/CompressedTexture2D::8540106439517278085::1747901754::1763410933::1::::<><><>0<>0<>4ab6a365f718877b91c941321e8b8d50<>res://.godot/imported/walk.png-b77c43b9045b0c6015a387f71f120a42.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Farming/::1763410933
+axe.png::CompressedTexture2D/CompressedTexture2D::7347807280562555876::1747900584::1763410933::1::::<><><>0<>0<>0ba55d619c18ea1fee600acefc4d2816<>res://.godot/imported/axe.png-d90a66fe34a452bb876399e0976ba10f.ctex::
+brush.png::CompressedTexture2D/CompressedTexture2D::2308241850156663462::1747900588::1763410933::1::::<><><>0<>0<>5976bf5b693a04860a4321bb0040fdb3<>res://.godot/imported/brush.png-697e5a9c9c73495f1bcd77a7d6fb414b.ctex::
+hammer.png::CompressedTexture2D/CompressedTexture2D::6600804680017644748::1747900594::1763410933::1::::<><><>0<>0<>b0ee20fccbbbd49810a61dffae49bf05<>res://.godot/imported/hammer.png-61227f65cc9e2c987dc63f3e696a2f98.ctex::
+hoe.png::CompressedTexture2D/CompressedTexture2D::857453906828913477::1747900684::1763410933::1::::<><><>0<>0<>354d72ddf252ae35ce1546ad1d610fa4<>res://.godot/imported/hoe.png-c7703d1f47ee780e1ba282001ce142d5.ctex::
+milking.png::CompressedTexture2D/CompressedTexture2D::2041288727164974119::1732283432::1763410933::1::::<><><>0<>0<>1cb33a0033a852d4513d1d0394dbc84f<>res://.godot/imported/milking.png-8343d9ef2cdb80e8acd43391b2a8b6a4.ctex::
+pick up.png::CompressedTexture2D/CompressedTexture2D::2854002940402834611::1747900314::1763410933::1::::<><><>0<>0<>5e278e0464629feacfe4117cabe3bf32<>res://.godot/imported/pick up.png-bbd0c333f5d772241b36f185f53320e8.ctex::
+pickaxe.png::CompressedTexture2D/CompressedTexture2D::6224432096291465324::1747900716::1763410933::1::::<><><>0<>0<>9b40e2429cfaf22e98dc1401d895389a<>res://.godot/imported/pickaxe.png-983b6366f916eecdda37fb15f1a85533.ctex::
+planting.png::CompressedTexture2D/CompressedTexture2D::4838335816820131026::1747900762::1763410933::1::::<><><>0<>0<>4813a71caaf241ea7c7745b8f92a8ad5<>res://.godot/imported/planting.png-beef03b3a2b69a992a1384ddf5edc2c4.ctex::
+shear.png::CompressedTexture2D/CompressedTexture2D::2382381912758137609::1747900790::1763410933::1::::<><><>0<>0<>7bef22fdd6ff025fb2f35353f2662cd2<>res://.godot/imported/shear.png-f7689501237b29077e18387d185b5a12.ctex::
+shovel.png::CompressedTexture2D/CompressedTexture2D::7488281129545083494::1747900444::1763410933::1::::<><><>0<>0<>fc04b48eec36e5c105fd836a8252a511<>res://.godot/imported/shovel.png-c97a0aae79d85b10b6abc94ffe22fd06.ctex::
+sickle.png::CompressedTexture2D/CompressedTexture2D::4140673675240362793::1747900840::1763410933::1::::<><><>0<>0<>ca10baf11d1b2918524af44c19b5c1f2<>res://.godot/imported/sickle.png-dee52acf6b3c2f519f55c2951ce65984.ctex::
+watering.png::CompressedTexture2D/CompressedTexture2D::1102903058118732786::1747900908::1763410933::1::::<><><>0<>0<>dd76ddaed1bf99d86c7c2c1d09e13efa<>res://.godot/imported/watering.png-b67c818bb8463fabd6bdeeb8a173ffdc.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Fishing/::1763410933
+casting.png::CompressedTexture2D/CompressedTexture2D::7217108231686481048::1747901842::1763410933::1::::<><><>0<>0<>a62478de0eda76aafccb93353595c2bc<>res://.godot/imported/casting.png-bd049649f8d2aff2224f8b3cf93b2ebc.ctex::
+catch.png::CompressedTexture2D/CompressedTexture2D::6001703202903811852::1747901902::1763410933::1::::<><><>0<>0<>18bc985d60f50413dad4f13a654e65ab<>res://.godot/imported/catch.png-f9325a8cc8e1e8720a8f5b5ecde56e0e.ctex::
+idle.png::CompressedTexture2D/CompressedTexture2D::1774604492577062709::1747901948::1763410933::1::::<><><>0<>0<>f9ad47f2a86a745378e904a10a3c01b5<>res://.godot/imported/idle.png-5363959731be513a449cab258aae14a1.ctex::
+reeling.png::CompressedTexture2D/CompressedTexture2D::29180884735286797::1747901986::1763410933::1::::<><><>0<>0<>a560d9ced55bde837d95a42b1e8ee714<>res://.godot/imported/reeling.png-cb73786c7fb628f0ba3a3f7bfdda7c86.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/::1764081090
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Angler/::1764081555
+angler - fishing casting.png::CompressedTexture2D/CompressedTexture2D::3853679707801586616::1756873968::1763410933::1::::<><><>0<>0<>0cb67383f0c66d4895f058839bbbad84<>res://.godot/imported/angler - fishing casting.png-87e849a9e9afd2963ce1b83a12b661f5.ctex::
+angler - fishing catching.png::CompressedTexture2D/CompressedTexture2D::4249060774727926216::1756800544::1763410933::1::::<><><>0<>0<>33e6d2f9a7c0f6c3ed8f328d627c4031<>res://.godot/imported/angler - fishing catching.png-d723da51d405ac3bd3647d49b9faa45c.ctex::
+angler - fishing idle.png::CompressedTexture2D/CompressedTexture2D::7972218247176634013::1756800528::1763410933::1::::<><><>0<>0<>090ea66854f085fed5d49c1b95730586<>res://.godot/imported/angler - fishing idle.png-8ebece6a816b4d41333cd2b9488c3dc6.ctex::
+angler - fishing reeling.png::CompressedTexture2D/CompressedTexture2D::810794710823122210::1756800534::1763410933::1::::<><><>0<>0<>6f6e981f02d8c073755506a9d173a587<>res://.godot/imported/angler - fishing reeling.png-f061a56498ef9e9534bcf3a3fc5ca251.ctex::
+angler - idle.png::CompressedTexture2D/CompressedTexture2D::8323069357278886408::1756800486::1763410933::1::::<><><>0<>0<>eca5cb85db8c007bdf58376420f3d4f2<>res://.godot/imported/angler - idle.png-503ee11942465c95a876f4d440d44c2e.ctex::
+angler - pick up.png::CompressedTexture2D/CompressedTexture2D::2460453545919845920::1756800506::1763410933::1::::<><><>0<>0<>40cbb6f28aa4d96f18d8b2ccb8ec3672<>res://.godot/imported/angler - pick up.png-7464c9f131d85ee7e89d6e93e19ad3cf.ctex::
+angler - run.png::CompressedTexture2D/CompressedTexture2D::6635087599944666404::1756800498::1763410933::1::::<><><>0<>0<>afa38094e669b4bc0bb8ae3c6dfcad21<>res://.godot/imported/angler - run.png-89d8101a2c99d7f60566c231e024c6d8.ctex::
+angler - walk.png::CompressedTexture2D/CompressedTexture2D::1429362433806613739::1756800494::1763410933::1::::<><><>0<>0<>77d9399708bd7f258d1ce92988984c6f<>res://.godot/imported/angler - walk.png-1e5d5f14d69b8e9c4cc934be7e73e2e4.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Blacksmith/::1763410933
+blacksmith - idle.png::CompressedTexture2D/CompressedTexture2D::2043488703191512846::1756800588::1763410933::1::::<><><>0<>0<>3ab77c63f0d89f30c684977665b4c034<>res://.godot/imported/blacksmith - idle.png-98d6bd2891e04522ae431e8d3106e273.ctex::
+blacksmith - pick up.png::CompressedTexture2D/CompressedTexture2D::3622163068900798121::1756800604::1763410933::1::::<><><>0<>0<>9b776c6ec546a1d7da0372c2ebead5bc<>res://.godot/imported/blacksmith - pick up.png-0f84b0f3017e8246f19f679d55f65714.ctex::
+blacksmith - run.png::CompressedTexture2D/CompressedTexture2D::876530066239160767::1756800600::1763410933::1::::<><><>0<>0<>c86347c2674e955f0adad55fde218118<>res://.godot/imported/blacksmith - run.png-3dd47f4b75374266382f5be49942b089.ctex::
+blacksmith - walk.png::CompressedTexture2D/CompressedTexture2D::1775467004524296666::1756800594::1763410933::1::::<><><>0<>0<>3d6e174f2a9fa4d01a4967536553d820<>res://.godot/imported/blacksmith - walk.png-671a12b8e03153300a0d4da8ce644241.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Chef/::1763410933
+chef - idle.png::CompressedTexture2D/CompressedTexture2D::2874992423201034366::1756800654::1763410933::1::::<><><>0<>0<>8740161833deef1f1c3d9a4e68a29afb<>res://.godot/imported/chef - idle.png-b363610808bcf38cde397b84851248d6.ctex::
+chef - pick up.png::CompressedTexture2D/CompressedTexture2D::7121276436621693171::1756800668::1763410933::1::::<><><>0<>0<>587671408293847be71558b91f641ff5<>res://.godot/imported/chef - pick up.png-2c6afac6d826500d4240847b2618ffd8.ctex::
+chef - run.png::CompressedTexture2D/CompressedTexture2D::4415897552868419481::1756800664::1763410933::1::::<><><>0<>0<>d7a8ecbc936d2bea1892c4ee1f84ab23<>res://.godot/imported/chef - run.png-0cd33c49fe50d8e7f3f3a9de62c82a74.ctex::
+chef - walk.png::CompressedTexture2D/CompressedTexture2D::7716118128056050156::1756800658::1763410933::1::::<><><>0<>0<>78855500032da7c70b2b3c9f6461369a<>res://.godot/imported/chef - walk.png-712b18cea50c71dcc81c46982b300ee9.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Farmer/::1763410933
+farmer - axe.png::CompressedTexture2D/CompressedTexture2D::202189474515120899::1756800796::1763410933::1::::<><><>0<>0<>c613b8dd1237f8acc7f5d68fec289d66<>res://.godot/imported/farmer - axe.png-3deb9eb95309af1eb27df8fa0510f91d.ctex::
+farmer - brush.png::CompressedTexture2D/CompressedTexture2D::3052683609876389140::1756800828::1763410933::1::::<><><>0<>0<>5741bdac65d9f0f1dc85c30cc9142ee9<>res://.godot/imported/farmer - brush.png-9028cdae967c0153f70271ce143eaa6e.ctex::
+farmer - hoe.png::CompressedTexture2D/CompressedTexture2D::8401023600609474086::1756800800::1763410933::1::::<><><>0<>0<>a57d042b50856f787b25b4b144fabeab<>res://.godot/imported/farmer - hoe.png-e8d7aecb01e25de1c5be2a8dc62e0afa.ctex::
+farmer - idle.png::CompressedTexture2D/CompressedTexture2D::7743390771389272143::1756800770::1763410933::1::::<><><>0<>0<>52b698cf79ab2d641c8a7339ea84d864<>res://.godot/imported/farmer - idle.png-d95a6f43e9249e59b06fb442520ab89c.ctex::
+farmer - milking.png::CompressedTexture2D/CompressedTexture2D::892325370270915987::1756800840::1763410933::1::::<><><>0<>0<>448e1c410587c5ac169b4867e04c77a4<>res://.godot/imported/farmer - milking.png-605da543c550bc3b71a723189d7dcd4d.ctex::
+farmer - pick up.png::CompressedTexture2D/CompressedTexture2D::1690297089373300286::1756800790::1763410933::1::::<><><>0<>0<>5ff4cabeb47187647faae4d2263eb560<>res://.godot/imported/farmer - pick up.png-f976b2529af0643ff977093019e53cf9.ctex::
+farmer - planting.png::CompressedTexture2D/CompressedTexture2D::7660802455331161418::1756800818::1763410933::1::::<><><>0<>0<>efa1d3fae000ddace14771df34615251<>res://.godot/imported/farmer - planting.png-61e09c70b72653cd223b4d58856cff9f.ctex::
+farmer - run.png::CompressedTexture2D/CompressedTexture2D::2687414707854215295::1756800782::1763410933::1::::<><><>0<>0<>da7b703bf0ff82feeec03c9048dae0e0<>res://.godot/imported/farmer - run.png-0cbef9066e51b07ce880a136a1ab47a6.ctex::
+farmer - shear.png::CompressedTexture2D/CompressedTexture2D::3996215190554583902::1756800834::1763410933::1::::<><><>0<>0<>4e52d3f58985444738332ebdd9b5ecb6<>res://.godot/imported/farmer - shear.png-ec892ef46ad59ab3f71d69bfee91271f.ctex::
+farmer - shovel.png::CompressedTexture2D/CompressedTexture2D::7808227592201589923::1756800806::1763410933::1::::<><><>0<>0<>c544db440d1465b01f3f6952f74e7b6b<>res://.godot/imported/farmer - shovel.png-91cc8c7841cef8d49fc6ca02fe68d63e.ctex::
+farmer - sickle.png::CompressedTexture2D/CompressedTexture2D::360563750899385874::1756800812::1763410933::1::::<><><>0<>0<>8f214cc2a2dd863e138b9c86ecb19977<>res://.godot/imported/farmer - sickle.png-25c0ff5637c6eb0e459ba25f300ff457.ctex::
+farmer - walk.png::CompressedTexture2D/CompressedTexture2D::2088070088898151523::1756800776::1763410933::1::::<><><>0<>0<>9488acf148d0ccd2b8b91f22c13df34d<>res://.godot/imported/farmer - walk.png-be3434bb4e6be9b93d4a6497c68562ce.ctex::
+farmer - watering.png::CompressedTexture2D/CompressedTexture2D::8073319328210747769::1756800822::1763410933::1::::<><><>0<>0<>b93e08695e6456648f367fc31b8d08fc<>res://.godot/imported/farmer - watering.png-66aa3b75c4e6f689e44accf15e43b773.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Florist/::1763410933
+florist - idle.png::CompressedTexture2D/CompressedTexture2D::8631419761815762414::1756800882::1763410933::1::::<><><>0<>0<>a2f032a75111d23e4b595b072412d2fa<>res://.godot/imported/florist - idle.png-c4411881421e47af7870d4daf30b8f61.ctex::
+florist - pick up.png::CompressedTexture2D/CompressedTexture2D::2952968771951947706::1756800896::1763410933::1::::<><><>0<>0<>bb42cb41e2eb7627cb05d56abee212cf<>res://.godot/imported/florist - pick up.png-7642c5d644855e3dad81ca14c9645ae1.ctex::
+florist - run.png::CompressedTexture2D/CompressedTexture2D::3486803970117917683::1756800892::1763410933::1::::<><><>0<>0<>1363e2b8fcc3b4ceb867effe4b34910f<>res://.godot/imported/florist - run.png-b6e87553f98f5fd383f0274b1d8e5353.ctex::
+florist - walk.png::CompressedTexture2D/CompressedTexture2D::6390133423817987211::1756800886::1763410933::1::::<><><>0<>0<>8880b0c4f34c1d0a8b0c6ea59e37be73<>res://.godot/imported/florist - walk.png-7194b3939ea32b3b9facb7843c2cdfb1.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Inn Keeper/::1763410933
+inn keeper - idle.png::CompressedTexture2D/CompressedTexture2D::1610145390804854731::1756800942::1763410933::1::::<><><>0<>0<>f019959ee67ef9840d00a3d660c48c8b<>res://.godot/imported/inn keeper - idle.png-3adf012b67d1f82365effae12984c091.ctex::
+inn keeper - pick up.png::CompressedTexture2D/CompressedTexture2D::5512126340678575546::1756800958::1763410933::1::::<><><>0<>0<>87cb48a7b2268eaebd3ce66365d5bd20<>res://.godot/imported/inn keeper - pick up.png-e2f88c8b8b664116cd42f6e94c1ad03b.ctex::
+inn keeper - run.png::CompressedTexture2D/CompressedTexture2D::6589943757671256780::1756800952::1763410933::1::::<><><>0<>0<>b5e47d0279301f7427d72c3d6eeb1922<>res://.godot/imported/inn keeper - run.png-a018cb2be1d00713688d62fcdfd3d3b3.ctex::
+inn keeper - walk.png::CompressedTexture2D/CompressedTexture2D::6869504140510150224::1756800948::1763410933::1::::<><><>0<>0<>8ad3565e4b6bc957c8a7c945bbc704cf<>res://.godot/imported/inn keeper - walk.png-b50ef03a254e06897357aa42784dea1a.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Merchant/::1763410933
+merchant - idle.png::CompressedTexture2D/CompressedTexture2D::5504647058056892879::1756800038::1763410933::1::::<><><>0<>0<>18b1bfd0bf92bbe2b05bc6aa6ef230a0<>res://.godot/imported/merchant - idle.png-c240c572c0d88dc80a1530c2831897ae.ctex::
+merchant - pick up.png::CompressedTexture2D/CompressedTexture2D::7396522079156526819::1756800062::1763410933::1::::<><><>0<>0<>6323caaf17c452fcc095ead613342e97<>res://.godot/imported/merchant - pick up.png-4564ae8cab5c46b7e1c9046f0b9aa741.ctex::
+merchant - run.png::CompressedTexture2D/CompressedTexture2D::8036998252339342313::1756800054::1763410933::1::::<><><>0<>0<>a09315ed92c2fab252664000e7833985<>res://.godot/imported/merchant - run.png-14951167e36b3689246b578186c0fabb.ctex::
+merchant - walk.png::CompressedTexture2D/CompressedTexture2D::725349062129924627::1756800046::1763410933::1::::<><><>0<>0<>b14cb6881498976c1629a869a7fc8eeb<>res://.godot/imported/merchant - walk.png-66e30bdd9c3d5cfa67bba68a3dfd7252.ctex::
+::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Miner/::1763410933
+miner - hammer.png::CompressedTexture2D/CompressedTexture2D::8393443203620946345::1756800252::1763410933::1::::<><><>0<>0<>d40f7cb292ede9265728f0447a1ffd23<>res://.godot/imported/miner - hammer.png-03501f51fd25d8ec1d445ae8454aa528.ctex::
+miner - idle.png::CompressedTexture2D/CompressedTexture2D::6031429068225868109::1756800212::1763410933::1::::<><><>0<>0<>cf8d7109275bb9d1aeb2d5915028a159<>res://.godot/imported/miner - idle.png-c27e18c3e7aa2bce3270cfb37629c8f6.ctex::
+miner - pick up.png::CompressedTexture2D/CompressedTexture2D::7897781499130639351::1756800240::1763410933::1::::<><><>0<>0<>d25b4a08124f7baa6a44f10a5f8dd4e6<>res://.godot/imported/miner - pick up.png-b0b07ce44796be080e21d49b88386947.ctex::
+miner - pickaxe.png::CompressedTexture2D/CompressedTexture2D::5892945997451457060::1756800246::1763410933::1::::<><><>0<>0<>c1511621b6f65fca874f038fe0e647c4<>res://.godot/imported/miner - pickaxe.png-a656a57ae58296826e09336df2e16e65.ctex::
+miner - run.png::CompressedTexture2D/CompressedTexture2D::1473294086314012901::1756800232::1763410933::1::::<><><>0<>0<>8389caa103d8ea87626dbf8075e588ff<>res://.godot/imported/miner - run.png-94bf8be340ebe915c491f59bb6c156d2.ctex::
+miner - walk.png::CompressedTexture2D/CompressedTexture2D::6920625777878038356::1756800224::1763410933::1::::<><><>0<>0<>8e99f6938da1fbae63da9905e33f1d75<>res://.godot/imported/miner - walk.png-8a21fcc31c8fb3d5abc6e33fa8ccde5f.ctex::
 ::res://Assets/Characters/Hana Caraka - Base Character [sample]/::1762869612
 color palette.png::CompressedTexture2D/CompressedTexture2D::3632246400495121406::1747902292::1762502758::1::::<><><>0<>0<>f28891b0f60d4999cd8f7ac5165f839d<>res://.godot/imported/color palette.png-b1f5b02782a5e3a5a7a22835a4f2756c.ctex::
 death.png::CompressedTexture2D/CompressedTexture2D::8360648589142157010::1747901704::1762502758::1::::<><><>0<>0<>929c801d20bebdbbb3186681275d4c23<>res://.godot/imported/death.png-ac70f33168d615521eac56fb62aeb8f0.ctex::
@@ -115,7 +208,7 @@ Chicken.png::CompressedTexture2D/CompressedTexture2D::5573748612028929391::17407
 ::res://Assets/Hana Caraka - Livestock & Fish [Sample]/Cow/::1762266171
 Calf.png::CompressedTexture2D/CompressedTexture2D::6808216652914175990::1740753264::1762266171::1::::<><><>0<>0<>8341987b0e02f4c71ec80988ad28c07a<>res://.godot/imported/Calf.png-be010f2a9ca3a7045ff6be049ebd543a.ctex::
 Cow.png::CompressedTexture2D/CompressedTexture2D::5266175406278798706::1740753310::1762266171::1::::<><><>0<>0<>24618b6d6d49aa2c201f67ea2a30657b<>res://.godot/imported/Cow.png-c2afd65ad29e7e82cd05520adc626838.ctex::
-::res://Assets/MiniWorldSprites/::1762267128
+::res://Assets/MiniWorldSprites/::1763111073
 AllAssetsPreview.png::CompressedTexture2D/CompressedTexture2D::2612682010129779434::1608845062::1762267128::1::::<><><>0<>0<>1a767de36be26d5b35b99003d20cb8ab<>res://.godot/imported/AllAssetsPreview.png-443742d4e351bbf3edb471825b039b6c.ctex::
 ColoredBuildingsPreview.png::CompressedTexture2D/CompressedTexture2D::8123829429781502275::1597590880::1762267128::1::::<><><>0<>0<>2bfbea28797f4e17b1941131e28d8469<>res://.godot/imported/ColoredBuildingsPreview.png-933c07f8e1dbd2f4852d52c0db08506f.ctex::
 ::res://Assets/MiniWorldSprites/Animals/::1762267128
@@ -127,7 +220,7 @@ Horse(32x32).png::CompressedTexture2D/CompressedTexture2D::3941215030278335508::
 MarineAnimals.png::CompressedTexture2D/CompressedTexture2D::1612118322732964478::1596357876::1762267128::1::::<><><>0<>0<>efe93d5038e6bae2e13df5f45862501a<>res://.godot/imported/MarineAnimals.png-203efd844ee6b32126187588347094b6.ctex::
 Pig.png::CompressedTexture2D/CompressedTexture2D::3910922275732927551::1670581866::1762267128::1::::<><><>0<>0<>e3e1556aa2c395993459fca4320f8f2b<>res://.godot/imported/Pig.png-fa056e586b7df368ab6d78103bfa19ba.ctex::
 Sheep.png::CompressedTexture2D/CompressedTexture2D::3091005980129899660::1670582736::1762267128::1::::<><><>0<>0<>71e7834a4a3070f509d84e75f3d6d005<>res://.godot/imported/Sheep.png-395b80f967f9e483b2ea4e4099d2955a.ctex::
-::res://Assets/MiniWorldSprites/Buildings/::1650569364
+::res://Assets/MiniWorldSprites/Buildings/::1763410907
 ::res://Assets/MiniWorldSprites/Buildings/Cyan/::1762267128
 CyanBarracks.png::CompressedTexture2D/CompressedTexture2D::1310663594131614698::1597167860::1762267128::1::::<><><>0<>0<>39d3f4dde8865dc04d68943bd256e655<>res://.godot/imported/CyanBarracks.png-d06ba74456027870597b484da3070b4c.ctex::
 CyanChapels.png::CompressedTexture2D/CompressedTexture2D::3056142435908270150::1597171778::1762267128::1::::<><><>0<>0<>9a2c185fa51771229dc86b4d746fc2ba<>res://.godot/imported/CyanChapels.png-bf749e07771008b6c3c8735f5c1d520d.ctex::
@@ -370,10 +463,13 @@ UiIcons.png::CompressedTexture2D/CompressedTexture2D::5614412841545139463::16094
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/::1762344773
 punyworld-overworld-tileset.png::CompressedTexture2D/CompressedTexture2D::2140423137442505543::1705055002::1762344773::1::::<><><>0<>0<>3d1a2e400a0a821dd5115c685190e558<>res://.godot/imported/punyworld-overworld-tileset.png-d8c1953454ca5f662b96572e00320768.ctex::
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/Tiled/::1705054110
-::res://Scenes/::1763108449
-fishable_items.tscn::PackedScene::6620217915261658115::1763105767::0::1::::<><><>0<>0<><>::uid://07liybjsqf5f::::res://Assets/Fishing/Fishes_48x48.png<>uid://byn0q4fivk8e6::::res://Assets/Fishing/fishing_icon_pack/fishes.png<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png<>uid://d0msqx0s7r5g::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png<>uid://c44kwl1tqda45::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE B - Pixel Gnome Fish Pack - Fresh Water Sprite Sheet.png<>uid://c0vhrmatlnt6m::::res://Assets/Fishing/fishing_icon_pack/objects.png<>uid://bwk6777f3w4hn::::res://Assets/Fishing/Fish.png<>uid://bynp1hnedpxq6::::res://Assets/Fishing/ItemsFishingA.png
-octo_boss.tscn::PackedScene::6401295544508998686::1763105767::0::1::::<><><>0<>0<><>::uid://bt2j7ososiot4::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Idle.png<>uid://lrodrpjapx2l::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Attack.png<>uid://byj645nyp0use::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Hurt.png
-player.tscn::PackedScene::1696742413813291619::1763106508::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cvvybj5an6ylm::::res://Assets/Characters/CharacterSpriteSheet.png
-village_map.tscn::PackedScene::3457565006222323774::1763108562::0::1::::<><><>0<>0<><>::uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png
-::res://Scripts/::1763107973
-player.gd::GDScript::881550977576973895::1763107973::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://Houses_Pack/::1764594455
+houses.png::CompressedTexture2D::5638470177305311671::1587416698::1764594465::1::::<><><>0<>0<>4ec364ed2881e366ca626279215049e6<>res://.godot/imported/houses.png-dc1c0aad1ebcdcd92602b81b77f50bf0.ctex::
+public-license.txt::TextFile::-1::1557335670::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1764318822
+fishable_items.tscn::PackedScene::6620217915261658115::1764318822::0::1::::<><><>0<>0<><>::uid://07liybjsqf5f::::res://Assets/Fishing/Fishes_48x48.png<>uid://byn0q4fivk8e6::::res://Assets/Fishing/fishing_icon_pack/fishes.png<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png<>uid://d0msqx0s7r5g::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png<>uid://c44kwl1tqda45::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE B - Pixel Gnome Fish Pack - Fresh Water Sprite Sheet.png<>uid://c0vhrmatlnt6m::::res://Assets/Fishing/fishing_icon_pack/objects.png<>uid://bwk6777f3w4hn::::res://Assets/Fishing/Fish.png<>uid://bynp1hnedpxq6::::res://Assets/Fishing/ItemsFishingA.png
+game.tscn::PackedScene::7229099743321016142::1764318822::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://yf6dng8a0jct::::res://Scenes/player.tscn
+player.tscn::PackedScene::1696742413813291619::1764318822::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
+village_map.tscn::PackedScene::3457565006222323774::1764318822::0::1::::<><><>0<>0<><>::uid://dn0ijwctb2v6j::::res://Assets/MiniWorldSprites/ColoredBuildingsPreview.png<>uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png<>uid://bjkfjpfckupqd::::res://Assets/MiniWorldSprites/Buildings/Enemy/Mausoleum.png<>uid://b3ga8vlystyso::::res://Assets/MiniWorldSprites/Buildings/Enemy/Orc/AllBuildings-Preview.png<>uid://bgiw0nquet6bc::::res://Assets/MiniWorldSprites/Nature/DeadTrees.png<>uid://brl45wxqcd31g::::res://Assets/MiniWorldSprites/Nature/Rocks.png<>uid://cngjkc5joicy5::::res://Assets/MiniWorldSprites/Nature/Trees.png<>uid://drf5lbyd65h65::::res://Assets/MiniWorldSprites/Miscellaneous/Tombstones.png<>uid://cpl55uimcvwmo::::res://Assets/MiniWorldSprites/Nature/Wheatfield.png<>uid://d0tplkeh621qg::::res://Assets/MiniWorldSprites/Miscellaneous/Well.png<>uid://mxok7plmg1xx::::res://Assets/MiniWorldSprites/Miscellaneous/StreetSigns.png<>uid://cthafl2gl3mr5::::res://Assets/MiniWorldSprites/Miscellaneous/Signs.png<>uid://m8auighrqtge::::res://Assets/MiniWorldSprites/Miscellaneous/Bridge.png<>uid://ca43ysjlij13t::::res://Assets/MiniWorldSprites/Miscellaneous/QuestBoard.png
+::res://Scripts/::1764315611
+player.gd::GDScript::881550977576973895::1764315611::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
