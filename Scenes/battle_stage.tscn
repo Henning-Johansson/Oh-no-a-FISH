@@ -1,0 +1,161 @@
+[gd_scene load_steps=18 format=3 uid="uid://ccyefy53mjx4e"]
+
+[ext_resource type="Script" uid="uid://5wa38i60fql1" path="res://Scripts/battle_stage.gd" id="1_g0eid"]
+[ext_resource type="PackedScene" uid="uid://c1k5a0ilp0n60" path="res://Scenes/fishable_items.tscn" id="1_xa5kr"]
+[ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="3_h1yn0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k540x"]
+bg_color = Color(0, 0.6, 0.495755, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hp63"]
+bg_color = Color(1, 0.29, 0.29, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0eid"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1yn0"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a0fsj"]
+bg_color = Color(0.360949, 0.360949, 0.360949, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2b17"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djpce"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc6so"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ao26"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yutts"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d0wc"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8jt46"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvynl"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q4sdk"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+
+[node name="battle_stage" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_g0eid")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -27.0
+offset_top = -20.0
+offset_right = 1184.0
+offset_bottom = 683.0
+scale = Vector2(2, 2)
+color = Color(0.105882, 0.196078, 0.74902, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer"]
+offset_left = -116.0
+offset_top = 879.0
+offset_right = 2517.0
+offset_bottom = 1441.0
+color = Color(0, 0.658824, 0, 1)
+
+[node name="Enemy" type="Node2D" parent="."]
+
+[node name="FishableItems" parent="Enemy" instance=ExtResource("1_xa5kr")]
+position = Vector2(988.5, 128.5)
+scale = Vector2(3, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Enemy"]
+
+[node name="Healthbar" type="ProgressBar" parent="Enemy/CanvasLayer"]
+offset_left = 1570.0
+offset_top = 420.0
+offset_right = 2270.0
+offset_bottom = 495.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/fill = SubResource("StyleBoxFlat_k540x")
+value = 100.0
+allow_greater = true
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="PlayerFig" type="Sprite2D" parent="Player"]
+position = Vector2(217, 479.5)
+scale = Vector2(8, 8)
+texture = ExtResource("3_h1yn0")
+hframes = 14
+vframes = 12
+frame = 158
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player"]
+
+[node name="Healthbar" type="ProgressBar" parent="Player/CanvasLayer"]
+offset_left = 79.0
+offset_top = 1105.0
+offset_right = 779.0
+offset_bottom = 1180.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/fill = SubResource("StyleBoxFlat_4hp63")
+step = 1.0
+value = 100.0
+
+[node name="Button" type="Button" parent="Player/CanvasLayer"]
+offset_left = 840.0
+offset_top = 960.0
+offset_right = 1440.0
+offset_bottom = 1060.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_g0eid")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1yn0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0fsj")
+text = "Hook-Pierce"
+
+[node name="Button2" type="Button" parent="Player/CanvasLayer"]
+offset_left = 1541.0
+offset_top = 960.0
+offset_right = 2141.0
+offset_bottom = 1060.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_r2b17")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_djpce")
+theme_override_styles/normal = SubResource("StyleBoxFlat_cc6so")
+text = "Fishingrod-Whip"
+
+[node name="Button3" type="Button" parent="Player/CanvasLayer"]
+offset_left = 840.0
+offset_top = 1115.0
+offset_right = 1440.0
+offset_bottom = 1215.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ao26")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yutts")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4d0wc")
+text = "Punch"
+
+[node name="Button4" type="Button" parent="Player/CanvasLayer"]
+offset_left = 1541.0
+offset_top = 1115.0
+offset_right = 2141.0
+offset_bottom = 1215.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_8jt46")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cvynl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q4sdk")
+text = "Deep Breath"
+
+[connection signal="pressed" from="Player/CanvasLayer/Button" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Player/CanvasLayer/Button4" to="." method="_on_button_4_pressed"]
