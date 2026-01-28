@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://da83hmm1c25xq"]
+[gd_scene load_steps=5 format=3 uid="uid://da83hmm1c25xq"]
 
 [ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="1_qxrlw"]
 [ext_resource type="Script" uid="uid://bb50ew4k5x7j2" path="res://Scripts/game.gd" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://yf6dng8a0jct" path="res://Scenes/player.tscn" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://dns8f71op8ssp" path="res://Scenes/inventory.tscn" id="4_3dryh"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_wrm1d")
@@ -10,6 +11,9 @@ script = ExtResource("1_wrm1d")
 [node name="VillageMap" parent="." instance=ExtResource("1_qxrlw")]
 
 [node name="Player" parent="." instance=ExtResource("2_wrm1d")]
+
+[node name="Inventory" parent="Player" instance=ExtResource("4_3dryh")]
+scale = Vector2(0.666667, 0.666667)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 

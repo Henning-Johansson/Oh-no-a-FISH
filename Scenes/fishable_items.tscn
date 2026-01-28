@@ -9,6 +9,12 @@ script = ExtResource("1_2oapw")
 [node name="FishableItemSprite" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("3_3j722")
-flip_h = true
 hframes = 4
 vframes = 4
+
+[node name="FishName" type="Label" parent="."]
+offset_left = -169.0
+offset_top = -43.0
+offset_right = 34.0
+offset_bottom = -20.0
+horizontal_alignment = 2

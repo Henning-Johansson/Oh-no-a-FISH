@@ -1,0 +1,285 @@
+[gd_scene load_steps=5 format=3 uid="uid://dns8f71op8ssp"]
+
+[ext_resource type="Script" uid="uid://bbmnjwkv33b0e" path="res://Scripts/inventory.gd" id="1_0n8tc"]
+[ext_resource type="Texture2D" uid="uid://cumoa5hnc0mhu" path="res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png" id="1_wdn4f"]
+[ext_resource type="Texture2D" uid="uid://b86yb5svh1vw1" path="res://Assets/Pxiel Art UI borders.png" id="2_k5gp2"]
+[ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/fishing_free/global_free_recoloured.png" id="3_yxepq"]
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource("1_0n8tc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1379.0
+offset_top = -753.0
+offset_right = 1319.0
+offset_bottom = 904.0
+color = Color(0, 0, 0, 0.196078)
+metadata/_edit_use_anchors_ = true
+
+[node name="InventoryBase" type="Sprite2D" parent="."]
+position = Vector2(-150, -35)
+scale = Vector2(6.5, 8)
+texture = ExtResource("1_wdn4f")
+hframes = 2
+vframes = 3
+frame = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1063.0
+offset_top = -432.0
+offset_right = 1075.0
+offset_bottom = 559.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(200, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control"]
+position = Vector2(550, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D3" type="Sprite2D" parent="Control"]
+position = Vector2(900, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D4" type="Sprite2D" parent="Control"]
+position = Vector2(1250, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D5" type="Sprite2D" parent="Control"]
+position = Vector2(1600, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D6" type="Sprite2D" parent="Control"]
+position = Vector2(1950, 200)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D7" type="Sprite2D" parent="Control"]
+position = Vector2(200, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D8" type="Sprite2D" parent="Control"]
+position = Vector2(550, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D9" type="Sprite2D" parent="Control"]
+position = Vector2(900, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D10" type="Sprite2D" parent="Control"]
+position = Vector2(1250, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D11" type="Sprite2D" parent="Control"]
+position = Vector2(1600, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Sprite2D12" type="Sprite2D" parent="Control"]
+position = Vector2(1950, 700)
+scale = Vector2(3, 3)
+texture = ExtResource("2_k5gp2")
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Label" type="Label" parent="."]
+offset_left = -955.0
+offset_top = -523.0
+offset_right = -687.0
+offset_bottom = -439.0
+theme_override_font_sizes/font_size = 38
+text = "Common Fish"
+metadata/_edit_use_anchors_ = true
+
+[node name="FishCanvas" type="CanvasLayer" parent="."]
+offset = Vector2(1150, 650)
+transform = Transform2D(1, 0, 0, 1, 1150, 650)
+
+[node name="AtlanticBass" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-880, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+
+[node name="Clownfish" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-530, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 1
+
+[node name="Dab" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-180, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 2
+
+[node name="SeaSpider" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(170, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 3
+
+[node name="BlueGill" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(520, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 4
+
+[node name="Guppy" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(870, -250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 5
+
+[node name="SeaSnail" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-880, 250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 6
+
+[node name="Axolotl" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-530, 250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 7
+
+[node name="HighFinBandedShark" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(-180, 250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 8
+
+[node name="GoldenTench" type="Sprite2D" parent="FishCanvas"]
+position = Vector2(170, 250)
+scale = Vector2(10, 10)
+texture = ExtResource("3_yxepq")
+hframes = 4
+vframes = 4
+frame = 9
+
+[node name="ColorRect" type="ColorRect" parent="FishCanvas"]
+offset_left = 150.0
+offset_top = 149.0
+offset_right = 216.0
+offset_bottom = 178.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="FishCanvas"]
+offset_left = -106.0
+offset_top = 152.0
+offset_right = -77.0
+offset_bottom = 239.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="FishCanvas"]
+offset_left = -865.0
+offset_top = 147.0
+offset_right = -799.0
+offset_bottom = 183.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="FishCanvas"]
+offset_left = -819.0
+offset_top = 234.0
+offset_right = -753.0
+offset_bottom = 270.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="FishCanvas"]
+offset_left = -659.0
+offset_top = -247.0
+offset_right = -593.0
+offset_bottom = -186.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="FishCanvas"]
+offset_left = -115.0
+offset_top = -286.0
+offset_right = -49.0
+offset_bottom = -225.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="FishCanvas"]
+offset_left = 54.0
+offset_top = -218.0
+offset_right = 92.0
+offset_bottom = -185.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="FishCanvas"]
+offset_left = 543.0
+offset_top = -380.0
+offset_right = 609.0
+offset_bottom = -319.0
+color = Color(0.227451, 0.231373, 0.305882, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="FishCanvas"]
+offset_left = 778.0
+offset_top = -187.0
+offset_right = 844.0
+offset_bottom = -155.0
+color = Color(0.227451, 0.231373, 0.305882, 1)

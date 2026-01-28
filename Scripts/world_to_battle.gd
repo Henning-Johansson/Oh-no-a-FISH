@@ -2,8 +2,10 @@ extends Node2D
 
 
 var stage = "game"
+var player_pos = Vector2(0,0)
 
 @onready var anim: AnimationPlayer = $AnimationPlayer
+
 
 func change_stage()-> void:
 	if stage == "game":

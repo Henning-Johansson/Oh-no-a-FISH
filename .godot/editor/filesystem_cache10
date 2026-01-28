@@ -1,9 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1768394470
+::res://::1769154958
 icon.svg::CompressedTexture2D/CompressedTexture2D::6887605255659731483::1744011743::1762266171::1::::<><><>0<>0<>2e6d8f37b864d36f3838ef09252ea972<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1762265995::0::1::::<><><>0<>0<><>::
-world_to_battle.tscn::PackedScene::8589968265296918025::1768394470::0::1::::<><><>0<>0<><>::uid://bikfscwqruafu::::res://Scripts/world_to_battle.gd
-::res://Assets/::1764685752
+::res://Assets/::1769154958
+Pxiel Art UI borders.png::CompressedTexture2D::4768108832215851834::1642085933::1769154958::1::::<><><>0<>0<>ce101eea9235cee7702b9bc08c01e5fe<>res://.godot/imported/Pxiel Art UI borders.png-3598412836860901ec6b06609c6f1db5.ctex::
+::res://Assets/Blue_Stone_UI_Asset/::1769154847
+BlueStoneUI_SpriteSheet.png::CompressedTexture2D/CompressedTexture2D::6202242398202762746::1745618426::1769154847::1::::<><><>0<>0<>4d8a8bcd78435145b3392e7cba167b7e<>res://.godot/imported/BlueStoneUI_SpriteSheet.png-6b446ee39a02442135ccad854158bc51.ctex::
 ::res://Assets/Characters/::1764081578
 angler_full.png::CompressedTexture2D/CompressedTexture2D::6216275093748565562::1764081514::1764081578::1::::<><><>0<>0<>90ae91bab7e48f1a995046d66ed7e43a<>res://.godot/imported/angler_full.png-18c5a9ed305be3a1005ee5b94f5d4aa3.ctex::
 ::res://Assets/Characters/Character Customizer/::1762502753
@@ -467,16 +469,19 @@ UiIcons.png::CompressedTexture2D/CompressedTexture2D::5614412841545139463::16094
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/::1762344773
 punyworld-overworld-tileset.png::CompressedTexture2D/CompressedTexture2D::2140423137442505543::1705055002::1762344773::1::::<><><>0<>0<>3d1a2e400a0a821dd5115c685190e558<>res://.godot/imported/punyworld-overworld-tileset.png-d8c1953454ca5f662b96572e00320768.ctex::
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/Tiled/::1705054110
-::res://Scenes/::1768384296
-battle_stage.tscn::PackedScene::4963017225893436994::1768384296::0::1::::<><><>0<>0<><>::uid://5wa38i60fql1::::res://Scripts/battle_stage.gd<>uid://c1k5a0ilp0n60::::res://Scenes/fishable_items.tscn<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
-fishable_items.tscn::PackedScene::6620217915261658115::1768382848::0::1::::<><><>0<>0<><>::uid://uw181k1cr4t1::::res://Scripts/fishable_items.gd<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png<>uid://d0msqx0s7r5g::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png<>uid://c44kwl1tqda45::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/SAMPLE B - Pixel Gnome Fish Pack - Fresh Water Sprite Sheet.png<>uid://c0vhrmatlnt6m::::res://Assets/Fishing/fishing_icon_pack/objects.png
-game.tscn::PackedScene::7229099743321016142::1768382848::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://bb50ew4k5x7j2::::res://Scripts/game.gd<>uid://yf6dng8a0jct::::res://Scenes/player.tscn
-player.tscn::PackedScene::1696742413813291619::1768382848::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
-village_map.tscn::PackedScene::3457565006222323774::1768382848::0::1::::<><><>0<>0<><>::uid://bee70x7endff::::res://Scripts/village_map.gd<>uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png<>uid://bjkfjpfckupqd::::res://Assets/MiniWorldSprites/Buildings/Enemy/Mausoleum.png<>uid://bgiw0nquet6bc::::res://Assets/MiniWorldSprites/Nature/DeadTrees.png<>uid://brl45wxqcd31g::::res://Assets/MiniWorldSprites/Nature/Rocks.png<>uid://cngjkc5joicy5::::res://Assets/MiniWorldSprites/Nature/Trees.png<>uid://drf5lbyd65h65::::res://Assets/MiniWorldSprites/Miscellaneous/Tombstones.png<>uid://d0tplkeh621qg::::res://Assets/MiniWorldSprites/Miscellaneous/Well.png<>uid://mxok7plmg1xx::::res://Assets/MiniWorldSprites/Miscellaneous/StreetSigns.png<>uid://cthafl2gl3mr5::::res://Assets/MiniWorldSprites/Miscellaneous/Signs.png<>uid://m8auighrqtge::::res://Assets/MiniWorldSprites/Miscellaneous/Bridge.png<>uid://c171rwqho0n5y::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Worm.png<>uid://ca43ysjlij13t::::res://Assets/MiniWorldSprites/Miscellaneous/QuestBoard.png
-::res://Scripts/::1768394470
-battle_stage.gd::GDScript::2151133369030735720::1768316279::0::1::::<>Node2D<><>0<>0<><>::
-fishable_items.gd::GDScript/GDScript::1450832138600596348::1767946127::0::1::::Fishables<>Node2D<><>0<>0<><>::
-game.gd::GDScript::2520067128756124773::1768316060::0::1::::<>Node2D<><>0<>0<><>::
+::res://Scenes/::1769524363
+battle_stage.tscn::PackedScene::4963017225893436994::1769524363::0::1::::<><><>0<>0<><>::uid://5wa38i60fql1::::res://Scripts/battle_stage.gd<>uid://c1k5a0ilp0n60::::res://Scenes/fishable_items.tscn<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
+fishable_items.tscn::PackedScene::6620217915261658115::1769524363::0::1::::<><><>0<>0<><>::uid://uw181k1cr4t1::::res://Scripts/fishable_items.gd<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
+game.tscn::PackedScene::7229099743321016142::1769524363::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://bb50ew4k5x7j2::::res://Scripts/game.gd<>uid://yf6dng8a0jct::::res://Scenes/player.tscn<>uid://dns8f71op8ssp::::res://Scenes/inventory.tscn
+inventory.tscn::PackedScene::8110890129247196787::1769524410::0::1::::<><><>0<>0<><>::uid://bbmnjwkv33b0e::::res://Scenes/inventory.gd<>uid://cumoa5hnc0mhu::::res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png<>uid://b86yb5svh1vw1::::res://Assets/Pxiel Art UI borders.png<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
+player.tscn::PackedScene::1696742413813291619::1769524363::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
+inventory.gd::GDScript::2482188625385370010::1769524314::0::1::::<>Node2D<><>0<>0<><>::
+village_map.tscn::PackedScene::3457565006222323774::1769524363::0::1::::<><><>0<>0<><>::uid://bee70x7endff::::res://Scripts/village_map.gd<>uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png<>uid://bjkfjpfckupqd::::res://Assets/MiniWorldSprites/Buildings/Enemy/Mausoleum.png<>uid://bgiw0nquet6bc::::res://Assets/MiniWorldSprites/Nature/DeadTrees.png<>uid://brl45wxqcd31g::::res://Assets/MiniWorldSprites/Nature/Rocks.png<>uid://cngjkc5joicy5::::res://Assets/MiniWorldSprites/Nature/Trees.png<>uid://drf5lbyd65h65::::res://Assets/MiniWorldSprites/Miscellaneous/Tombstones.png<>uid://d0tplkeh621qg::::res://Assets/MiniWorldSprites/Miscellaneous/Well.png<>uid://mxok7plmg1xx::::res://Assets/MiniWorldSprites/Miscellaneous/StreetSigns.png<>uid://cthafl2gl3mr5::::res://Assets/MiniWorldSprites/Miscellaneous/Signs.png<>uid://m8auighrqtge::::res://Assets/MiniWorldSprites/Miscellaneous/Bridge.png<>uid://c171rwqho0n5y::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Worm.png<>uid://ca43ysjlij13t::::res://Assets/MiniWorldSprites/Miscellaneous/QuestBoard.png
+world_to_battle.tscn::PackedScene::8589968265296918025::1769524363::0::1::::<><><>0<>0<><>::uid://bikfscwqruafu::::res://Scripts/world_to_battle.gd
+::res://Scripts/::1768920468
+battle_stage.gd::GDScript/GDScript::2151133369030735720::1768916970::0::1::::<>Node2D<><>0<>0<><>::
+fishable_items.gd::GDScript/GDScript::1450832138600596348::1768550266::0::1::::Fishables<>Node2D<><>0<>0<><>::
+game.gd::GDScript/GDScript::2520067128756124773::1768920419::0::1::::<>Node2D<><>0<>0<><>::
 player.gd::GDScript/GDScript::881550977576973895::1768315155::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
 village_map.gd::GDScript/GDScript::78747718104342691::1764920063::0::1::::<>Node2D<><>0<>0<><>::
-world_to_battle.gd::GDScript::2968911079374946542::1768315984::0::1::::<>Node2D<><>0<>0<><>::
+world_to_battle.gd::GDScript/GDScript::2968911079374946542::1768920468::0::1::::<>Node2D<><>0<>0<><>::
