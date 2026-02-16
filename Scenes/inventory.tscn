@@ -129,6 +129,196 @@ hframes = 3
 vframes = 3
 frame = 3
 
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 250.0
+offset_right = 320.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 250.0
+offset_right = 670.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label2"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 250.0
+offset_right = 1020.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label3"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label4" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 1310.0
+offset_top = 250.0
+offset_right = 1370.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label4"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label5" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 1660.0
+offset_top = 250.0
+offset_right = 1720.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label5"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label6" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 2010.0
+offset_top = 250.0
+offset_right = 2070.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label6"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label7" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 750.0
+offset_right = 320.0
+offset_bottom = 810.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label7"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label8" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 750.0
+offset_right = 670.0
+offset_bottom = 810.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label8"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label9" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 750.0
+offset_right = 1020.0
+offset_bottom = 810.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label9"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
+[node name="Label10" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 1310.0
+offset_top = 750.0
+offset_right = 1370.0
+offset_bottom = 810.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control/Label10"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.51901, 1.59982)
+
 [node name="Label" type="Label" parent="."]
 offset_left = -955.0
 offset_top = -523.0
@@ -189,7 +379,7 @@ hframes = 4
 vframes = 4
 frame = 5
 
-[node name="SeaSnail" type="Sprite2D" parent="FishCanvas"]
+[node name="FreshwaterSnail" type="Sprite2D" parent="FishCanvas"]
 position = Vector2(-880, 250)
 scale = Vector2(10, 10)
 texture = ExtResource("3_yxepq")

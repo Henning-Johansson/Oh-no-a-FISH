@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://da83hmm1c25xq"]
+[gd_scene load_steps=6 format=3 uid="uid://da83hmm1c25xq"]
 
 [ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="1_qxrlw"]
 [ext_resource type="Script" uid="uid://bb50ew4k5x7j2" path="res://Scripts/game.gd" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://yf6dng8a0jct" path="res://Scenes/player.tscn" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dns8f71op8ssp" path="res://Scenes/inventory.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://dlrm70xml2wph" path="res://Scenes/pause_menu.tscn" id="5_wowpa"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_wrm1d")
@@ -15,6 +16,13 @@ script = ExtResource("1_wrm1d")
 [node name="Inventory" parent="Player" instance=ExtResource("4_3dryh")]
 scale = Vector2(0.666667, 0.666667)
 
+[node name="PauseMenu" parent="Player" instance=ExtResource("5_wowpa")]
+position = Vector2(-714.667, -419.333)
+scale = Vector2(0.6, 0.6)
+
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [connection signal="fishing" from="Player" to="." method="_on_player_fishing"]
+[connection signal="inventory" from="Player" to="Player/Inventory" method="_on_player_inventory"]
+[connection signal="pause" from="Player" to="Player/PauseMenu" method="_on_player_pause"]
+[connection signal="unpaused" from="Player/PauseMenu" to="Player" method="_on_pause_menu_unpaused"]

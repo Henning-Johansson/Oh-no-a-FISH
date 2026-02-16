@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1769154958
+::res://::1770975618
 icon.svg::CompressedTexture2D/CompressedTexture2D::6887605255659731483::1744011743::1762266171::1::::<><><>0<>0<>2e6d8f37b864d36f3838ef09252ea972<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1762265995::0::1::::<><><>0<>0<><>::
-::res://Assets/::1769154958
-Pxiel Art UI borders.png::CompressedTexture2D::4768108832215851834::1642085933::1769154958::1::::<><><>0<>0<>ce101eea9235cee7702b9bc08c01e5fe<>res://.godot/imported/Pxiel Art UI borders.png-3598412836860901ec6b06609c6f1db5.ctex::
+::res://Assets/::1770973994
+Pxiel Art UI borders.png::CompressedTexture2D/CompressedTexture2D::4768108832215851834::1642085933::1769154958::1::::<><><>0<>0<>ce101eea9235cee7702b9bc08c01e5fe<>res://.godot/imported/Pxiel Art UI borders.png-3598412836860901ec6b06609c6f1db5.ctex::
 ::res://Assets/Blue_Stone_UI_Asset/::1769154847
 BlueStoneUI_SpriteSheet.png::CompressedTexture2D/CompressedTexture2D::6202242398202762746::1745618426::1769154847::1::::<><><>0<>0<>4d8a8bcd78435145b3392e7cba167b7e<>res://.godot/imported/BlueStoneUI_SpriteSheet.png-6b446ee39a02442135ccad854158bc51.ctex::
 ::res://Assets/Characters/::1764081578
@@ -114,7 +114,7 @@ jump.png::CompressedTexture2D/CompressedTexture2D::5568610649918058968::17479017
 Read Me.txt::TextFile/TextFile::-1::1747902178::0::1::::<><><>0<>0<><>::
 run.png::CompressedTexture2D/CompressedTexture2D::1729710241827419006::1747901742::1762502758::1::::<><><>0<>0<>40e946ae6b75e1629a7c0aeec48a1e2f<>res://.godot/imported/run.png-074f185cc31a6f12294f0628b73d3817.ctex::
 walk.png::CompressedTexture2D/CompressedTexture2D::1889851639402948871::1747901754::1762502758::1::::<><><>0<>0<>26b09ddff041ff25994c6b3f27307dfe<>res://.godot/imported/walk.png-61c1613a2863e7b720b777301e25df30.ctex::
-::res://Assets/Fishing/::1762504091
+::res://Assets/Fishing/::1770973994
 Fish.png::CompressedTexture2D/CompressedTexture2D::3953160123897567231::1740753172::1762504091::1::::<><><>0<>0<>8c0be7bf198cdf2eb7c9f5f3bf89cb7a<>res://.godot/imported/Fish.png-364d41812af6ceee34dca20782bf6968.ctex::
 Fishes_16x16.png::CompressedTexture2D/CompressedTexture2D::4538845668596461968::1754768472::1762504091::1::::<><><>0<>0<>e4d50ec5653520688850614c8af10bc1<>res://.godot/imported/Fishes_16x16.png-9537cfaba768bae35ffbb36a4ead9c88.ctex::
 Fishes_32x32.png::CompressedTexture2D/CompressedTexture2D::2780596324190888502::1755951695::1762504091::1::::<><><>0<>0<>675af3276ebe1d01b9ed6fe3db9fb991<>res://.godot/imported/Fishes_32x32.png-faa6d6e4dbffb5b12031bdc1524ad110.ctex::
@@ -125,6 +125,14 @@ global.png::CompressedTexture2D/CompressedTexture2D::8157391456338889074::175457
 global_free_recoloured.png::CompressedTexture2D/CompressedTexture2D::7390257042817524320::1754578882::1762504091::1::::<><><>0<>0<>b78f89cfcd9a3969e422c48d4c9c7c9b<>res://.godot/imported/global_free_recoloured.png-1d2e923406379839817709e8141e3666.ctex::
 item list.txt::TextFile/TextFile::-1::1754578647::0::1::::<><><>0<>0<><>::
 license.txt::TextFile/TextFile::-1::1762504091::0::1::::<><><>0<>0<><>::
+::res://Assets/Fishing/fishing_gear/::1770973994
+00_fishing_gear.png::CompressedTexture2D::7273889043052684692::1770970146::1770973994::1::::<><><>0<>0<>d72d984f0b59292179e59dd12e781d28<>res://.godot/imported/00_fishing_gear.png-ac694e90b48f93fbed491c7ae26a7447.ctex::
+01_fishing_gear.png::CompressedTexture2D::6557284471946104511::1770970146::1770973994::1::::<><><>0<>0<>52c7394226bcd3b9961bc483726bd5a9<>res://.godot/imported/01_fishing_gear.png-49b33763a1d86e57e215aa5f51ea637c.ctex::
+02_fishing_gear.png::CompressedTexture2D::374604952196505687::1770970146::1770973994::1::::<><><>0<>0<>eff774b30f5d0d364313ebb27212d884<>res://.godot/imported/02_fishing_gear.png-4208fcde75755249047e49d20de3b6ba.ctex::
+03_fishing_gear.png::CompressedTexture2D::5164591386142147622::1770970146::1770973994::1::::<><><>0<>0<>839baf0007f2eabe0a119bce29101096<>res://.godot/imported/03_fishing_gear.png-c0a7b226dbb38b61a4f752622af49d02.ctex::
+04_fishing_gear.png::CompressedTexture2D::3508046590563525129::1770970146::1770973994::1::::<><><>0<>0<>287f344f5c13d61ada0f22a4af39ccf8<>res://.godot/imported/04_fishing_gear.png-84e8f6a60fd50641d3682a75d4b57e16.ctex::
+05_fishing_gear.png::CompressedTexture2D::5982437108613243741::1770970146::1770973994::1::::<><><>0<>0<>76ea915dc2282418834d049082d5f92d<>res://.godot/imported/05_fishing_gear.png-417a713b1649b0dbbf4907e9dc57bae9.ctex::
+06_fishing_gear.png::CompressedTexture2D::5977220861044193965::1770970146::1770973994::1::::<><><>0<>0<>a6405982ef6926eef8cdf88f5e89db1c<>res://.godot/imported/06_fishing_gear.png-5788196ab90cf645b4ad4baffa93e2ae.ctex::
 ::res://Assets/Fishing/fishing_icon_pack/::1762504091
 fishes.png::CompressedTexture2D/CompressedTexture2D::4099337870623449355::1721816448::1762504091::1::::<><><>0<>0<>cf8c2ea3bfe8e082f45f49e84c30fc17<>res://.godot/imported/fishes.png-4e5d2a40cce4938f6a97167365fb10e3.ctex::
 fishing_gear.png::CompressedTexture2D/CompressedTexture2D::4256894946647953402::1722717150::1762504091::1::::<><><>0<>0<>2fad62cd65d22de8e4c1eca0cde975c4<>res://.godot/imported/fishing_gear.png-f25acf4f64528e2858cf34023e426eda.ctex::
@@ -167,7 +175,7 @@ Death.png::CompressedTexture2D/CompressedTexture2D::8155384591554405918::1672486
 Hurt.png::CompressedTexture2D/CompressedTexture2D::1184531928573361645::1672486746::1762504091::1::::<><><>0<>0<>178304ea2e9d89dc7b1dc13091fde238<>res://.godot/imported/Hurt.png-bced964c783789d2a8dee5342dd6944a.ctex::
 Idle.png::CompressedTexture2D/CompressedTexture2D::2317043009072424412::1672486754::1762504091::1::::<><><>0<>0<>8e14e96246cbcc7c70d61e4704364b3d<>res://.godot/imported/Idle.png-bd0ac3a87edfb4e96f548171e6aaed72.ctex::
 Walk.png::CompressedTexture2D/CompressedTexture2D::1339304877685987673::1672486762::1762504091::1::::<><><>0<>0<>bea8ce7e064b9d8a1712cc964f6c1d62<>res://.godot/imported/Walk.png-d1fa455e9d49848d1014945e05c4e22b.ctex::
-::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/::1762504091
+::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/::1770729282
 Read Me.txt::TextFile/TextFile::-1::1740099651::0::1::::<><><>0<>0<><>::
 SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet Outlined.png::CompressedTexture2D/CompressedTexture2D::7845042410214210182::1740462717::1762504091::1::::<><><>0<>0<>3d4ac92795f98f38bd044b4a891c9cf1<>res://.godot/imported/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet Outlined.png-482edd3b5fd74c6f369c48ba0533c943.ctex::
 SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png::CompressedTexture2D/CompressedTexture2D::262937600034399174::1740462618::1762504091::1::::<><><>0<>0<>47358af4da1020da1976e57cec5a2a4a<>res://.godot/imported/SAMPLE A - Pixel Gnome Fish Pack - Salt Water Sprite Sheet.png-a13dd9b26617d31a6bdf17ac170e0594.ctex::
@@ -469,19 +477,40 @@ UiIcons.png::CompressedTexture2D/CompressedTexture2D::5614412841545139463::16094
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/::1762344773
 punyworld-overworld-tileset.png::CompressedTexture2D/CompressedTexture2D::2140423137442505543::1705055002::1762344773::1::::<><><>0<>0<>3d1a2e400a0a821dd5115c685190e558<>res://.godot/imported/punyworld-overworld-tileset.png-d8c1953454ca5f662b96572e00320768.ctex::
 ::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/Tiled/::1705054110
-::res://Scenes/::1769524363
-battle_stage.tscn::PackedScene::4963017225893436994::1769524363::0::1::::<><><>0<>0<><>::uid://5wa38i60fql1::::res://Scripts/battle_stage.gd<>uid://c1k5a0ilp0n60::::res://Scenes/fishable_items.tscn<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
-fishable_items.tscn::PackedScene::6620217915261658115::1769524363::0::1::::<><><>0<>0<><>::uid://uw181k1cr4t1::::res://Scripts/fishable_items.gd<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
-game.tscn::PackedScene::7229099743321016142::1769524363::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://bb50ew4k5x7j2::::res://Scripts/game.gd<>uid://yf6dng8a0jct::::res://Scenes/player.tscn<>uid://dns8f71op8ssp::::res://Scenes/inventory.tscn
-inventory.tscn::PackedScene::8110890129247196787::1769524410::0::1::::<><><>0<>0<><>::uid://bbmnjwkv33b0e::::res://Scenes/inventory.gd<>uid://cumoa5hnc0mhu::::res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png<>uid://b86yb5svh1vw1::::res://Assets/Pxiel Art UI borders.png<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
-player.tscn::PackedScene::1696742413813291619::1769524363::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
-inventory.gd::GDScript::2482188625385370010::1769524314::0::1::::<>Node2D<><>0<>0<><>::
-village_map.tscn::PackedScene::3457565006222323774::1769524363::0::1::::<><><>0<>0<><>::uid://bee70x7endff::::res://Scripts/village_map.gd<>uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png<>uid://bjkfjpfckupqd::::res://Assets/MiniWorldSprites/Buildings/Enemy/Mausoleum.png<>uid://bgiw0nquet6bc::::res://Assets/MiniWorldSprites/Nature/DeadTrees.png<>uid://brl45wxqcd31g::::res://Assets/MiniWorldSprites/Nature/Rocks.png<>uid://cngjkc5joicy5::::res://Assets/MiniWorldSprites/Nature/Trees.png<>uid://drf5lbyd65h65::::res://Assets/MiniWorldSprites/Miscellaneous/Tombstones.png<>uid://d0tplkeh621qg::::res://Assets/MiniWorldSprites/Miscellaneous/Well.png<>uid://mxok7plmg1xx::::res://Assets/MiniWorldSprites/Miscellaneous/StreetSigns.png<>uid://cthafl2gl3mr5::::res://Assets/MiniWorldSprites/Miscellaneous/Signs.png<>uid://m8auighrqtge::::res://Assets/MiniWorldSprites/Miscellaneous/Bridge.png<>uid://c171rwqho0n5y::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Worm.png<>uid://ca43ysjlij13t::::res://Assets/MiniWorldSprites/Miscellaneous/QuestBoard.png
-world_to_battle.tscn::PackedScene::8589968265296918025::1769524363::0::1::::<><><>0<>0<><>::uid://bikfscwqruafu::::res://Scripts/world_to_battle.gd
-::res://Scripts/::1768920468
-battle_stage.gd::GDScript/GDScript::2151133369030735720::1768916970::0::1::::<>Node2D<><>0<>0<><>::
-fishable_items.gd::GDScript/GDScript::1450832138600596348::1768550266::0::1::::Fishables<>Node2D<><>0<>0<><>::
-game.gd::GDScript/GDScript::2520067128756124773::1768920419::0::1::::<>Node2D<><>0<>0<><>::
-player.gd::GDScript/GDScript::881550977576973895::1768315155::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+::res://Assets/XTypewriter_Font_0_96/::1770734957
+License.txt::TextFile/TextFile::-1::1768085186::0::1::::<><><>0<>0<><>::
+::res://Assets/XTypewriter_Font_0_96/OpenType (.otf)/::1770735535
+XTypewriter-Bold.otf::FontFile/FontFile::1094677238353955710::1768091842::1770735535::1::::<><><>0<>0<>378d4e71c03c7a278d866496f0efd7ae<>res://.godot/imported/XTypewriter-Bold.otf-6c66a7813194f25915588f77af690655.fontdata::
+XTypewriter-Regular.otf::FontFile/FontFile::8911579267145109357::1768090058::1770735535::1::::<><><>0<>0<>22484d116fbc4dacc115806ee2033d5e<>res://.godot/imported/XTypewriter-Regular.otf-bf708a63160e3e29dffa62952b06b5b4.fontdata::
+::res://Assets/XTypewriter_Font_0_96/TrueType (.ttf)/::1770735535
+XTypewriter-Bold.ttf::FontFile/FontFile::6058403520423216119::1768091856::1770735535::1::::<><><>0<>0<>72b641ec86551d3a03e1eb68c0b1bd22<>res://.godot/imported/XTypewriter-Bold.ttf-e1275e7722dd2058e7fc4efe566d4bf9.fontdata::
+XTypewriter-Regular.ttf::FontFile/FontFile::4727870342017787108::1768090046::1770735535::1::::<><><>0<>0<>c47759a365108e6150aa33d9b0593eb5<>res://.godot/imported/XTypewriter-Regular.ttf-a2ebcdbfd2f61c58aaacbe2286d626bc.fontdata::
+::res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/::1770735535
+XTypewriter-Bold.woff::FontFile/FontFile::9186323832052611477::1768091838::1770735535::1::::<><><>0<>0<>8e0de67bfb9ef9116778507f099aba7e<>res://.godot/imported/XTypewriter-Bold.woff-70e34d6a4befc32be3a7b0403f8f7e55.fontdata::
+XTypewriter-Bold.woff2::FontFile/FontFile::9147520632502856608::1768091838::1770735535::1::::<><><>0<>0<>a888a69c95d126d989f637382aba3d33<>res://.godot/imported/XTypewriter-Bold.woff2-66073f32d0454d53c8e4d5d5c9d8d5df.fontdata::
+XTypewriter-Regular.woff::FontFile/FontFile::596116909279851523::1768090042::1770735535::1::::<><><>0<>0<>6386343434cd94e466e3ccea5f0ce38d<>res://.godot/imported/XTypewriter-Regular.woff-2056ace922fb820089e94b54f7e0b0bd.fontdata::
+XTypewriter-Regular.woff2::FontFile/FontFile::7171633215074101067::1768090042::1770735535::1::::<><><>0<>0<>8378ceecdd0ae03944d60c284794104f<>res://.godot/imported/XTypewriter-Regular.woff2-dfb7eae28ad607ba0c4140f33e8c4375.fontdata::
+::res://Scenes/::1771241638
+battle_stage.tscn::PackedScene::4963017225893436994::1771241638::0::1::::<><><>0<>0<><>::uid://5wa38i60fql1::::res://Scripts/battle_stage.gd<>uid://c1k5a0ilp0n60::::res://Scenes/fishable_items.tscn<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png<>uid://crfn7pf0paot6::::res://Assets/Fishing/fishing_gear/06_fishing_gear.png<>uid://crh64odhr0f30::::res://Assets/Fishing/fishing_gear/05_fishing_gear.png
+fishable_items.tscn::PackedScene/PackedScene::6620217915261658115::1770973840::0::1::::<><><>0<>0<><>::uid://uw181k1cr4t1::::res://Scripts/fishable_items.gd<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
+fish_tracker.tscn::PackedScene/PackedScene::194410489881248861::1770973840::0::1::::<><><>0<>0<><>::uid://btgvk5jfup8so::::res://Scripts/fish_tracker.gd
+game.tscn::PackedScene::7229099743321016142::1771241638::0::1::::<><><>0<>0<><>::uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://bb50ew4k5x7j2::::res://Scripts/game.gd<>uid://yf6dng8a0jct::::res://Scenes/player.tscn<>uid://dns8f71op8ssp::::res://Scenes/inventory.tscn<>uid://dlrm70xml2wph::::res://Scenes/pause_menu.tscn
+inventory.tscn::PackedScene/PackedScene::8110890129247196787::1770973840::0::1::::<><><>0<>0<><>::uid://bbmnjwkv33b0e::::res://Scripts/inventory.gd<>uid://cumoa5hnc0mhu::::res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png<>uid://b86yb5svh1vw1::::res://Assets/Pxiel Art UI borders.png<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png
+pause_menu.tscn::PackedScene::7967220851410096933::1771241638::0::1::::<><><>0<>0<><>::uid://iq07t6bgmcvr::::res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff<>uid://cp1se08sjehcv::::res://Scripts/pause_menu.gd<>uid://8kyiw5bxj38t::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/A - Salt Water/Clownfish.png<>uid://dcllkab6lfcsa::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Rusty Can.png
+player.tscn::PackedScene/PackedScene::1696742413813291619::1770973840::0::1::::<><><>0<>0<><>::uid://mtbasjgdnhel::::res://Scripts/player.gd<>uid://cuthe33fksq6m::::res://Assets/Characters/angler_full.png
+boss_battle.tscn::PackedScene::2273265140590865681::1771241695::0::1::::<><><>0<>0<><>::uid://dqt00bfqrciw3::::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Angler/angler - idle.png<>uid://byistdiknfras::::res://Scenes/boss_battle.gd<>uid://crfn7pf0paot6::::res://Assets/Fishing/fishing_gear/06_fishing_gear.png<>uid://crh64odhr0f30::::res://Assets/Fishing/fishing_gear/05_fishing_gear.png<>uid://lrodrpjapx2l::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Attack.png<>uid://01mf7ooa3l52::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Death.png<>uid://byj645nyp0use::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Hurt.png<>uid://bt2j7ososiot4::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Idle.png<>uid://btoluhcljwiqn::::res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Walk.png
+boss_battle.gd::GDScript::4088594959392774414::1771241638::0::1::::<>Node2D<><>0<>0<><>::
+start_menu.tscn::PackedScene/PackedScene::1019857114122491407::1770973840::0::1::::<><><>0<>0<><>::uid://okk6cqquev2m::::res://Scripts/start_menu.gd<>uid://bpi4ucu37e3qo::::res://Scenes/village_map.tscn<>uid://ddj5pos1xo1cu::::res://Assets/Fishing/fishing_free/global_free_recoloured.png<>uid://b1wco5ersia8y::::res://Assets/Fishing/fishing_icon_pack/fishing_gear.png<>uid://iq07t6bgmcvr::::res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff<>uid://8qescssw2d31::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/B - Fresh Water/Rainbow Trout.png<>uid://dcllkab6lfcsa::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Rusty Can.png
+village_map.tscn::PackedScene::3457565006222323774::1771241638::0::1::::<><><>0<>0<><>::uid://bee70x7endff::::res://Scripts/village_map.gd<>uid://5q3prssg67ff::::res://Assets/PUNY_WORLD_v1/PUNY_WORLD_v1/punyworld-overworld-tileset.png<>uid://bjkfjpfckupqd::::res://Assets/MiniWorldSprites/Buildings/Enemy/Mausoleum.png<>uid://bgiw0nquet6bc::::res://Assets/MiniWorldSprites/Nature/DeadTrees.png<>uid://brl45wxqcd31g::::res://Assets/MiniWorldSprites/Nature/Rocks.png<>uid://cngjkc5joicy5::::res://Assets/MiniWorldSprites/Nature/Trees.png<>uid://drf5lbyd65h65::::res://Assets/MiniWorldSprites/Miscellaneous/Tombstones.png<>uid://m8auighrqtge::::res://Assets/MiniWorldSprites/Miscellaneous/Bridge.png<>uid://c171rwqho0n5y::::res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Worm.png<>uid://66hyrhdrhfyv::::res://Assets/Hana Caraka - Livestock & Fish [Sample]/Chicken/Chick.png<>uid://ckoqy6eivxw8n::::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Merchant/merchant - idle.png<>uid://w674hns2rvyp::::res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Inn Keeper/inn keeper - idle.png<>uid://bfadafik34ogi::::res://Assets/MiniWorldSprites/Characters/Monsters/Undead/Necromancer.png
+world_to_battle.tscn::PackedScene::8589968265296918025::1771241638::0::1::::<><><>0<>0<><>::uid://bikfscwqruafu::::res://Scripts/world_to_battle.gd
+::res://Scripts/::1771240248
+battle_stage.gd::GDScript::2151133369030735720::1771240248::0::1::::<>Node2D<><>0<>0<><>::
+fishable_items.gd::GDScript/GDScript::1450832138600596348::1769525980::0::1::::Fishables<>Node2D<><>0<>0<><>::
+fish_tracker.gd::GDScript/GDScript::3733689483985495950::1770365346::0::1::::<>Node2D<><>0<>0<><>::
+game.gd::GDScript/GDScript::2520067128756124773::1770363532::0::1::::<>Node2D<><>0<>0<><>::
+inventory.gd::GDScript/GDScript::2482188625385370010::1770364654::0::1::::<>Node2D<><>0<>0<><>::
+pause_menu.gd::GDScript/GDScript::5880449257499987365::1770973137::0::1::::<>Node2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::881550977576973895::1770973137::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+start_menu.gd::GDScript/GDScript::1003950248529214422::1770971734::0::1::::<>Node2D<><>0<>0<><>::
 village_map.gd::GDScript/GDScript::78747718104342691::1764920063::0::1::::<>Node2D<><>0<>0<><>::
-world_to_battle.gd::GDScript/GDScript::2968911079374946542::1768920468::0::1::::<>Node2D<><>0<>0<><>::
+world_to_battle.gd::GDScript::2968911079374946542::1770974422::0::1::::<>Node2D<><>0<>0<><>::

@@ -12,25 +12,63 @@ extends Node2D
 @onready var player_timer: Timer = $Timers/PlayerAttackReloadTimer
 @onready var cooldown_timer: Timer = $Timers/CooldownTextDisplayTimer
 @onready var healing_timer: Timer = $Timers/HealingTextDisplayTimer
+@onready var win_timer: Timer = $Timers/WinTimer
+@onready var defeat_timer: Timer = $Timers/DefeatTimer
 @onready var can_attack: Label = $CanvasLayer/CanAttack
 @onready var cooldown_text: Label = $CanvasLayer/CooldownLabel
 @onready var round_label: Label = $CanvasLayer/RoundText
 @onready var healable: Label = $CanvasLayer/HealingLabel
 @onready var win_lable: Label = $CanvasLayer/WinLabel
+@onready var defeat_label: Label = $CanvasLayer/DefeatLabel
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
 signal fighting
+signal atlantic_bass_caught
+signal clownfish_caught
+signal dab_caught
+signal sea_spider_caught
+signal blue_gill_caught
+signal guppy_caught
+signal freshwater_snail_caught
+signal axolotl_caught
+signal high_fin_banded_shark_caught
+signal golden_tench_caught
 
 var can_fight: bool = true
 var b2_cooldown = 0
 var round_value = 0
 var win: bool = false
+var loss: bool = false
+var atlantic_bass: bool = false
+var clownfish: bool = false
+var dab: bool = false
+var sea_spider: bool = false
+var blue_gill: bool = false
+var guppy: bool = false
+var freshwater_snail: bool = false
+var axolotl: bool = false
+var high_fin_banded_shark: bool = false
+var golden_tench: bool = false
+var count_up: bool = false
 
 
 func _ready()-> void:
+	atlantic_bass = false
+	clownfish = false
+	dab= false
+	sea_spider = false
+	blue_gill = false
+	guppy = false
+	freshwater_snail = false
+	axolotl = false
+	high_fin_banded_shark = false
+	golden_tench = false
+	count_up = false
+	win = false
+	loss = false
+	emit_signal("fighting")
 	enemy_health.value = 100
 	player_health.value = 100
-	emit_signal("fighting")
 	can_fight = true
 	can_attack.visible = false
 	cooldown_text.visible = false
@@ -40,11 +78,72 @@ func _ready()-> void:
 	round_label.text = "Round: " + str(round_value)
 	round_label.visible = true
 	win_lable.visible = false
+	defeat_label.visible = false
+
 
 func _process(delta: float) -> void:
 	if enemy_health.value == 0:
 		win_lable.visible = true
 		win = true
+	if player_health.value == 0:
+		defeat_label.visible = true
+		defeat_timer.start()
+		can_fight = false
+		loss = true
+	if win == true:
+		if atlantic_bass == true:
+			FishTracker.update_icon("atlantic_bass")
+			if count_up == false:
+				FishTracker.update_count_plus("atlantic_bass")
+				count_up = true
+		elif axolotl == true:
+			FishTracker.update_icon("axolotl")
+			if count_up == false:
+				FishTracker.update_count_plus("axolotl")
+				count_up = true
+		elif blue_gill == true:
+			FishTracker.update_icon("blue_gill")
+			if count_up == false:
+				FishTracker.update_count_plus("blue_gill")
+				count_up = true
+		elif clownfish == true:
+			FishTracker.update_icon("clownfish")
+			if count_up == false:
+				FishTracker.update_count_plus("clownfish")
+				count_up = true
+		elif dab == true:
+			FishTracker.update_icon("dab")
+			if count_up == false:
+				FishTracker.update_count_plus("dab")
+				count_up = true
+		elif freshwater_snail == true:
+			FishTracker.update_icon("freshwater_snail")
+			if count_up == false:
+				FishTracker.update_count_plus("freshwater_snail")
+				count_up = true
+		elif golden_tench == true:
+			FishTracker.update_icon("golden_tench")
+			if count_up == false:
+				FishTracker.update_count_plus("golden_tench")
+				count_up = true
+		elif guppy == true:
+			FishTracker.update_icon("guppy")
+			if count_up == false:
+				FishTracker.update_count_plus("guppy")
+				count_up = true
+		elif high_fin_banded_shark == true:
+			FishTracker.update_icon("high_fin_banded_shark")
+			if count_up == false:
+				FishTracker.update_count_plus("high_fin_banded_shark")
+				count_up = true
+		elif sea_spider == true:
+			FishTracker.update_icon("sea_spider")
+			if count_up == false:
+				FishTracker.update_count_plus("sea_spider")
+				count_up = true
+	elif loss == true:
+		WorldToBattle.player_pos = Vector2(0,0)
+
 
 
 #Player attack and ability functions
@@ -120,7 +219,7 @@ func _fish_attack()-> void:
 		round_value += 1
 		round_label.text = "Round: " + str(round_value)
 	if enemy_health.value == 0:
-		WorldToBattle.change_stage()
+		win_timer.start()
 
 
 #Timer functions
@@ -136,6 +235,51 @@ func _on_cooldown_text_display_timer_timeout() -> void:
 func _on_healing_text_display_timer_timeout() -> void:
 	healable.visible = false
 
+
+func _on_win_timer_timeout() -> void:
+	WorldToBattle.change_stage()
+
+
+func _on_defeat_timer_timeout() -> void:
+	WorldToBattle.change_stage()
+
+
 #Inventory Update Functions
-func _on_atlantic_bass():
-	pass
+func _on_fishable_items_atlantic_bass() -> void:
+	atlantic_bass = true
+
+
+func _on_fishable_items_axolotl() -> void:
+	axolotl = true
+
+
+func _on_fishable_items_blue_gill() -> void:
+	blue_gill = true
+
+
+func _on_fishable_items_clownfish() -> void:
+	clownfish = true
+
+
+func _on_fishable_items_dab() -> void:
+	dab = true
+
+
+func _on_fishable_items_freshwater_snail() -> void:
+	freshwater_snail = true
+
+
+func _on_fishable_items_golden_tench() -> void:
+	golden_tench = true
+
+
+func _on_fishable_items_guppy() -> void:
+	guppy = true
+
+
+func _on_fishable_items_high_fin_banded_shark() -> void:
+	high_fin_banded_shark = true
+
+
+func _on_fishable_items_sea_spider() -> void:
+	sea_spider = true

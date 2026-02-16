@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1f6axtxf8xt"]
+
+[ext_resource type="Script" uid="uid://btgvk5jfup8so" path="res://Scripts/fish_tracker.gd" id="1_rgtvt"]
+
+[node name="FishTracker" type="Node2D"]
+script = ExtResource("1_rgtvt")

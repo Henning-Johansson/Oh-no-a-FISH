@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Player
 
 #Dictionaries
-enum states {IDLE, WALK, FISHING}
+enum states {IDLE, WALK, FISHING, INVENTORY, PAUSED}
 
 
 #Variable values
@@ -11,16 +11,21 @@ var is_dead: bool = false
 var is_able_to_fish: bool = false
 var dir: String = "down"
 var anim_played: bool = false
+var inventory_opened: bool = false
+var game_paused: bool = false
+var is_able_to_interact: bool = false
 
 #Variables activated upon the programs start
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
-@onready var can_fish: Label = $"Can fish"
+@onready var can_fish: Label = $CanFish
 @onready var fishing_down: RayCast2D = $FishingDown
 @onready var fishing_right: RayCast2D =$FishingRight
 @onready var fishing_up: RayCast2D = $FishingUp
 @onready var fishing_left: RayCast2D = $FishingLeft
 @onready var fishing_time: Timer = $FishingTimer
+@onready var interact: Area2D = $NpcInteractions/Area2D
+@onready var can_interact: Label = $CanInteract
 
 #Constant values
 const MAX_SPEED = 600
@@ -28,6 +33,8 @@ const ACC = 10000000
 
 #Signals
 signal fishing
+signal inventory
+signal pause
 
 "GAME LOOP"#The code that runs the game
 #Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -39,6 +46,10 @@ func _physics_process(delta: float) -> void:
 			_walk_state(delta)
 		states.FISHING:
 			_fishing_state(delta)
+		states.INVENTORY:
+			_inventory_state(delta)
+		states.PAUSED:
+			_paused_state(delta)
 
 
 "GENERAL HELP FUNCTIONS"#Functions that help with general pieces of data
@@ -80,6 +91,10 @@ func _idle_state(delta: float) -> void:
 	_movement(delta, input_x, input_y)
 	if velocity.length() != 0:
 		_enter_walk_state()
+	if Input.is_action_just_pressed("access_inventory"):
+		_enter_inventory_state()
+	if Input.is_action_just_pressed("pause_menu"):
+		_enter_paused_state()
 
 func _walk_state(delta: float) -> void:
 	_can_fish(fishing_down, fishing_right, fishing_left, fishing_up)
@@ -103,10 +118,12 @@ func _walk_state(delta: float) -> void:
 	_movement(delta, input_x, input_y)
 	if velocity.length() == 0:
 		_enter_idle_state()
+	if Input.is_action_just_pressed("access_inventory"):
+		_enter_inventory_state()
+	if Input.is_action_just_pressed("pause_menu"):
+		_enter_paused_state()
 
 func _fishing_state(delta: float) -> void:
-	if Input.is_action_just_pressed("fishing"):
-		_enter_idle_state()
 	if fishing_down.is_colliding() and anim_played == false:
 		anim.play("Fishing_Cast_down")
 		anim_played = true
@@ -126,6 +143,24 @@ func _fishing_state(delta: float) -> void:
 		anim_played = true
 		emit_signal("fishing")
 
+func _inventory_state(delta) -> void:
+	if not inventory_opened:
+		emit_signal("inventory")
+		inventory_opened = true
+	if Input.is_action_just_pressed("access_inventory") and inventory_opened:
+		inventory_opened = false
+		emit_signal("inventory")
+		_enter_idle_state()
+
+func _paused_state(delta) -> void:
+	if not game_paused:
+		emit_signal("pause")
+		game_paused = true
+	if Input.is_action_just_pressed("pause_menu") and game_paused:
+		game_paused = false
+		emit_signal("pause")
+		_enter_idle_state()
+
 
 "ENTER STATE FUNCTIONS"#Defines what happens when each state is entered
 func _enter_idle_state():
@@ -136,6 +171,12 @@ func _enter_walk_state():
 
 func _enter_fishing_state():
 	state = states.FISHING
+
+func _enter_inventory_state():
+	state = states.INVENTORY
+
+func _enter_paused_state():
+	state = states.PAUSED
 
 "PUBLIC FUNCTIONS"#Functions visible to other scripts
 func _can_fish(fishing_down: RayCast2D, fishing_right: RayCast2D, fishing_left: RayCast2D, fishing_up: RayCast2D):
@@ -154,3 +195,16 @@ func _can_fish(fishing_down: RayCast2D, fishing_right: RayCast2D, fishing_left: 
 	else:
 		can_fish.visible = false
 		is_able_to_fish = false
+
+func _can_trade(interact):
+	if interact.is_colliding():
+		can_interact.visible = true
+		is_able_to_fish = true
+	else:
+		can_interact.visible = false
+		is_able_to_interact = false
+
+
+func _on_pause_menu_unpaused() -> void:
+	_enter_idle_state()
+	game_paused = false

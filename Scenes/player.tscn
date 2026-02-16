@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://yf6dng8a0jct"]
+[gd_scene load_steps=32 format=3 uid="uid://yf6dng8a0jct"]
 
 [ext_resource type="Script" uid="uid://mtbasjgdnhel" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="2_cvnsp"]
@@ -455,6 +455,9 @@ font_size = 14
 outline_size = 7
 outline_color = Color(0, 0, 0, 1)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
+radius = 56.0357
+
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(1.5, 1.5)
 collision_layer = 2
@@ -478,7 +481,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_x3wgy")
 }
 
-[node name="Can fish" type="Label" parent="."]
+[node name="CanFish" type="Label" parent="."]
 visible = false
 offset_left = -46.0
 offset_top = -68.0
@@ -486,6 +489,26 @@ offset_right = 48.0
 offset_bottom = -48.0
 text = "Press F to fish"
 label_settings = SubResource("LabelSettings_cvnsp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanInteract" type="Label" parent="."]
+visible = false
+offset_left = -59.3333
+offset_top = -68.0
+offset_right = 59.6667
+offset_bottom = -48.0
+text = "Press I to Interact"
+label_settings = SubResource("LabelSettings_cvnsp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FishingTimer" type="Timer" parent="."]
+wait_time = 0.8
+
+[node name="FishingLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-45, 0)
+collision_mask = 32
 
 [node name="FishingDown" type="RayCast2D" parent="."]
 target_position = Vector2(0, 45)
@@ -499,12 +522,14 @@ collision_mask = 32
 target_position = Vector2(0, -45)
 collision_mask = 32
 
-[node name="FishingLeft" type="RayCast2D" parent="."]
-target_position = Vector2(-45, 0)
-collision_mask = 32
+[node name="NpcInteractions" type="Node2D" parent="."]
 
-[node name="FishingTimer" type="Timer" parent="."]
-wait_time = 0.8
+[node name="Area2D" type="Area2D" parent="NpcInteractions"]
+collision_layer = 0
+collision_mask = 64
 
-[connection signal="draw" from="Can fish" to="." method="_on_can_fish_draw"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcInteractions/Area2D"]
+shape = SubResource("CircleShape2D_cvnsp")
+
+[connection signal="draw" from="CanFish" to="." method="_on_can_fish_draw"]
 [connection signal="timeout" from="FishingTimer" to="." method="_on_fishing_timer_timeout"]

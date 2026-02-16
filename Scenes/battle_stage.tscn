@@ -1,8 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://ccyefy53mjx4e"]
+[gd_scene load_steps=26 format=3 uid="uid://ccyefy53mjx4e"]
 
 [ext_resource type="Script" uid="uid://5wa38i60fql1" path="res://Scripts/battle_stage.gd" id="1_g0eid"]
 [ext_resource type="PackedScene" uid="uid://c1k5a0ilp0n60" path="res://Scenes/fishable_items.tscn" id="1_xa5kr"]
 [ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="3_h1yn0"]
+[ext_resource type="Texture2D" uid="uid://crfn7pf0paot6" path="res://Assets/Fishing/fishing_gear/06_fishing_gear.png" id="4_h1yn0"]
+[ext_resource type="Texture2D" uid="uid://crh64odhr0f30" path="res://Assets/Fishing/fishing_gear/05_fishing_gear.png" id="5_a0fsj"]
 
 [sub_resource type="Animation" id="Animation_djpce"]
 resource_name = "EnemyHeal"
@@ -106,45 +108,111 @@ _data = {
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k540x"]
 bg_color = Color(0, 0.6, 0.495755, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hp63"]
-bg_color = Color(1, 0.29, 0.29, 1)
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0eid"]
 bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1yn0"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a0fsj"]
 bg_color = Color(0.360949, 0.360949, 0.360949, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2b17"]
 bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djpce"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc6so"]
 bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ao26"]
 bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yutts"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d0wc"]
 bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8jt46"]
 bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvynl"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q4sdk"]
 bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="battle_stage" type="Node2D"]
 scale = Vector2(2, 2)
@@ -174,6 +242,7 @@ offset_top = 879.0
 offset_right = 2517.0
 offset_bottom = 1441.0
 color = Color(0, 0.658824, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="CanAttack" type="Label" parent="CanvasLayer"]
 offset_left = 722.0
@@ -183,6 +252,7 @@ offset_bottom = 682.0
 theme_override_font_sizes/font_size = 50
 text = "Slow down. You can't attack that fast"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CooldownLabel" type="Label" parent="CanvasLayer"]
 offset_left = 722.0
@@ -191,6 +261,7 @@ offset_right = 1612.0
 offset_bottom = 682.0
 theme_override_font_sizes/font_size = 50
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="HealingLabel" type="Label" parent="CanvasLayer"]
 offset_left = 722.0
@@ -200,6 +271,7 @@ offset_bottom = 682.0
 theme_override_font_sizes/font_size = 50
 text = "You can't heal when you have full health."
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="RoundText" type="Label" parent="CanvasLayer"]
 offset_left = 10.0
@@ -207,6 +279,7 @@ offset_top = 10.0
 offset_right = 468.0
 offset_bottom = 100.0
 theme_override_font_sizes/font_size = 65
+metadata/_edit_use_anchors_ = true
 
 [node name="WinLabel" type="Label" parent="CanvasLayer"]
 offset_left = 205.0
@@ -224,6 +297,25 @@ theme_override_font_sizes/font_size = 200
 text = "You Caught A Fish!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DefeatLabel" type="Label" parent="CanvasLayer"]
+offset_left = 553.0
+offset_top = 462.0
+offset_right = 1750.0
+offset_bottom = 792.0
+theme_override_colors/font_color = Color(0.517647, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.215686, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 30
+theme_override_constants/shadow_offset_y = 20
+theme_override_constants/outline_size = 30
+theme_override_constants/shadow_outline_size = 30
+theme_override_font_sizes/font_size = 200
+text = "DEFEAT"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Enemy" type="Node2D" parent="."]
 
@@ -242,7 +334,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/fill = SubResource("StyleBoxFlat_k540x")
 value = 100.0
-allow_greater = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Player" type="Node2D" parent="."]
 
@@ -265,6 +357,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 48
 theme_override_styles/fill = SubResource("StyleBoxFlat_4hp63")
 value = 100.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="Player/CanvasLayer"]
 offset_left = 840.0
@@ -275,7 +368,11 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_g0eid")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_h1yn0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0fsj")
-text = "Hook-Pierce"
+text = "       Hook-Pierce"
+icon = ExtResource("4_h1yn0")
+icon_alignment = 2
+expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="Player/CanvasLayer"]
 offset_left = 1541.0
@@ -286,7 +383,11 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/hover = SubResource("StyleBoxFlat_r2b17")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_djpce")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cc6so")
-text = "Fishingrod-Whip"
+text = "        Fishingrod-Whip"
+icon = ExtResource("4_h1yn0")
+icon_alignment = 2
+expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Button3" type="Button" parent="Player/CanvasLayer"]
 offset_left = 840.0
@@ -297,7 +398,11 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/hover = SubResource("StyleBoxFlat_4ao26")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_yutts")
 theme_override_styles/normal = SubResource("StyleBoxFlat_4d0wc")
-text = "Punch"
+text = "       Punch"
+icon = ExtResource("4_h1yn0")
+icon_alignment = 2
+expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Button4" type="Button" parent="Player/CanvasLayer"]
 offset_left = 1541.0
@@ -308,7 +413,11 @@ theme_override_font_sizes/font_size = 48
 theme_override_styles/hover = SubResource("StyleBoxFlat_8jt46")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cvynl")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q4sdk")
-text = "Deep Breath"
+text = "       Deep Breath"
+icon = ExtResource("5_a0fsj")
+icon_alignment = 2
+expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Timers" type="Node2D" parent="."]
 
@@ -316,7 +425,7 @@ text = "Deep Breath"
 one_shot = true
 
 [node name="PlayerAttackReloadTimer" type="Timer" parent="Timers"]
-wait_time = 1.2
+wait_time = 1.3
 one_shot = true
 
 [node name="CooldownTextDisplayTimer" type="Timer" parent="Timers"]
@@ -327,7 +436,25 @@ one_shot = true
 wait_time = 2.0
 one_shot = true
 
+[node name="WinTimer" type="Timer" parent="Timers"]
+wait_time = 1.5
+one_shot = true
+
+[node name="DefeatTimer" type="Timer" parent="Timers"]
+wait_time = 1.5
+one_shot = true
+
 [connection signal="fighting" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting"]
+[connection signal="atlantic_bass" from="Enemy/FishableItems" to="." method="_on_fishable_items_atlantic_bass"]
+[connection signal="axolotl" from="Enemy/FishableItems" to="." method="_on_fishable_items_axolotl"]
+[connection signal="blue_gill" from="Enemy/FishableItems" to="." method="_on_fishable_items_blue_gill"]
+[connection signal="clownfish" from="Enemy/FishableItems" to="." method="_on_fishable_items_clownfish"]
+[connection signal="dab" from="Enemy/FishableItems" to="." method="_on_fishable_items_dab"]
+[connection signal="freshwater_snail" from="Enemy/FishableItems" to="." method="_on_fishable_items_freshwater_snail"]
+[connection signal="golden_tench" from="Enemy/FishableItems" to="." method="_on_fishable_items_golden_tench"]
+[connection signal="guppy" from="Enemy/FishableItems" to="." method="_on_fishable_items_guppy"]
+[connection signal="high_fin_banded_shark" from="Enemy/FishableItems" to="." method="_on_fishable_items_high_fin_banded_shark"]
+[connection signal="sea_spider" from="Enemy/FishableItems" to="." method="_on_fishable_items_sea_spider"]
 [connection signal="pressed" from="Player/CanvasLayer/Button" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="Player/CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Player/CanvasLayer/Button3" to="." method="_on_button_3_pressed"]
@@ -336,3 +463,5 @@ one_shot = true
 [connection signal="timeout" from="Timers/PlayerAttackReloadTimer" to="." method="_can_fight_timeout"]
 [connection signal="timeout" from="Timers/CooldownTextDisplayTimer" to="." method="_on_cooldown_text_display_timer_timeout"]
 [connection signal="timeout" from="Timers/HealingTextDisplayTimer" to="." method="_on_healing_text_display_timer_timeout"]
+[connection signal="timeout" from="Timers/WinTimer" to="." method="_on_win_timer_timeout"]
+[connection signal="timeout" from="Timers/DefeatTimer" to="." method="_on_defeat_timer_timeout"]

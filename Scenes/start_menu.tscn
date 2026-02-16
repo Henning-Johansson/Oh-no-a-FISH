@@ -1,0 +1,228 @@
+[gd_scene load_steps=11 format=3 uid="uid://osa5rx5g7tv0"]
+
+[ext_resource type="Script" uid="uid://okk6cqquev2m" path="res://Scripts/start_menu.gd" id="1_i2i62"]
+[ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="2_lfskg"]
+[ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/fishing_free/global_free_recoloured.png" id="3_ru7em"]
+[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/fishing_icon_pack/fishing_gear.png" id="4_77ila"]
+[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff" id="5_00l4x"]
+[ext_resource type="Texture2D" uid="uid://8qescssw2d31" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/B - Fresh Water/Rainbow Trout.png" id="6_7vuks"]
+[ext_resource type="Texture2D" uid="uid://dcllkab6lfcsa" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Rusty Can.png" id="7_rpttd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cayip"]
+bg_color = Color(0, 0.476194, 0.533203, 1)
+border_width_left = 25
+border_width_top = 25
+border_width_right = 25
+border_width_bottom = 25
+border_color = Color(0.00585937, 0.210938, 0.234375, 1)
+border_blend = true
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwsa2"]
+bg_color = Color(0.00784314, 0.282353, 0.313726, 1)
+border_width_left = 25
+border_width_top = 25
+border_width_right = 25
+border_width_bottom = 25
+border_color = Color(0.00392157, 0.196078, 0.219608, 1)
+border_blend = true
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_158mb"]
+bg_color = Color(0.00347223, 0.555555, 0.625, 1)
+border_width_left = 25
+border_width_top = 25
+border_width_right = 25
+border_width_bottom = 25
+border_color = Color(0.00784314, 0.282353, 0.313726, 1)
+border_blend = true
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="StartMenu" type="Node2D"]
+script = ExtResource("1_i2i62")
+
+[node name="VillageMap" parent="." instance=ExtResource("2_lfskg")]
+position = Vector2(2054, 2448)
+
+[node name="Details" type="Node2D" parent="."]
+
+[node name="Set1" type="Node2D" parent="Details"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(2283, 17)
+rotation = -1.42593
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+hframes = 4
+vframes = 4
+
+[node name="Sprite2D2" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(858, 825)
+rotation = 0.0366519
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+hframes = 4
+vframes = 4
+frame = 7
+
+[node name="Sprite2D3" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(993, 236)
+rotation = 0.272271
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+flip_h = true
+hframes = 4
+vframes = 4
+frame = 5
+
+[node name="Sprite2D4" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(-1.99998, 834)
+rotation = 0.272271
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+flip_h = true
+hframes = 4
+vframes = 4
+frame = 4
+
+[node name="Sprite2D5" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(1533, 1291)
+rotation = 2.19213
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+flip_h = true
+hframes = 4
+vframes = 4
+frame = 3
+
+[node name="Sprite2D6" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(2301, 723)
+rotation = -0.366519
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+hframes = 4
+vframes = 4
+frame = 2
+
+[node name="Sprite2D7" type="Sprite2D" parent="Details/Set1"]
+position = Vector2(1436, 547)
+scale = Vector2(8, 8)
+texture = ExtResource("3_ru7em")
+hframes = 4
+vframes = 4
+frame = 6
+
+[node name="Set2" type="Node2D" parent="Details"]
+
+[node name="Sprite2D8" type="Sprite2D" parent="Details/Set2"]
+position = Vector2(269, 1243)
+rotation = 0.785398
+scale = Vector2(13, 13)
+texture = ExtResource("4_77ila")
+flip_h = true
+hframes = 6
+vframes = 6
+frame = 26
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Title"]
+offset_left = 450.0
+offset_top = 76.0
+offset_right = 1856.0
+offset_bottom = 368.0
+theme_override_fonts/font = ExtResource("5_00l4x")
+theme_override_font_sizes/font_size = 200
+text = "+h no a FiSH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Title"]
+position = Vector2(492, 232)
+scale = Vector2(5, 5)
+texture = ExtResource("4_77ila")
+flip_h = true
+hframes = 6
+vframes = 6
+frame = 20
+
+[node name="Sprite2D2" type="Sprite2D" parent="Title"]
+position = Vector2(977, 254)
+scale = Vector2(3.4, 3.4)
+texture = ExtResource("4_77ila")
+flip_h = true
+hframes = 6
+vframes = 6
+frame = 20
+
+[node name="Sprite2D3" type="Sprite2D" parent="Title"]
+position = Vector2(1562, 173)
+texture = ExtResource("4_77ila")
+flip_h = true
+hframes = 6
+vframes = 6
+frame = 20
+
+[node name="Label2" type="Label" parent="Title"]
+offset_left = 19.0
+offset_top = 1221.0
+offset_right = 474.0
+offset_bottom = 1274.0
+theme_override_fonts/font = ExtResource("5_00l4x")
+theme_override_font_sizes/font_size = 30
+text = "A game by Henning Johansson"
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 840.0
+offset_top = 550.0
+offset_right = 1260.0
+offset_bottom = 670.0
+scale = Vector2(1.5, 1.5)
+theme_override_colors/font_hover_color = Color(0.292969, 0.292969, 0.292969, 1)
+theme_override_colors/icon_hover_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_colors/icon_pressed_color = Color(0.247059, 0.247059, 0.247059, 1)
+theme_override_colors/font_color = Color(0.195312, 0.195312, 0.195312, 1)
+theme_override_colors/font_pressed_color = Color(0.392578, 0.392578, 0.392578, 1)
+theme_override_fonts/font = ExtResource("5_00l4x")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_cayip")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wwsa2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_158mb")
+text = " Start"
+icon = ExtResource("6_7vuks")
+icon_alignment = 2
+expand_icon = true
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 840.0
+offset_top = 800.0
+offset_right = 1260.0
+offset_bottom = 920.0
+scale = Vector2(1.5, 1.5)
+theme_override_colors/font_hover_color = Color(0.292969, 0.292969, 0.292969, 1)
+theme_override_colors/icon_hover_color = Color(0.498039, 0.498039, 0.498039, 1)
+theme_override_colors/icon_pressed_color = Color(0.247059, 0.247059, 0.247059, 1)
+theme_override_colors/font_color = Color(0.195312, 0.195312, 0.195312, 1)
+theme_override_colors/font_pressed_color = Color(0.392578, 0.392578, 0.392578, 1)
+theme_override_fonts/font = ExtResource("5_00l4x")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover = SubResource("StyleBoxFlat_cayip")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wwsa2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_158mb")
+text = "Quit Game
+"
+icon = ExtResource("7_rpttd")
+icon_alignment = 2
+expand_icon = true
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
