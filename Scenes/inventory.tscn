@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dns8f71op8ssp"]
 
 [ext_resource type="Script" uid="uid://bbmnjwkv33b0e" path="res://Scripts/inventory.gd" id="1_0n8tc"]
-[ext_resource type="Texture2D" uid="uid://cumoa5hnc0mhu" path="res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png" id="1_wdn4f"]
+[ext_resource type="Texture2D" uid="uid://c5u7bmowst224" path="res://Assets/Customs/Inventory.png" id="2_0n8tc"]
 [ext_resource type="Texture2D" uid="uid://b86yb5svh1vw1" path="res://Assets/Pxiel Art UI borders.png" id="2_k5gp2"]
 [ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/fishing_free/global_free_recoloured.png" id="3_yxepq"]
 
@@ -17,12 +17,9 @@ color = Color(0, 0, 0, 0.196078)
 metadata/_edit_use_anchors_ = true
 
 [node name="InventoryBase" type="Sprite2D" parent="."]
-position = Vector2(-150, -35)
+position = Vector2(115, -35)
 scale = Vector2(6.5, 8)
-texture = ExtResource("1_wdn4f")
-hframes = 2
-vframes = 3
-frame = 1
+texture = ExtResource("2_0n8tc")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

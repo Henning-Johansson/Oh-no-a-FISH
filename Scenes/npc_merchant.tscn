@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://d0qiu3r0rem32"]
+
+[ext_resource type="Texture2D" uid="uid://ckoqy6eivxw8n" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Merchant/merchant - idle.png" id="1_j2wod"]
+[ext_resource type="Script" uid="uid://c1tkcsh2ixr4p" path="res://Scripts/npc_merchant.gd" id="1_xhidi"]
+[ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_v1qfn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1qfn"]
+atlas = ExtResource("1_j2wod")
+region = Rect2(0, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh5uf"]
+atlas = ExtResource("1_j2wod")
+region = Rect2(80, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6whob"]
+atlas = ExtResource("1_j2wod")
+region = Rect2(160, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7krg"]
+atlas = ExtResource("1_j2wod")
+region = Rect2(240, 80, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tx0tn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1qfn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh5uf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6whob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7krg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.5
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xhidi"]
+radius = 20.0
+height = 52.0
+
+[node name="NPCMerchant" type="Node2D"]
+script = ExtResource("1_xhidi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, 0)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_tx0tn")
+frame_progress = 0.476115
+
+[node name="Interactible" parent="." instance=ExtResource("2_v1qfn")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CapsuleShape2D_xhidi")
+
+[connection signal="do_interact" from="Interactible" to="." method="_on_interactible_do_interact"]
+[connection signal="stop_interact" from="Interactible" to="." method="_on_interactible_stop_interact"]

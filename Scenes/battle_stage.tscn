@@ -1,10 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://ccyefy53mjx4e"]
+[gd_scene load_steps=27 format=3 uid="uid://ccyefy53mjx4e"]
 
 [ext_resource type="Script" uid="uid://5wa38i60fql1" path="res://Scripts/battle_stage.gd" id="1_g0eid"]
 [ext_resource type="PackedScene" uid="uid://c1k5a0ilp0n60" path="res://Scenes/fishable_items.tscn" id="1_xa5kr"]
 [ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="3_h1yn0"]
 [ext_resource type="Texture2D" uid="uid://crfn7pf0paot6" path="res://Assets/Fishing/fishing_gear/06_fishing_gear.png" id="4_h1yn0"]
 [ext_resource type="Texture2D" uid="uid://crh64odhr0f30" path="res://Assets/Fishing/fishing_gear/05_fishing_gear.png" id="5_a0fsj"]
+[ext_resource type="AudioStream" uid="uid://bvoj3sjjrj1pi" path="res://Audios/14 Battle! (Wild Pokémon).mp3" id="6_r2b17"]
 
 [sub_resource type="Animation" id="Animation_djpce"]
 resource_name = "EnemyHeal"
@@ -334,6 +335,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/fill = SubResource("StyleBoxFlat_k540x")
 value = 100.0
+fill_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" type="Node2D" parent="."]
@@ -444,7 +446,12 @@ one_shot = true
 wait_time = 1.5
 one_shot = true
 
-[connection signal="fighting" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_r2b17")
+autoplay = true
+
+[connection signal="fighting_freshwater" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting_freshwater"]
+[connection signal="fighting_saltwater" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting_saltwater"]
 [connection signal="atlantic_bass" from="Enemy/FishableItems" to="." method="_on_fishable_items_atlantic_bass"]
 [connection signal="axolotl" from="Enemy/FishableItems" to="." method="_on_fishable_items_axolotl"]
 [connection signal="blue_gill" from="Enemy/FishableItems" to="." method="_on_fishable_items_blue_gill"]

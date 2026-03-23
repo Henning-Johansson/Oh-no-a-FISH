@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://osa5rx5g7tv0"]
+[gd_scene load_steps=12 format=3 uid="uid://osa5rx5g7tv0"]
 
 [ext_resource type="Script" uid="uid://okk6cqquev2m" path="res://Scripts/start_menu.gd" id="1_i2i62"]
 [ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="2_lfskg"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff" id="5_00l4x"]
 [ext_resource type="Texture2D" uid="uid://8qescssw2d31" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/B - Fresh Water/Rainbow Trout.png" id="6_7vuks"]
 [ext_resource type="Texture2D" uid="uid://dcllkab6lfcsa" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Rusty Can.png" id="7_rpttd"]
+[ext_resource type="AudioStream" uid="uid://jcx81jhgukbk" path="res://Audios/03 Title Screen.mp3" id="8_lfskg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cayip"]
 bg_color = Color(0, 0.476194, 0.533203, 1)
@@ -223,6 +224,10 @@ text = "Quit Game
 icon = ExtResource("7_rpttd")
 icon_alignment = 2
 expand_icon = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_lfskg")
+autoplay = true
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

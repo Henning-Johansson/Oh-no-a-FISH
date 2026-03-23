@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdnd82kyagvd8"]
+
+[ext_resource type="Texture2D" uid="uid://cumoa5hnc0mhu" path="res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png" id="1_mmb71"]
+[ext_resource type="Script" uid="uid://dawbsptbfdfy4" path="res://Scripts/guide_intro_speech.gd" id="1_v7f7k"]
+[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff" id="2_q5blr"]
+
+[node name="GuideIntroSpeech" type="Node2D"]
+script = ExtResource("1_v7f7k")
+
+[node name="TextBox" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_mmb71")
+hframes = 2
+vframes = 3
+frame = 3
+
+[node name="Text" type="Node2D" parent="."]
+
+[node name="NPCName" type="Label" parent="Text"]
+offset_left = -645.0
+offset_top = -249.0
+offset_right = -429.0
+offset_bottom = -218.0
+theme_override_fonts/font = ExtResource("2_q5blr")
+theme_override_font_sizes/font_size = 26
+text = "Guide"
+
+[node name="NPCSpeechPart1" type="Label" parent="Text"]
+offset_left = -656.0
+offset_top = -206.0
+offset_right = 563.0
+offset_bottom = -76.0
+theme_override_fonts/font = ExtResource("2_q5blr")
+text = "Hello and welcome to \"Oh no a FISH\". Your job is to travel around the island and find fishing spots where you can fish. Then you can sell those fish to the various merchants that can be found around the island. Once you have managed to save up 10 000 coins you should head to the mountain where a special merchant lives, they will sell you octopus bait that will let you catch an octopus when fishing in the ocean. Once you've caught the octopus you can continue to run around and catch more fish but currently the octopuss is the end of the game. "
+autowrap_mode = 3
+
+[node name="NPCSpeeechPart2" type="Label" parent="Text"]
+offset_left = -656.0
+offset_top = -206.0
+offset_right = 563.0
+offset_bottom = -76.0
+theme_override_fonts/font = ExtResource("2_q5blr")
+text = "If your ever wondering how many of a fish you have you can access your inventory by pressing \"I\", you can also pause the game by pressing \"esc\", whenever you want to exit something simply press the same button you used to enter it. "
+autowrap_mode = 3
+
+[node name="ContinueLabel" type="Label" parent="Text"]
+offset_left = 312.0
+offset_top = -97.0
+offset_right = 565.0
+offset_bottom = -71.0
+theme_override_colors/font_color = Color(0.650391, 0.650391, 0.650391, 1)
+theme_override_fonts/font = ExtResource("2_q5blr")
+theme_override_font_sizes/font_size = 17
+text = "Press \"SPACE\" to continue"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="EndLabel" type="Label" parent="Text"]
+offset_left = 312.0
+offset_top = -97.0
+offset_right = 565.0
+offset_bottom = -71.0
+theme_override_colors/font_color = Color(0.650391, 0.650391, 0.650391, 1)
+theme_override_fonts/font = ExtResource("2_q5blr")
+theme_override_font_sizes/font_size = 17
+text = "Press \"T\" to end"
+horizontal_alignment = 2
+autowrap_mode = 2

@@ -20,8 +20,10 @@ var fish_name_dict = {"Atlantic Bass": 0, "Clownfish": 1, "Dab": 2,
 	"Sea Spider": 3, "Blue Gill": 4, "Guppy": 5, "Freshwater Snail": 6,
 	"Axolotl": 7, "High Fin Banded Shark": 8, "Golden Tench": 9}
 
-func _on_battle_stage_fighting() -> void:
-	var what_fish = randi_range(0,9)
+
+
+func _on_battle_stage_fighting_saltwater() -> void:
+	var what_fish = randi_range(0, 3)
 	fishable_items.frame = what_fish
 	fish_name.text = fish_name_dict.find_key(what_fish)
 	if what_fish == 0:
@@ -32,7 +34,13 @@ func _on_battle_stage_fighting() -> void:
 		emit_signal("dab")
 	elif what_fish == 3:
 		emit_signal("sea_spider")
-	elif what_fish == 4:
+
+
+func _on_battle_stage_fighting_freshwater() -> void:
+	var what_fish = randi_range(4, 9)
+	fishable_items.frame = what_fish
+	fish_name.text = fish_name_dict.find_key(what_fish)
+	if what_fish == 4:
 		emit_signal("blue_gill")
 	elif what_fish == 5:
 		emit_signal("guppy")

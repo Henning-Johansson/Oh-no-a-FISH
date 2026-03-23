@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://h45xf4ld5vge"]
+
+[ext_resource type="Script" uid="uid://clww1bpgkxxwu" path="res://Scripts/npc_rare_merchant.gd" id="1_5f0ng"]
+[ext_resource type="Texture2D" uid="uid://w674hns2rvyp" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Inn Keeper/inn keeper - idle.png" id="1_hcr71"]
+[ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_5f0ng"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fncmf"]
+atlas = ExtResource("1_hcr71")
+region = Rect2(0, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfdai"]
+atlas = ExtResource("1_hcr71")
+region = Rect2(80, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vi0p"]
+atlas = ExtResource("1_hcr71")
+region = Rect2(160, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvhxa"]
+atlas = ExtResource("1_hcr71")
+region = Rect2(240, 80, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mr6rl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fncmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfdai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vi0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvhxa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.5
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f52b4"]
+radius = 20.0
+height = 52.0
+
+[node name="NPCRareMerchant" type="Node2D"]
+script = ExtResource("1_5f0ng")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, 0)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_mr6rl")
+
+[node name="Interactible" parent="." instance=ExtResource("2_5f0ng")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CapsuleShape2D_f52b4")
+
+[connection signal="do_interact" from="Interactible" to="." method="_on_interactible_do_interact"]
+[connection signal="stop_interact" from="Interactible" to="." method="_on_interactible_stop_interact"]

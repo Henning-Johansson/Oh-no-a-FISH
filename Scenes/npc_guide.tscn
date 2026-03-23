@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://usm37ir67igg"]
+
+[ext_resource type="Texture2D" uid="uid://du8ehtdvxmswk" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Florist/florist - idle.png" id="1_jfcwk"]
+[ext_resource type="Script" uid="uid://djq6rwer1jhbs" path="res://Scripts/npc_guide.gd" id="1_rb6n1"]
+[ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_y80w5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y80w5"]
+atlas = ExtResource("1_jfcwk")
+region = Rect2(0, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rb6n1"]
+atlas = ExtResource("1_jfcwk")
+region = Rect2(80, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arthk"]
+atlas = ExtResource("1_jfcwk")
+region = Rect2(160, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cb1aq"]
+atlas = ExtResource("1_jfcwk")
+region = Rect2(240, 80, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v01by"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y80w5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rb6n1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arthk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cb1aq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.5
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y80w5"]
+radius = 20.0
+height = 52.0
+
+[node name="NPCGuide" type="Node2D"]
+script = ExtResource("1_rb6n1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, 0)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_v01by")
+
+[node name="Interactible" parent="." instance=ExtResource("2_y80w5")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CapsuleShape2D_y80w5")
+
+[connection signal="do_interact" from="Interactible" to="." method="_on_interactible_do_interact"]
+[connection signal="stop_interact" from="Interactible" to="." method="_on_interactible_stop_interact"]

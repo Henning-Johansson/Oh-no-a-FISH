@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://7nglyrs6d85j"]
+[gd_scene load_steps=65 format=3 uid="uid://7nglyrs6d85j"]
 
 [ext_resource type="Texture2D" uid="uid://dqt00bfqrciw3" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Angler/angler - idle.png" id="1_amt1x"]
 [ext_resource type="Script" uid="uid://byistdiknfras" path="res://Scripts/boss_battle.gd" id="1_ilr4i"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://byj645nyp0use" path="res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Hurt.png" id="6_f6wtb"]
 [ext_resource type="Texture2D" uid="uid://bt2j7ososiot4" path="res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Idle.png" id="7_uj2j7"]
 [ext_resource type="Texture2D" uid="uid://btoluhcljwiqn" path="res://Assets/Fishing/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/Octo/Walk.png" id="8_cf2as"]
+[ext_resource type="AudioStream" uid="uid://4gokcre1s3o8" path="res://Audios/28. Battle! (Gym Leader).mp3" id="10_f6wtb"]
 
 [sub_resource type="Animation" id="Animation_tanjw"]
 resource_name = "Cutscene"
@@ -108,6 +109,36 @@ tracks/7/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_slk4n"]
+resource_name = "PlayerHeal"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerNode/PlayerFig:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5ftf7"]
+resource_name = "PlayerHurt"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerNode/PlayerFig:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_amt1x"]
@@ -221,36 +252,6 @@ tracks/8/keys = {
 "values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_5ftf7"]
-resource_name = "PlayerHurt"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PlayerNode/PlayerFig:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_slk4n"]
-resource_name = "PlayerHeal"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("PlayerNode/PlayerFig:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(0, 1, 0, 1), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5ftf7"]
 _data = {
 &"Cutscene": SubResource("Animation_tanjw"),
@@ -258,102 +259,6 @@ _data = {
 &"PlayerHurt": SubResource("Animation_5ftf7"),
 &"RESET": SubResource("Animation_amt1x")
 }
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slk4n"]
-bg_color = Color(1, 0, 0, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ftf7"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6gsn"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pf3nw"]
-bg_color = Color(0.360949, 0.360949, 0.360949, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tanjw"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ilr4i"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6wtb"]
-bg_color = Color(0.360784, 0.360784, 0.360784, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uj2j7"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cf2as"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sf6om"]
-bg_color = Color(0.360784, 0.360784, 0.360784, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfcl1"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qmd4v"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8sv3f"]
-bg_color = Color(0.360784, 0.360784, 0.360784, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sf6om"]
 atlas = ExtResource("4_tanjw")
@@ -639,6 +544,102 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slk4n"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ftf7"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6gsn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pf3nw"]
+bg_color = Color(0.360949, 0.360949, 0.360949, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tanjw"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ilr4i"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6wtb"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uj2j7"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cf2as"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sf6om"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfcl1"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qmd4v"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8sv3f"]
+bg_color = Color(0.360784, 0.360784, 0.360784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="BossBattle" type="Node2D"]
 script = ExtResource("1_ilr4i")
 
@@ -646,6 +647,41 @@ script = ExtResource("1_ilr4i")
 libraries = {
 &"": SubResource("AnimationLibrary_5ftf7")
 }
+
+[node name="TimerNode" type="Node2D" parent="."]
+
+[node name="EnemyAttackTimer" type="Timer" parent="TimerNode"]
+one_shot = true
+
+[node name="PlayerAttackReloadTimer" type="Timer" parent="TimerNode"]
+wait_time = 0.5
+one_shot = true
+
+[node name="CooldownTextDisplayTimer" type="Timer" parent="TimerNode"]
+wait_time = 2.0
+one_shot = true
+
+[node name="HealingTextDisplayTimer" type="Timer" parent="TimerNode"]
+wait_time = 2.0
+one_shot = true
+
+[node name="WinTimer" type="Timer" parent="TimerNode"]
+wait_time = 1.75
+one_shot = true
+
+[node name="DefeatTimer" type="Timer" parent="TimerNode"]
+wait_time = 1.5
+one_shot = true
+
+[node name="BossAttackAnimTimer" type="Timer" parent="TimerNode"]
+one_shot = true
+
+[node name="BossHurtAnimTimer" type="Timer" parent="TimerNode"]
+one_shot = true
+
+[node name="BossDeathAnimTimer" type="Timer" parent="TimerNode"]
+wait_time = 1.75
+one_shot = true
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -665,6 +701,51 @@ offset_right = 2517.0
 offset_bottom = 1441.0
 color = Color(0, 0.59375, 0, 1)
 metadata/_edit_use_anchors_ = true
+
+[node name="BossNode" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BossNode"]
+position = Vector2(1906, 342)
+scale = Vector2(15, 15)
+sprite_frames = SubResource("SpriteFrames_7nle3")
+animation = &"Idle"
+frame = 2
+frame_progress = 0.545523
+flip_h = true
+
+[node name="ColorRect" type="ColorRect" parent="BossNode"]
+offset_left = 1531.0
+offset_top = 18.0
+offset_right = 1618.0
+offset_bottom = 732.0
+color = Color(0.0862745, 0.160784, 0.611765, 1)
+
+[node name="BossHealthbarVisual" type="ProgressBar" parent="BossNode"]
+offset_left = 870.0
+offset_top = 700.0
+offset_right = 2270.0
+offset_bottom = 800.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/fill = SubResource("StyleBoxFlat_466ia")
+max_value = 200.0
+value = 100.0
+allow_greater = true
+fill_mode = 1
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="BossHealthbarProcentage" type="ProgressBar" parent="BossNode"]
+offset_left = 1570.0
+offset_top = 700.0
+offset_right = 2270.0
+offset_bottom = 800.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/background = SubResource("StyleBoxFlat_oh7a1")
+theme_override_styles/fill = SubResource("StyleBoxFlat_s70no")
+value = 100.0
+allow_greater = true
 
 [node name="TextNode" type="Node2D" parent="."]
 
@@ -823,44 +904,8 @@ icon_alignment = 2
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="BossNode" type="Node2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BossNode"]
-position = Vector2(1906, 342)
-scale = Vector2(15, 15)
-sprite_frames = SubResource("SpriteFrames_7nle3")
-animation = &"Death"
-frame_progress = 0.385962
-flip_h = true
-
-[node name="BossHealthbarVisual" type="ProgressBar" parent="BossNode"]
-offset_left = 870.0
-offset_top = 700.0
-offset_right = 2270.0
-offset_bottom = 800.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/fill = SubResource("StyleBoxFlat_466ia")
-max_value = 200.0
-value = 100.0
-allow_greater = true
-fill_mode = 1
-show_percentage = false
-metadata/_edit_use_anchors_ = true
-
-[node name="BossHealthbarProcentage" type="ProgressBar" parent="BossNode"]
-offset_left = 1570.0
-offset_top = 700.0
-offset_right = 2270.0
-offset_bottom = 800.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/background = SubResource("StyleBoxFlat_oh7a1")
-theme_override_styles/fill = SubResource("StyleBoxFlat_s70no")
-value = 100.0
-allow_greater = true
-
 [node name="CutsceneNode" type="Node2D" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CutsceneNode"]
 offset_left = 845.0
@@ -889,46 +934,10 @@ frame = 5
 [node name="CutsceneTimer" type="Timer" parent="CutsceneNode"]
 wait_time = 3.6
 
-[node name="TimerNode" type="Node2D" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_f6wtb")
+autoplay = true
 
-[node name="EnemyAttackTimer" type="Timer" parent="TimerNode"]
-one_shot = true
-
-[node name="PlayerAttackReloadTimer" type="Timer" parent="TimerNode"]
-wait_time = 1.3
-one_shot = true
-
-[node name="CooldownTextDisplayTimer" type="Timer" parent="TimerNode"]
-wait_time = 2.0
-one_shot = true
-
-[node name="HealingTextDisplayTimer" type="Timer" parent="TimerNode"]
-wait_time = 2.0
-one_shot = true
-
-[node name="WinTimer" type="Timer" parent="TimerNode"]
-wait_time = 1.5
-one_shot = true
-
-[node name="DefeatTimer" type="Timer" parent="TimerNode"]
-wait_time = 1.5
-one_shot = true
-
-[node name="BossAttackAnimTimer" type="Timer" parent="TimerNode"]
-one_shot = true
-
-[node name="BossHurtAnimTimer" type="Timer" parent="TimerNode"]
-one_shot = true
-
-[node name="BossDeathAnimTimer" type="Timer" parent="TimerNode"]
-wait_time = 1.75
-one_shot = true
-
-[connection signal="pressed" from="PlayerNode/HookPierceButton" to="." method="_on_hook_pierce_button_pressed"]
-[connection signal="pressed" from="PlayerNode/FishingrodWhipButton" to="." method="_on_fishingrod_whip_button_pressed"]
-[connection signal="pressed" from="PlayerNode/PunchButton" to="." method="_on_punch_button_pressed"]
-[connection signal="pressed" from="PlayerNode/DeepBreathButton" to="." method="_on_deep_breath_button_pressed"]
-[connection signal="timeout" from="CutsceneNode/CutsceneTimer" to="." method="_on_cutscene_timer_timeout"]
 [connection signal="timeout" from="TimerNode/EnemyAttackTimer" to="." method="boss_action"]
 [connection signal="timeout" from="TimerNode/PlayerAttackReloadTimer" to="." method="_on_player_attack_reload_timer_timeout"]
 [connection signal="timeout" from="TimerNode/CooldownTextDisplayTimer" to="." method="_on_cooldown_text_display_timer_timeout"]
@@ -937,3 +946,8 @@ one_shot = true
 [connection signal="timeout" from="TimerNode/DefeatTimer" to="." method="_on_defeat_timer_timeout"]
 [connection signal="timeout" from="TimerNode/BossAttackAnimTimer" to="." method="_on_boss_attack_anim_timer_timeout"]
 [connection signal="timeout" from="TimerNode/BossHurtAnimTimer" to="." method="_on_boss_hurt_anim_timer_timeout"]
+[connection signal="pressed" from="PlayerNode/HookPierceButton" to="." method="_on_hook_pierce_button_pressed"]
+[connection signal="pressed" from="PlayerNode/FishingrodWhipButton" to="." method="_on_fishingrod_whip_button_pressed"]
+[connection signal="pressed" from="PlayerNode/PunchButton" to="." method="_on_punch_button_pressed"]
+[connection signal="pressed" from="PlayerNode/DeepBreathButton" to="." method="_on_deep_breath_button_pressed"]
+[connection signal="timeout" from="CutsceneNode/CutsceneTimer" to="." method="_on_cutscene_timer_timeout"]

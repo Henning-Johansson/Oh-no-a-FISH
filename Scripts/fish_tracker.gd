@@ -14,6 +14,7 @@ var high_fin_banded_shark_caught: bool = false
 var sea_spider_caught: bool = false
 var inventory_open: bool = false
 
+
 #Integer variables
 var atlantic_bass_count: int = 0
 var axolotl_count: int = 0
@@ -25,6 +26,8 @@ var golden_tench_count: int = 0
 var guppy_count: int = 0
 var high_fin_banded_shark_count: int = 0
 var sea_spider_count: int = 0
+var money: int = 0
+var octo_bait: int = 0
 
 
 func update_icon(fish: String) -> void:
@@ -71,3 +74,47 @@ func update_count_plus(fish: String) -> void:
 		high_fin_banded_shark_count += 1
 	elif fish == "sea_spider":
 		sea_spider_count += 1
+
+func update_count_minus(fish: String) -> void:
+	if fish == "atlantic_bass":
+		atlantic_bass_count -= 1
+	elif fish == "axolotl":
+		axolotl_count -= 1
+	elif fish == "blue_gill":
+		blue_gill_count -= 1
+	elif fish == "clownfish":
+		clownfish_count -= 1
+	elif fish == "dab":
+		dab_count -= 1
+	elif fish == "freshwater_snail":
+		freshwater_snail_count -= 1
+	elif fish == "golden_tench":
+		golden_tench_count -= 1
+	elif fish == "guppy":
+		guppy_count -= 1
+	elif fish == "high_fin_banded_shark":
+		high_fin_banded_shark_count -= 1
+	elif fish == "sea_spider":
+		sea_spider_count -= 1
+
+func money_counter(fish: String) -> void:
+	if fish == "atlantic_bass":
+		money += 100
+	elif fish == "axolotl":
+		money += 200
+	elif fish == "blue_gill":
+		money += 100
+	elif fish == "clownfish":
+		money += 100
+	elif fish == "dab":
+		money += 100
+	elif fish == "freshwater_snail":
+		money += 200
+	elif fish == "golden_tench":
+		money += 200
+	elif fish == "guppy":
+		money += 200
+	elif fish == "high_fin_banded_shark":
+		money += 200
+	elif fish == "sea_spider":
+		money += 100

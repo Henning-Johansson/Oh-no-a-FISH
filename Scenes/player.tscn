@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mtbasjgdnhel" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="2_cvnsp"]
+[ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="3_6t5aa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ij6vw"]
 radius = 12.0
@@ -455,9 +456,6 @@ font_size = 14
 outline_size = 7
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_cvnsp"]
-radius = 56.0357
-
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(1.5, 1.5)
 collision_layer = 2
@@ -465,7 +463,7 @@ collision_mask = 13
 script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-9.53674e-07, 0)
+position = Vector2(2, 0)
 scale = Vector2(4, 4)
 texture = ExtResource("2_cvnsp")
 hframes = 14
@@ -473,7 +471,7 @@ vframes = 12
 frame = 56
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.666667, 14)
+position = Vector2(-2.98023e-07, 14)
 shape = SubResource("CapsuleShape2D_ij6vw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -492,13 +490,16 @@ label_settings = SubResource("LabelSettings_cvnsp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CanInteract" type="Label" parent="."]
-visible = false
-offset_left = -59.3333
-offset_top = -68.0
-offset_right = 59.6667
-offset_bottom = -48.0
-text = "Press I to Interact"
+[node name="CanTrade" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -70.0
+offset_top = -75.0
+offset_right = 70.0
+offset_bottom = -55.0
+grow_horizontal = 2
+text = "Press T to Trade/Talk"
 label_settings = SubResource("LabelSettings_cvnsp")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -506,30 +507,42 @@ vertical_alignment = 1
 [node name="FishingTimer" type="Timer" parent="."]
 wait_time = 0.8
 
-[node name="FishingLeft" type="RayCast2D" parent="."]
+[node name="FLeftSaltwater" type="RayCast2D" parent="."]
 target_position = Vector2(-45, 0)
 collision_mask = 32
 
-[node name="FishingDown" type="RayCast2D" parent="."]
+[node name="FLeftFreshwater" type="RayCast2D" parent="."]
+target_position = Vector2(-45, 0)
+collision_mask = 16
+
+[node name="FDownSaltwater" type="RayCast2D" parent="."]
 target_position = Vector2(0, 45)
 collision_mask = 32
 
-[node name="FishingRight" type="RayCast2D" parent="."]
+[node name="FDownFreshwater" type="RayCast2D" parent="."]
+target_position = Vector2(0, 45)
+collision_mask = 16
+
+[node name="FRightSaltwater" type="RayCast2D" parent="."]
 target_position = Vector2(45, 0)
 collision_mask = 32
 
-[node name="FishingUp" type="RayCast2D" parent="."]
+[node name="FRightFreshwater" type="RayCast2D" parent="."]
+target_position = Vector2(45, 0)
+collision_mask = 16
+
+[node name="FUpSaltwater" type="RayCast2D" parent="."]
 target_position = Vector2(0, -45)
 collision_mask = 32
 
-[node name="NpcInteractions" type="Node2D" parent="."]
+[node name="FUpFreshwater" type="RayCast2D" parent="."]
+target_position = Vector2(0, -45)
+collision_mask = 16
 
-[node name="Area2D" type="Area2D" parent="NpcInteractions"]
-collision_layer = 0
-collision_mask = 64
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcInteractions/Area2D"]
-shape = SubResource("CircleShape2D_cvnsp")
+[node name="Interactible" parent="." instance=ExtResource("3_6t5aa")]
+scale = Vector2(0.7, 0.7)
 
 [connection signal="draw" from="CanFish" to="." method="_on_can_fish_draw"]
 [connection signal="timeout" from="FishingTimer" to="." method="_on_fishing_timer_timeout"]
+[connection signal="do_interact" from="Interactible" to="." method="_on_interactible_do_interact"]
+[connection signal="stop_interact" from="Interactible" to="." method="_on_interactible_stop_interact"]

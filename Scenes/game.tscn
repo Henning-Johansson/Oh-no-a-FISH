@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://da83hmm1c25xq"]
+[gd_scene load_steps=11 format=3 uid="uid://da83hmm1c25xq"]
 
 [ext_resource type="PackedScene" uid="uid://bpi4ucu37e3qo" path="res://Scenes/village_map.tscn" id="1_qxrlw"]
 [ext_resource type="Script" uid="uid://bb50ew4k5x7j2" path="res://Scripts/game.gd" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://yf6dng8a0jct" path="res://Scenes/player.tscn" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dns8f71op8ssp" path="res://Scenes/inventory.tscn" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/fishing_icon_pack/fishing_gear.png" id="5_h4fw4"]
 [ext_resource type="PackedScene" uid="uid://dlrm70xml2wph" path="res://Scenes/pause_menu.tscn" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://oqqxsv7hfuef" path="res://Scenes/trading.tscn" id="6_i6g32"]
+[ext_resource type="Texture2D" uid="uid://d0h4ngqc4sbaf" path="res://Assets/Customs/Fish_Coin.png" id="7_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://cdnd82kyagvd8" path="res://Scenes/guide_intro_speech.tscn" id="8_v158k"]
+[ext_resource type="AudioStream" uid="uid://dvx7hgyc4q5ro" path="res://Audios/04 Pallet Town.mp3" id="10_ldgsr"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_wrm1d")
@@ -12,6 +17,27 @@ script = ExtResource("1_wrm1d")
 [node name="VillageMap" parent="." instance=ExtResource("1_qxrlw")]
 
 [node name="Player" parent="." instance=ExtResource("2_wrm1d")]
+
+[node name="MoneyCounter" type="Node2D" parent="Player"]
+
+[node name="Coin" type="Sprite2D" parent="Player/MoneyCounter"]
+position = Vector2(700, -370)
+scale = Vector2(3, 3)
+texture = ExtResource("7_1l0tm")
+
+[node name="MoneyCount" type="Label" parent="Player/MoneyCounter"]
+offset_left = -112.0
+offset_top = -407.0
+offset_right = 628.0
+offset_bottom = -327.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="Inventory" parent="Player" instance=ExtResource("4_3dryh")]
 scale = Vector2(0.666667, 0.666667)
@@ -22,7 +48,48 @@ scale = Vector2(0.6, 0.6)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[connection signal="fishing" from="Player" to="." method="_on_player_fishing"]
+[node name="Trading" parent="Player" instance=ExtResource("6_i6g32")]
+position = Vector2(-220, 40)
+
+[node name="BaitCounter" type="Node2D" parent="Player"]
+position = Vector2(0, 120)
+
+[node name="Bait" type="Sprite2D" parent="Player/BaitCounter"]
+position = Vector2(700, -370)
+scale = Vector2(3, 3)
+texture = ExtResource("5_h4fw4")
+hframes = 6
+vframes = 6
+frame = 15
+
+[node name="BaitCount" type="Label" parent="Player/BaitCounter"]
+offset_left = -112.0
+offset_top = -407.0
+offset_right = 628.0
+offset_bottom = -327.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GuideIntroSpeech" parent="Player" instance=ExtResource("8_v158k")]
+position = Vector2(-80, 470)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ldgsr")
+autoplay = true
+
+[connection signal="common_trade" from="Player" to="Player/Trading" method="_on_player_common_trade"]
+[connection signal="fishing_freshwater" from="Player" to="." method="_on_player_fishing_freshwater"]
+[connection signal="fishing_saltwater" from="Player" to="." method="_on_player_fishing_saltwater"]
 [connection signal="inventory" from="Player" to="Player/Inventory" method="_on_player_inventory"]
 [connection signal="pause" from="Player" to="Player/PauseMenu" method="_on_player_pause"]
+[connection signal="rare_trade" from="Player" to="Player/Trading" method="_on_player_rare_trade"]
+[connection signal="start_speaking" from="Player" to="Player/GuideIntroSpeech" method="_on_player_start_speaking"]
+[connection signal="stop_speaking" from="Player" to="Player/GuideIntroSpeech" method="_on_player_stop_speaking"]
+[connection signal="stop_trade" from="Player" to="Player/Trading" method="_on_player_stop_trade"]
 [connection signal="unpaused" from="Player/PauseMenu" to="Player" method="_on_pause_menu_unpaused"]

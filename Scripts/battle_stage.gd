@@ -22,7 +22,8 @@ extends Node2D
 @onready var defeat_label: Label = $CanvasLayer/DefeatLabel
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
-signal fighting
+signal fighting_saltwater
+signal fighting_freshwater
 signal atlantic_bass_caught
 signal clownfish_caught
 signal dab_caught
@@ -63,10 +64,13 @@ func _ready()-> void:
 	axolotl = false
 	high_fin_banded_shark = false
 	golden_tench = false
+	if WorldToBattle.battle_type == "saltwater":
+		emit_signal("fighting_saltwater")
+	elif WorldToBattle.battle_type == "freshwater":
+		emit_signal("fighting_freshwater")
 	count_up = false
 	win = false
 	loss = false
-	emit_signal("fighting")
 	enemy_health.value = 100
 	player_health.value = 100
 	can_fight = true

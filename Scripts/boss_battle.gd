@@ -63,18 +63,12 @@ func cutscene() -> void:
 	cutscene_timer.start()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 
 func _on_hook_pierce_button_pressed() -> void:
 	if can_fight == true:
 		var a = randi_range(7,13)
 		bossbar_procentage.value -= a
 		bossbar_visual.value -= a
-		enemy_timer.start()
-		player_timer.start()
 		can_fight = false
 		boss_sprite.play("Hurt")
 		boss_hurt_timer.start()
@@ -87,8 +81,6 @@ func _on_fishingrod_whip_button_pressed() -> void:
 		var a = randi_range(18, 24)
 		bossbar_procentage.value -= a
 		bossbar_visual.value -= a
-		enemy_timer.start()
-		player_timer.start()
 		can_fight = false
 		b2_cooldown = 3
 		boss_sprite.play("Hurt")
@@ -107,8 +99,6 @@ func _on_punch_button_pressed() -> void:
 		var a = randi_range(3, 7)
 		bossbar_procentage.value -= a
 		bossbar_visual.value -= a
-		enemy_timer.start()
-		player_timer.start()
 		can_fight = false
 		boss_sprite.play("Hurt")
 		boss_hurt_timer.start()
@@ -121,7 +111,6 @@ func _on_deep_breath_button_pressed() -> void:
 		if not player_health.value == player_health.max_value:
 			player_health.value += randi_range(7, 15)
 			enemy_timer.start()
-			player_timer.start()
 			can_fight = false
 			anim.play("PlayerHeal")
 		else:
@@ -137,6 +126,7 @@ func boss_action() -> void:
 			var b = randi_range(4,9)
 			bossbar_visual.value += b
 			bossbar_procentage.value += b
+			player_timer.start()
 		elif a == 2:
 			player_health.value -= randi_range(7, 16)
 			boss_sprite.play("Attack")
@@ -186,8 +176,11 @@ func _on_defeat_timer_timeout() -> void:
 
 
 func _on_boss_attack_anim_timer_timeout() -> void:
-	boss_sprite.play("Idle")
+	boss_sprite.play("Walk")
+	can_fight = true
+	can_attack.visible = false
 
 
 func _on_boss_hurt_anim_timer_timeout() -> void:
-	boss_sprite.play("Idle")
+	boss_sprite.play("Walk")
+	boss_action()
