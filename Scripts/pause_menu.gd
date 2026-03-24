@@ -1,6 +1,6 @@
 extends Node2D
 
-
+# Variable values activated upon the programs start
 @onready var col_rec: ColorRect = $ColorRect
 @onready var pause_text: Label = $PauseLabel
 @onready var cont_button: Button = $ContinueButton
@@ -8,11 +8,14 @@ extends Node2D
 @onready var cheat_button: Button = $CheatButton
 @onready var cheat_sprite: Sprite2D = $CheatSprite
 
+# Variable values
 var paused: bool = false
 var stage: bool = false
 
+# Signal
 signal unpaused
 
+# The first thing the program does when called
 func _ready() -> void:
 	paused = false
 	col_rec.visible = false
@@ -23,11 +26,11 @@ func _ready() -> void:
 	cheat_sprite.visible = false
 	cheat_sprite.modulate = Color(0,0,0)
 
-
+# What the program does when the quit button is pressed
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()
 
-
+# What the program does when the continue button is pressed
 func _on_continue_button_pressed() -> void:
 	paused = false
 	col_rec.visible = false
@@ -38,7 +41,7 @@ func _on_continue_button_pressed() -> void:
 	cheat_sprite.visible = false
 	emit_signal("unpaused")
 
-
+# What the program does when the game is paused
 func _on_player_pause() -> void:
 	if paused == false:
 		paused = true
@@ -57,7 +60,7 @@ func _on_player_pause() -> void:
 		cheat_button.visible = false
 		cheat_sprite.visible = false
 
-
+# What the program does when the cheat button is pressed
 func _on_cheat_button_pressed() -> void:
 	if stage == false:
 		WorldToBattle.boss_stage = true

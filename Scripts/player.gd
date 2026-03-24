@@ -1,11 +1,11 @@
 extends CharacterBody2D
 class_name Player
 
-#Dictionaries
+# Dictionaries
 enum states {IDLE, WALK, FISHING, INVENTORY, PAUSED, TRADE}
 
 
-#Variable values
+# Variable values
 var state = states.IDLE
 var is_dead: bool = false
 var is_able_to_fish: bool = false
@@ -18,7 +18,7 @@ var is_trading: bool = false
 var common_merchant: bool = false
 var rare_merchant: bool = false
 
-#Variables activated upon the programs start
+# Variable values activated upon the programs start
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var can_fish: Label = $CanFish
@@ -34,11 +34,11 @@ var rare_merchant: bool = false
 @onready var can_trade: Label = $CanTrade
 
 
-#Constant values
+# Constant values
 const MAX_SPEED = 600
 const ACC = 10000000
 
-#Signals
+# Signals
 signal fishing_saltwater
 signal fishing_freshwater
 signal inventory
@@ -49,8 +49,8 @@ signal stop_trade
 signal start_speaking
 signal stop_speaking
 
-"GAME LOOP"#The code that runs the game
-#Called every frame. 'delta' is the elapsed time since the previous frame.
+"GAME LOOP"# The code that runs the game
+# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	match state:
 		states.IDLE:
@@ -67,7 +67,8 @@ func _physics_process(delta: float) -> void:
 			_trade_state(delta)
 
 
-"GENERAL HELP FUNCTIONS"#Functions that help with general pieces of data
+"GENERAL HELP FUNCTIONS"# Functions that help with general pieces of data
+# How the game calculates the movement data
 func _movement(delta: float, input_x: float, input_y: float):
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	if input_x != 0:
@@ -80,13 +81,15 @@ func _movement(delta: float, input_x: float, input_y: float):
 		velocity.y = move_toward(velocity.y, 0, ACC*delta)
 	move_and_slide()
 
+# How the game makes sure the character is facing the right direction
 func _update_direction(input_x: float) -> void:
 	if input_x > 0:
 		sprite.flip_h = false
 	elif input_x < 0:
 		sprite.flip_h = true
 
-"STATE FUNCTIONS"#Defines each state the player can be in
+"STATE FUNCTIONS"# Defines what the player character does in each state
+# What the player character does when not moving
 func _idle_state(delta: float) -> void:
 	_can_fish(fishing_down_saltwater, fishing_right_saltwater, 
 	fishing_left_saltwater, fishing_up_saltwater, fishing_down_saltwater,
@@ -115,6 +118,7 @@ func _idle_state(delta: float) -> void:
 	if Input.is_action_just_pressed("trade") and is_able_to_interact == true:
 		_enter_trade_state()
 
+# What the player character does when walking
 func _walk_state(delta: float) -> void:
 	_can_fish(fishing_down_saltwater, fishing_right_saltwater, 
 	fishing_left_saltwater, fishing_up_saltwater, fishing_down_saltwater,
@@ -144,8 +148,8 @@ func _walk_state(delta: float) -> void:
 	if Input.is_action_just_pressed("pause_menu"):
 		_enter_paused_state()
 
+# What the player character does when fishing
 func _fishing_state(delta: float) -> void:
-	#print("hi there")
 	if fishing_down_saltwater.is_colliding() and anim_played == false:
 		anim.play("Fishing_Cast_down")
 		anim_played = true
@@ -183,6 +187,7 @@ func _fishing_state(delta: float) -> void:
 		anim_played = true
 		emit_signal("fishing_freshwater")
 
+# What the player character does when the inventory is accessed
 func _inventory_state(delta) -> void:
 	if not inventory_opened:
 		emit_signal("inventory")
@@ -192,6 +197,7 @@ func _inventory_state(delta) -> void:
 		emit_signal("inventory")
 		_enter_idle_state()
 
+# What the player character does when the game is paused
 func _paused_state(delta) -> void:
 	if not game_paused:
 		emit_signal("pause")
@@ -201,6 +207,7 @@ func _paused_state(delta) -> void:
 		emit_signal("pause")
 		_enter_idle_state()
 
+# What the player character does during interactions with NPCs
 func _trade_state(delta) -> void:
 	if not is_trading: 
 		if WorldToBattle.trading_rarity == "common":
@@ -219,7 +226,8 @@ func _trade_state(delta) -> void:
 		_enter_idle_state()
 
 
-"ENTER STATE FUNCTIONS"#Defines what happens when each state is entered
+"ENTER STATE FUNCTIONS"
+# Tells the game which state it's supposed to be in
 func _enter_idle_state():
 	state = states.IDLE
 
@@ -239,6 +247,7 @@ func _enter_trade_state():
 	state = states.TRADE
 
 "PUBLIC FUNCTIONS"#Functions visible to other scripts
+# Checks if you can fish
 func _can_fish(fishing_down_saltwater: RayCast2D, 
 	fishing_right_saltwater: RayCast2D, 
 	fishing_left_saltwater: RayCast2D, 
@@ -275,12 +284,12 @@ func _can_fish(fishing_down_saltwater: RayCast2D,
 		can_fish.visible = false
 		is_able_to_fish = false
 
-
+# Pause menu 
 func _on_pause_menu_unpaused() -> void:
 	_enter_idle_state()
 	game_paused = false
 
-
+# Interactions with NPCs
 func _on_interactible_do_interact() -> void:
 	can_trade.visible = true
 	is_able_to_interact = true

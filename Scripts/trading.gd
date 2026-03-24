@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variable values activated upon the programs start
 @onready var atlantic_bass_button: Button = $CommonTradning/Buttons/AtlanticBassButton
 @onready var clownfish_button: Button = $CommonTradning/Buttons/ClownfishButton
 @onready var dab_button: Button = $CommonTradning/Buttons/DabButton
@@ -18,8 +19,10 @@ extends Node2D
 @onready var octo_bait_button: Button = $RareTrading/Buttons/OctopusBaitButton
 @onready var not_enough_money_label: Label = $Labels/BaitTradeLabel
 
+# Variable value
 var is_trading: bool = false
 
+# The first thing the program does when called
 func _ready() -> void:
 	not_enough_fish_label.visible = false
 	not_enough_money_label.visible = false
@@ -27,7 +30,7 @@ func _ready() -> void:
 	background.visible = false
 	rare_trading.visible = false
 
-
+"Fish buttons"# Exchanges different fish for different amounts of money
 func _on_atlantic_bass_button_pressed() -> void:
 	if FishTracker.atlantic_bass_count > 0:
 		FishTracker.update_count_minus("atlantic_bass")
@@ -117,26 +120,26 @@ func _on_golden_tench_button_pressed() -> void:
 		not_enough_fish_label.visible = true
 		label_timer.start()
 
-
+# What happens when the timer timesout
 func _on_timer_timeout() -> void:
 	not_enough_fish_label.visible = false
 	not_enough_money_label.visible = false
 
-
+# What the program does during a common trade
 func _on_player_common_trade() -> void:
 	if is_trading == false:
 		common_trading.visible = true
 		background.visible = true
 		is_trading = true
 
-
+# What the program does during a rare trade
 func _on_player_rare_trade() -> void:
 	if is_trading == false:
 		rare_trading.visible = true
 		background.visible = true
 		is_trading = true
 
-
+# What the program does when trading is stopped
 func _on_player_stop_trade() -> void:
 	if is_trading == true:
 		common_trading.visible = false
@@ -144,7 +147,7 @@ func _on_player_stop_trade() -> void:
 		background.visible = false
 		is_trading = false
 
-
+# Exchanges money for octopus bair
 func _on_octopus_bait_button_pressed() -> void:
 	if FishTracker.money >= 10000:
 		FishTracker.octo_bait += 1

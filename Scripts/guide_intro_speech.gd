@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variable values activated upon the programs start
 @onready var text_box: Sprite2D = $TextBox
 @onready var text_node: Node2D = $Text
 @onready var npc_name: Label = $Text/NPCName
@@ -8,10 +9,11 @@ extends Node2D
 @onready var continue_text: Label = $Text/ContinueLabel
 @onready var end_text: Label = $Text/EndLabel
 
+# Variable values
 var speech_started: bool = false
 var speech_section: int = 0
 
-# Called when the node enters the scene tree for the first time.
+# The first thing the program does when called
 func _ready() -> void:
 	text_box.visible = false
 	text_node.visible = false
@@ -21,6 +23,7 @@ func _ready() -> void:
 	continue_text.visible = false
 	end_text.visible = false
 
+# What the program does every frame
 func _process(delta: float) -> void:
 	if (Input.is_action_just_pressed("continue") and speech_started == true
 	and speech_section == 1):
@@ -33,7 +36,7 @@ func _process(delta: float) -> void:
 		end_text.visible = true
 		speech_section = 2
 
-
+# Shows the first part of the NPCs speech
 func _on_player_start_speaking() -> void:
 	text_box.visible = true
 	text_node.visible = true
@@ -44,8 +47,7 @@ func _on_player_start_speaking() -> void:
 	speech_started = true
 	speech_section = 1
 
-
-
+# Ends the NPCs speech
 func _on_player_stop_speaking() -> void:
 	text_box.visible = false
 	text_node.visible = false

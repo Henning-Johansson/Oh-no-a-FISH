@@ -1,6 +1,6 @@
 extends Node2D
 
-
+# Variable values activated upon the programs start
 @onready var inv = $"."
 @onready var canvas = $FishCanvas
 @onready var atlantic_bass: Sprite2D = $FishCanvas/AtlanticBass
@@ -24,8 +24,10 @@ extends Node2D
 @onready var high_fin_bande_shark_amount: Label = $Control/Label9
 @onready var golden_tench_amount: Label = $Control/Label10
 
+# Variable value
 var inventory_accessed: bool = false
 
+# The first thing the program does when called
 func _ready() -> void:
 	inventory_accessed = false
 	inv.visible = false
@@ -51,6 +53,7 @@ func _ready() -> void:
 	if FishTracker.sea_spider_caught == false:
 		sea_spider.modulate = Color(0,0,0,255)
 
+# What the program does every frame
 func _process(delta: float) -> void:
 	atlantic_bass_amount.text = str(FishTracker.atlantic_bass_count)
 	axolotl_amount.text = str(FishTracker.axolotl_count)
@@ -63,8 +66,7 @@ func _process(delta: float) -> void:
 	high_fin_bande_shark_amount.text = str(FishTracker.high_fin_banded_shark_count)
 	sea_spider_amount.text = str(FishTracker.sea_spider_count)
 
-
-
+# Shows and hides the inventory when the player accessess it
 func _on_player_inventory() -> void:
 	if inventory_accessed == false:
 		inv.visible = true

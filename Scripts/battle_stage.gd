@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variable values activated upon the programs start
 @onready var player_health: ProgressBar = $Player/CanvasLayer/Healthbar
 @onready var enemy_health: ProgressBar = $Enemy/CanvasLayer/Healthbar
 @onready var fish: Node2D = $Enemy/FishableItems
@@ -22,6 +23,7 @@ extends Node2D
 @onready var defeat_label: Label = $CanvasLayer/DefeatLabel
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
+# Signals
 signal fighting_saltwater
 signal fighting_freshwater
 signal atlantic_bass_caught
@@ -35,6 +37,7 @@ signal axolotl_caught
 signal high_fin_banded_shark_caught
 signal golden_tench_caught
 
+# Variable values
 var can_fight: bool = true
 var b2_cooldown = 0
 var round_value = 0
@@ -52,7 +55,7 @@ var high_fin_banded_shark: bool = false
 var golden_tench: bool = false
 var count_up: bool = false
 
-
+# The first thing the program does when called
 func _ready()-> void:
 	atlantic_bass = false
 	clownfish = false
@@ -84,7 +87,7 @@ func _ready()-> void:
 	win_lable.visible = false
 	defeat_label.visible = false
 
-
+# What the program does every frame
 func _process(delta: float) -> void:
 	if enemy_health.value == 0:
 		win_lable.visible = true
@@ -150,8 +153,8 @@ func _process(delta: float) -> void:
 
 
 
-#Player attack and ability functions
-func _on_button_1_pressed() -> void: #Attack: Hook-Pierce
+"Player attack and ability functions"
+func _on_button_1_pressed() -> void:# Attack: Hook-Pierce
 	if can_fight == true:
 		enemy_health.value -= randi_range(7,13)
 		enemy_timer.start()
@@ -162,7 +165,7 @@ func _on_button_1_pressed() -> void: #Attack: Hook-Pierce
 		can_attack.visible = true
 
 
-func _on_button_2_pressed() -> void: #Attack: Fishingrod-Whip
+func _on_button_2_pressed() -> void:# Attack: Fishingrod-Whip
 	if can_fight == true and b2_cooldown == 0:
 		enemy_health.value -= randi_range(18, 24)
 		enemy_timer.start()
@@ -179,7 +182,7 @@ func _on_button_2_pressed() -> void: #Attack: Fishingrod-Whip
 		can_attack.visible = true
 
 
-func _on_button_3_pressed() -> void: #Attack: Punch
+func _on_button_3_pressed() -> void:# Attack: Punch
 	if can_fight == true:
 		enemy_health.value -= randi_range(3, 7)
 		enemy_timer.start()
@@ -190,7 +193,7 @@ func _on_button_3_pressed() -> void: #Attack: Punch
 		can_attack.visible = true
 
 
-func _on_button_4_pressed() -> void: #Attack: Deep Breath
+func _on_button_4_pressed() -> void:# Attack: Deep Breath
 	if can_fight == true:
 		if not player_health.value == player_health.max_value:
 			player_health.value += randi_range(7, 15)
@@ -205,7 +208,8 @@ func _on_button_4_pressed() -> void: #Attack: Deep Breath
 		can_attack.visible = true
 
 
-#Fish attacks and abilityfunctions
+"Fish attacks and abilityfunctions"
+# What the enemy fish does on its turn of combat
 func _fish_attack()-> void:
 	var a = randi_range(1,3)
 	if not enemy_health.value == 0:
@@ -226,7 +230,7 @@ func _fish_attack()-> void:
 		win_timer.start()
 
 
-#Timer functions
+"Timer functions"# What happens when the timers timeout
 func _can_fight_timeout() -> void:
 	can_fight = true
 	can_attack.visible = false
@@ -248,7 +252,7 @@ func _on_defeat_timer_timeout() -> void:
 	WorldToBattle.change_stage()
 
 
-#Inventory Update Functions
+"Inventory Update Functions"# Tells the game which fish was caught
 func _on_fishable_items_atlantic_bass() -> void:
 	atlantic_bass = true
 

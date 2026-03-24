@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variable values activated upon the programs start
 @onready var anim: AnimationPlayer = $AnimationPlayer
 @onready var player_health: ProgressBar = $PlayerNode/PlayerHealth
 @onready var hook_pierce: Button = $PlayerNode/HookPierceButton
@@ -29,13 +30,14 @@ extends Node2D
 @onready var win_lable: Label = $TextNode/WinLabel
 @onready var defeat_label: Label = $TextNode/DefeatLabel
 
+# Variable values
 var can_fight: bool = true
 var b2_cooldown = 0
 var round_value = 0
 var win: bool = false
 var loss: bool = false
 
-# Called when the node enters the scene tree for the first time.
+# The first thing the program does when called
 func _ready() -> void:
 	cutscene_box.visible = true
 	attack_sprite.visible = true
@@ -57,14 +59,14 @@ func _ready() -> void:
 	boss_sprite.play("Walk")
 	cutscene()
 
-
+# The cutscene that plays upon start
 func cutscene() -> void:
 	anim.play("Cutscene")
 	cutscene_timer.start()
 
 
-
-func _on_hook_pierce_button_pressed() -> void:
+"Player attack and ability functions"
+func _on_hook_pierce_button_pressed() -> void:# Attack: Hook-Pierce
 	if can_fight == true:
 		var a = randi_range(7,13)
 		bossbar_procentage.value -= a
@@ -76,7 +78,7 @@ func _on_hook_pierce_button_pressed() -> void:
 		can_attack.visible = true
 
 
-func _on_fishingrod_whip_button_pressed() -> void:
+func _on_fishingrod_whip_button_pressed() -> void:# Attack: Fishingrod-Whip
 	if can_fight == true and b2_cooldown == 0:
 		var a = randi_range(18, 24)
 		bossbar_procentage.value -= a
@@ -94,7 +96,7 @@ func _on_fishingrod_whip_button_pressed() -> void:
 		can_attack.visible = true
 
 
-func _on_punch_button_pressed() -> void:
+func _on_punch_button_pressed() -> void:# Attack: Punch
 	if can_fight == true:
 		var a = randi_range(3, 7)
 		bossbar_procentage.value -= a
@@ -106,7 +108,7 @@ func _on_punch_button_pressed() -> void:
 		can_attack.visible = true
 
 
-func _on_deep_breath_button_pressed() -> void:
+func _on_deep_breath_button_pressed() -> void:# Attack: Deep Breath
 	if can_fight == true:
 		if not player_health.value == player_health.max_value:
 			player_health.value += randi_range(7, 15)
@@ -119,21 +121,23 @@ func _on_deep_breath_button_pressed() -> void:
 	else:
 		can_attack.visible = true
 
+"Fish attacks and abilityfunctions"
+# What the enemy boss does on its turn of combat
 func boss_action() -> void:
 	var a = randi_range(1,3)
 	if not bossbar_visual.value == 0:
 		if a == 1 and not bossbar_visual.value == bossbar_visual.max_value:
-			var b = randi_range(4,9)
+			var b = randi_range(7,12)
 			bossbar_visual.value += b
 			bossbar_procentage.value += b
 			player_timer.start()
 		elif a == 2:
-			player_health.value -= randi_range(7, 16)
+			player_health.value -= randi_range(10, 19)
 			boss_sprite.play("Attack")
 			boss_attack_timer.start()
 			anim.play("PlayerHurt")
 		else:
-			player_health.value -= randi_range(3, 8)
+			player_health.value -= randi_range(6, 11)
 			boss_sprite.play("Attack")
 			boss_attack_timer.start()
 			anim.play("PlayerHurt")
@@ -145,7 +149,7 @@ func boss_action() -> void:
 		boss_sprite.play("Death")
 		win_timer.start()
 
-
+"Timer functions"# What happens when the timers timeout
 func _on_cutscene_timer_timeout() -> void:
 	boss_sprite.visible = true
 	cutscene_box.visible = false

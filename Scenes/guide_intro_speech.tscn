@@ -40,7 +40,7 @@ offset_top = -206.0
 offset_right = 563.0
 offset_bottom = -76.0
 theme_override_fonts/font = ExtResource("2_q5blr")
-text = "If your ever wondering how many of a fish you have you can access your inventory by pressing \"I\", you can also pause the game by pressing \"esc\", whenever you want to exit something simply press the same button you used to enter it. "
+text = "If your ever wondering how many of a fish you have you can access your inventory by pressing \"E\", you can also pause the game by pressing \"esc\", whenever you want to exit something simply press the same button you used to enter it. "
 autowrap_mode = 3
 
 [node name="ContinueLabel" type="Label" parent="Text"]

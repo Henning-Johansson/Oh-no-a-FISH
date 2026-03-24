@@ -1,7 +1,7 @@
 extends Node2D
 
-
-#Bool variables
+"Variable values"# Variable values were divided into to groups due to there being so many
+# Bool variable values
 var atlantic_bass_caught: bool = false
 var axolotl_caught: bool = false
 var blue_gill_caught: bool = false
@@ -15,7 +15,7 @@ var sea_spider_caught: bool = false
 var inventory_open: bool = false
 
 
-#Integer variables
+# Integer variable values
 var atlantic_bass_count: int = 0
 var axolotl_count: int = 0
 var blue_gill_count: int = 0
@@ -29,7 +29,7 @@ var sea_spider_count: int = 0
 var money: int = 0
 var octo_bait: int = 0
 
-
+# Updates each fishes icon in the inventory
 func update_icon(fish: String) -> void:
 	if fish == "atlantic_bass":
 		atlantic_bass_caught = true
@@ -52,7 +52,7 @@ func update_icon(fish: String) -> void:
 	elif fish == "sea_spider":
 		sea_spider_caught = true
 
-
+# Increases the amount of fish the player has
 func update_count_plus(fish: String) -> void:
 	if fish == "atlantic_bass":
 		atlantic_bass_count += 1
@@ -75,6 +75,7 @@ func update_count_plus(fish: String) -> void:
 	elif fish == "sea_spider":
 		sea_spider_count += 1
 
+# Decreases the amount of fish the player has
 func update_count_minus(fish: String) -> void:
 	if fish == "atlantic_bass":
 		atlantic_bass_count -= 1
@@ -97,6 +98,7 @@ func update_count_minus(fish: String) -> void:
 	elif fish == "sea_spider":
 		sea_spider_count -= 1
 
+# Increases the amount of mony the player has
 func money_counter(fish: String) -> void:
 	if fish == "atlantic_bass":
 		money += 100

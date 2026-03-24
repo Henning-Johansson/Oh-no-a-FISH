@@ -1,10 +1,11 @@
 extends Node2D
 class_name Fishables
 
+# Variable values activated upon the programs start
 @onready var fishable_items: Sprite2D = $FishableItemSprite
 @onready var fish_name: Label = $FishName
 
-#Signals
+# Signals
 signal atlantic_bass
 signal clownfish
 signal dab
@@ -16,12 +17,13 @@ signal axolotl
 signal high_fin_banded_shark
 signal golden_tench
 
+# Variable dictionary used to keep track of all the fish
 var fish_name_dict = {"Atlantic Bass": 0, "Clownfish": 1, "Dab": 2,
 	"Sea Spider": 3, "Blue Gill": 4, "Guppy": 5, "Freshwater Snail": 6,
 	"Axolotl": 7, "High Fin Banded Shark": 8, "Golden Tench": 9}
 
 
-
+# Decides which fish to fight when fishing in salwater
 func _on_battle_stage_fighting_saltwater() -> void:
 	var what_fish = randi_range(0, 3)
 	fishable_items.frame = what_fish
@@ -35,7 +37,7 @@ func _on_battle_stage_fighting_saltwater() -> void:
 	elif what_fish == 3:
 		emit_signal("sea_spider")
 
-
+# Decides which fish to fight when fishing in freshwater
 func _on_battle_stage_fighting_freshwater() -> void:
 	var what_fish = randi_range(4, 9)
 	fishable_items.frame = what_fish
