@@ -10,7 +10,6 @@ func _ready() -> void:
 # What the program does when the player interacts with the guide
 func _on_interactible_do_interact() -> void:
 	WorldToBattle.is_speaking = true
-	WorldToBattle._guide_speech_start()
 
 # What the program does when the player stops interacting with the guide
 func _on_interactible_stop_interact() -> void:

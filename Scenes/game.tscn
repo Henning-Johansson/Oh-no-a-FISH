@@ -40,15 +40,18 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Inventory" parent="Player" instance=ExtResource("4_3dryh")]
+z_index = 1
 scale = Vector2(0.666667, 0.666667)
 
 [node name="PauseMenu" parent="Player" instance=ExtResource("5_wowpa")]
+z_index = 1
 position = Vector2(-714.667, -419.333)
 scale = Vector2(0.6, 0.6)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Trading" parent="Player" instance=ExtResource("6_i6g32")]
+z_index = 1
 position = Vector2(-220, 40)
 
 [node name="BaitCounter" type="Node2D" parent="Player"]
@@ -77,11 +80,13 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="GuideIntroSpeech" parent="Player" instance=ExtResource("8_v158k")]
+z_index = 1
 position = Vector2(-80, 470)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_ldgsr")
 autoplay = true
+parameters/looping = true
 
 [connection signal="common_trade" from="Player" to="Player/Trading" method="_on_player_common_trade"]
 [connection signal="fishing_freshwater" from="Player" to="." method="_on_player_fishing_freshwater"]

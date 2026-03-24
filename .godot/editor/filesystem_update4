@@ -16,3 +16,10 @@ res://Scripts/start_menu.gd
 res://Scripts/trading.gd
 res://Scripts/village_map.gd
 res://Scripts/world_to_battle.gd
+res://Scenes/game.tscn
+res://Scenes/village_map.tscn
+res://Scenes/player.tscn
+res://Scenes/npc_guide.tscn
+res://Scenes/battle_stage.tscn
+res://Scenes/boss_battle.tscn
+res://Scenes/start_menu.tscn

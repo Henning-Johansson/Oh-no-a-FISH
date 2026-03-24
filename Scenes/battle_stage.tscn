@@ -449,6 +449,7 @@ one_shot = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_r2b17")
 autoplay = true
+parameters/looping = true
 
 [connection signal="fighting_freshwater" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting_freshwater"]
 [connection signal="fighting_saltwater" from="." to="Enemy/FishableItems" method="_on_battle_stage_fighting_saltwater"]

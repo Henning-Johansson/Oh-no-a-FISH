@@ -905,7 +905,6 @@ expand_icon = true
 metadata/_edit_use_anchors_ = true
 
 [node name="CutsceneNode" type="Node2D" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CutsceneNode"]
 offset_left = 845.0
@@ -937,6 +936,7 @@ wait_time = 3.6
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_f6wtb")
 autoplay = true
+parameters/looping = true
 
 [connection signal="timeout" from="TimerNode/EnemyAttackTimer" to="." method="boss_action"]
 [connection signal="timeout" from="TimerNode/PlayerAttackReloadTimer" to="." method="_on_player_attack_reload_timer_timeout"]

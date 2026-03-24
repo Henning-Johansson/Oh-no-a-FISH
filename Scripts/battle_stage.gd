@@ -245,11 +245,11 @@ func _on_healing_text_display_timer_timeout() -> void:
 
 
 func _on_win_timer_timeout() -> void:
-	WorldToBattle.change_stage()
+	WorldToBattle.change_stage_freshwater()
 
 
 func _on_defeat_timer_timeout() -> void:
-	WorldToBattle.change_stage()
+	WorldToBattle.change_stage_freshwater()
 
 
 "Inventory Update Functions"# Tells the game which fish was caught

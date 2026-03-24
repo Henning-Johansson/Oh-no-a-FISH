@@ -11,6 +11,7 @@ var is_speaking = false
 # Variable value activated upon the programs start
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
+
 # What the program does when the player fishes in saltwater with or without octopus bait
 func change_stage_saltwater()-> void:
 	if FishTracker.octo_bait > 0:
