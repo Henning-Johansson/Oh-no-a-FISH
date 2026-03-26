@@ -59,6 +59,19 @@ func _ready() -> void:
 	boss_sprite.play("Walk")
 	cutscene()
 
+# What the program does every frame
+func _process(delta: float) -> void:
+	if bossbar_visual.value == 0:
+		win_lable.visible = true
+		win = true
+	if player_health.value == 0:
+		defeat_label.visible = true
+		defeat_timer.start()
+		can_fight = false
+		loss = true
+	if loss == true:
+		WorldToBattle.player_pos = Vector2(0,0)
+
 # The cutscene that plays upon start
 func cutscene() -> void:
 	anim.play("Cutscene")
@@ -172,11 +185,11 @@ func _on_healing_text_display_timer_timeout() -> void:
 
 
 func _on_win_timer_timeout() -> void:
-	WorldToBattle.change_stage()
+	WorldToBattle.change_stage_freshwater()
 
 
 func _on_defeat_timer_timeout() -> void:
-	WorldToBattle.change_stage()
+	WorldToBattle.change_stage_freshwater()
 
 
 func _on_boss_attack_anim_timer_timeout() -> void:
