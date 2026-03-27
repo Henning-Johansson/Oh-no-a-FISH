@@ -149,9 +149,9 @@ func _on_player_stop_trade() -> void:
 
 # Exchanges money for octopus bair
 func _on_octopus_bait_button_pressed() -> void:
-	if FishTracker.money >= 10000:
+	if FishTracker.money >= 2500:
 		FishTracker.octo_bait += 1
-		FishTracker.money -= 10000
+		FishTracker.money -= 2500
 	else:
 		not_enough_money_label.visible = true
 		label_timer.start()

@@ -140,17 +140,17 @@ func boss_action() -> void:
 	var a = randi_range(1,3)
 	if not bossbar_visual.value == 0:
 		if a == 1 and not bossbar_visual.value == bossbar_visual.max_value:
-			var b = randi_range(7,12)
+			var b = randi_range(5,10)
 			bossbar_visual.value += b
 			bossbar_procentage.value += b
 			player_timer.start()
 		elif a == 2:
-			player_health.value -= randi_range(10, 19)
+			player_health.value -= randi_range(10, 15)
 			boss_sprite.play("Attack")
 			boss_attack_timer.start()
 			anim.play("PlayerHurt")
 		else:
-			player_health.value -= randi_range(6, 11)
+			player_health.value -= randi_range(4, 9)
 			boss_sprite.play("Attack")
 			boss_attack_timer.start()
 			anim.play("PlayerHurt")

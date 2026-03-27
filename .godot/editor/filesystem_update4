@@ -1,10 +1,4 @@
-res://Scenes/game.tscn
-res://Scripts/fish_tracker.gd
-res://Scenes/village_map.tscn
-res://Scenes/player.tscn
-res://Scenes/npc_guide.tscn
-res://Scenes/guide_intro_speech.tscn
-res://Scenes/battle_stage.tscn
 res://Scenes/boss_battle.tscn
-res://Scenes/start_menu.tscn
 res://Scripts/boss_battle.gd
+res://Scenes/trading.tscn
+res://Scripts/trading.gd
