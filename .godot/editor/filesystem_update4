@@ -2,3 +2,5 @@ res://Scenes/boss_battle.tscn
 res://Scripts/boss_battle.gd
 res://Scenes/trading.tscn
 res://Scripts/trading.gd
+res://Scenes/pause_menu.tscn
+res://Scripts/pause_menu.gd
