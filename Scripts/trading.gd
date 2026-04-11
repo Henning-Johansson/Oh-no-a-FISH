@@ -18,9 +18,34 @@ extends Node2D
 @onready var rare_trading: Node2D = $RareTrading
 @onready var octo_bait_button: Button = $RareTrading/Buttons/OctopusBaitButton
 @onready var not_enough_money_label: Label = $Labels/BaitTradeLabel
+@onready var strange_trading: Node2D = $StrangeTrading
+@onready var bones_button: Button = $StrangeTrading/Buttons/BoneButton
+@onready var bones: Control = $StrangeTrading/Sprites/Control/Bones
+@onready var bone_1: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone
+@onready var bone_2: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone2
+@onready var bone_3: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone3
+@onready var bone_4: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone4
+@onready var bone_5: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone5
+@onready var bone_6: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone6
+@onready var bone_7: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone7
+@onready var bone_8: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone8
+@onready var bone_9: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone9
+@onready var bone_10: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone10
+@onready var bone_11: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone11
+@onready var bone_12: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone12
+@onready var bone_13: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone13
+@onready var bone_14: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone14
+@onready var bone_15_1: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone15
+@onready var bone_15_2: Sprite2D = $StrangeTrading/Sprites/Control/Bones/Bone16
 
 # Variable value
 var is_trading: bool = false
+
+# Variable dictionary used to keep track of all the bones
+var bone_dict = {"bone_1": 1, "bone_2": 2, "bone_3": 3, "bone_4": 4, 
+	"bone_5": 5, "bone_6": 6, "bone_7": 7, "bone_8": 8, "bone_9": 9, 
+	"bone_10": 10, "bone_11": 11, "bone_12": 12, "bone_13": 13, 
+	"bone_14": 14, "bone_15_1": 15, "bone_15_2": 15}
 
 # The first thing the program does when called
 func _ready() -> void:
@@ -147,7 +172,7 @@ func _on_player_stop_trade() -> void:
 		background.visible = false
 		is_trading = false
 
-# Exchanges money for octopus bair
+# Exchanges money for octopus bait
 func _on_octopus_bait_button_pressed() -> void:
 	if FishTracker.money >= 2500:
 		FishTracker.octo_bait += 1
@@ -155,3 +180,8 @@ func _on_octopus_bait_button_pressed() -> void:
 	else:
 		not_enough_money_label.visible = true
 		label_timer.start()
+
+"Bone Button Function"# Changes which bone is showed
+func bone_picker() -> void:
+	var bone_value = randi_range(1,15)
+	#bone_dict.find_key()

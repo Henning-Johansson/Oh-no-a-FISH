@@ -186,6 +186,8 @@ func _on_healing_text_display_timer_timeout() -> void:
 
 func _on_win_timer_timeout() -> void:
 	WorldToBattle.change_stage_freshwater()
+	FishTracker.update_icon("octopus")
+	FishTracker.update_count_plus("octopus")
 
 
 func _on_defeat_timer_timeout() -> void:

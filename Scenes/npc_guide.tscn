@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://usm37ir67igg"]
 
-[ext_resource type="Texture2D" uid="uid://du8ehtdvxmswk" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Florist/florist - idle.png" id="1_jfcwk"]
+[ext_resource type="Texture2D" uid="uid://du8ehtdvxmswk" path="res://Assets/Characters/florist - idle.png" id="1_jfcwk"]
 [ext_resource type="Script" uid="uid://djq6rwer1jhbs" path="res://Scripts/npc_guide.gd" id="1_rb6n1"]
 [ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_y80w5"]
 

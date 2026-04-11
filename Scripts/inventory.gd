@@ -2,17 +2,21 @@ extends Node2D
 
 # Variable values activated upon the programs start
 @onready var inv = $"."
-@onready var canvas = $FishCanvas
-@onready var atlantic_bass: Sprite2D = $FishCanvas/AtlanticBass
-@onready var clownfish: Sprite2D = $FishCanvas/Clownfish
-@onready var dab: Sprite2D = $FishCanvas/Dab
-@onready var sea_spider: Sprite2D = $FishCanvas/SeaSpider
-@onready var blue_gill: Sprite2D = $FishCanvas/BlueGill
-@onready var guppy: Sprite2D =$FishCanvas/Guppy
-@onready var freshwater_snail: Sprite2D = $FishCanvas/FreshwaterSnail
-@onready var axolotl: Sprite2D = $FishCanvas/Axolotl
-@onready var high_fin_banded_shark: Sprite2D = $FishCanvas/HighFinBandedShark
-@onready var golden_tench: Sprite2D = $FishCanvas/GoldenTench
+@onready var fish_control = $Fish
+@onready var atlantic_bass: Sprite2D = $Fish/AtlanticBass
+@onready var clownfish: Sprite2D = $Fish/Clownfish
+@onready var dab: Sprite2D = $Fish/Dab
+@onready var sea_spider: Sprite2D = $Fish/SeaSpider
+@onready var blue_gill: Sprite2D = $Fish/BlueGill
+@onready var guppy: Sprite2D =$Fish/Guppy
+@onready var freshwater_snail: Sprite2D = $Fish/FreshwaterSnail
+@onready var axolotl: Sprite2D = $Fish/Axolotl
+@onready var high_fin_banded_shark: Sprite2D = $Fish/HighFinBandedShark
+@onready var golden_tench: Sprite2D = $Fish/GoldenTench
+@onready var octopus: Sprite2D = $Fish/Octopus
+@onready var octopus_question_mark: Sprite2D = $Fish/OctopusQuestionMark
+@onready var bone_fish: Sprite2D = $Fish/BoneFish
+@onready var bone_fish_question_mark: Sprite2D = $Fish/BoneFishQuestionMark
 @onready var atlantic_bass_amount: Label = $Control/Label
 @onready var clownfish_amount: Label = $Control/Label2
 @onready var dab_amount: Label = $Control/Label3
@@ -23,6 +27,8 @@ extends Node2D
 @onready var axolotl_amount: Label = $Control/Label8
 @onready var high_fin_bande_shark_amount: Label = $Control/Label9
 @onready var golden_tench_amount: Label = $Control/Label10
+@onready var octopus_amount: Label = $Control/Label11
+@onready var bone_fish_amount: Label = $Control/Label12
 
 # Variable value
 var inventory_accessed: bool = false
@@ -31,7 +37,7 @@ var inventory_accessed: bool = false
 func _ready() -> void:
 	inventory_accessed = false
 	inv.visible = false
-	canvas.visible = false
+	fish_control.visible = false
 	if FishTracker.atlantic_bass_caught == false:
 		atlantic_bass.modulate = Color(0,0,0,255)
 	if FishTracker.axolotl_caught == false:
@@ -52,6 +58,12 @@ func _ready() -> void:
 		high_fin_banded_shark.modulate = Color(0,0,0,255)
 	if FishTracker.sea_spider_caught == false:
 		sea_spider.modulate = Color(0,0,0,255)
+	if FishTracker.octopus_caught == false:
+		octopus.visible = false
+		octopus_question_mark.visible = true
+	if FishTracker.bone_fish_caught == false:
+		bone_fish.visible = false
+		bone_fish_question_mark.visible = true
 
 # What the program does every frame
 func _process(delta: float) -> void:
@@ -65,14 +77,16 @@ func _process(delta: float) -> void:
 	guppy_amount.text = str(FishTracker.guppy_count)
 	high_fin_bande_shark_amount.text = str(FishTracker.high_fin_banded_shark_count)
 	sea_spider_amount.text = str(FishTracker.sea_spider_count)
+	octopus_amount.text = str(FishTracker.octopus_count)
+	bone_fish_amount.text = str(FishTracker.bone_fish_count)
 
 # Shows and hides the inventory when the player accessess it
 func _on_player_inventory() -> void:
 	if inventory_accessed == false:
 		inv.visible = true
-		canvas.visible = true
+		fish_control.visible = true
 		inventory_accessed = true
 	elif inventory_accessed == true:
 		inv.visible = false
-		canvas.visible = false
+		fish_control.visible = false
 		inventory_accessed = false

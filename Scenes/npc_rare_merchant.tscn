@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://h45xf4ld5vge"]
 
 [ext_resource type="Script" uid="uid://clww1bpgkxxwu" path="res://Scripts/npc_rare_merchant.gd" id="1_5f0ng"]
-[ext_resource type="Texture2D" uid="uid://w674hns2rvyp" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Inn Keeper/inn keeper - idle.png" id="1_hcr71"]
+[ext_resource type="Texture2D" uid="uid://w674hns2rvyp" path="res://Assets/Characters/inn keeper - idle.png" id="1_hcr71"]
 [ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_5f0ng"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fncmf"]

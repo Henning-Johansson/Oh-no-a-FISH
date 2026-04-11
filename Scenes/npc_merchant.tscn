@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://d0qiu3r0rem32"]
 
-[ext_resource type="Texture2D" uid="uid://ckoqy6eivxw8n" path="res://Assets/Characters/Hana Caraka - Base Character/Premade Character/Merchant/merchant - idle.png" id="1_j2wod"]
+[ext_resource type="Texture2D" uid="uid://ckoqy6eivxw8n" path="res://Assets/Characters/merchant - idle.png" id="1_j2wod"]
 [ext_resource type="Script" uid="uid://c1tkcsh2ixr4p" path="res://Scripts/npc_merchant.gd" id="1_xhidi"]
 [ext_resource type="PackedScene" uid="uid://cyinmlrs5abjr" path="res://Scenes/interactible.tscn" id="2_v1qfn"]
 

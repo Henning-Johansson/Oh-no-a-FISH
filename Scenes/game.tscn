@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bb50ew4k5x7j2" path="res://Scripts/game.gd" id="1_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://yf6dng8a0jct" path="res://Scenes/player.tscn" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dns8f71op8ssp" path="res://Scenes/inventory.tscn" id="4_3dryh"]
-[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/fishing_icon_pack/fishing_gear.png" id="5_h4fw4"]
+[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/Fish/fishing_gear.png" id="5_h4fw4"]
 [ext_resource type="PackedScene" uid="uid://dlrm70xml2wph" path="res://Scenes/pause_menu.tscn" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://oqqxsv7hfuef" path="res://Scenes/trading.tscn" id="6_i6g32"]
 [ext_resource type="Texture2D" uid="uid://d0h4ngqc4sbaf" path="res://Assets/Customs/Fish_Coin.png" id="7_1l0tm"]

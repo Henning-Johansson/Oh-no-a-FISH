@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://dlrm70xml2wph"]
 
-[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff" id="1_1och7"]
+[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/XTypewriter-Regular.woff" id="1_1och7"]
 [ext_resource type="Script" uid="uid://cp1se08sjehcv" path="res://Scripts/pause_menu.gd" id="1_bpi0q"]
-[ext_resource type="Texture2D" uid="uid://8kyiw5bxj38t" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/A - Salt Water/Clownfish.png" id="2_1och7"]
-[ext_resource type="Texture2D" uid="uid://dcllkab6lfcsa" path="res://Assets/Fishing/SAMPLE PACK - Pixel Gnome Fishing Pack/C - Misc/Rusty Can.png" id="3_vmyb1"]
+[ext_resource type="Texture2D" uid="uid://8kyiw5bxj38t" path="res://Assets/Fishing/Fish/Clownfish.png" id="2_1och7"]
+[ext_resource type="Texture2D" uid="uid://dcllkab6lfcsa" path="res://Assets/Fishing/Fish/Rusty Can.png" id="3_vmyb1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myy0f"]
 bg_color = Color(0, 0.476194, 0.533203, 1)

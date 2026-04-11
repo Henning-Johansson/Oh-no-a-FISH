@@ -12,6 +12,8 @@ var golden_tench_caught: bool = false
 var guppy_caught: bool = false
 var high_fin_banded_shark_caught: bool = false
 var sea_spider_caught: bool = false
+var octopus_caught: bool = false
+var bone_fish_caught: bool = false
 var inventory_open: bool = false
 
 
@@ -28,6 +30,9 @@ var high_fin_banded_shark_count: int = 0
 var sea_spider_count: int = 0
 var money: int = 0
 var octo_bait: int = 0
+var octopus_count: int = 0
+var bones: int = 0
+var bone_fish_count: int = 0
 
 # Updates each fishes icon in the inventory
 func update_icon(fish: String) -> void:
@@ -51,6 +56,10 @@ func update_icon(fish: String) -> void:
 		high_fin_banded_shark_caught = true
 	elif fish == "sea_spider":
 		sea_spider_caught = true
+	elif fish == "octopus":
+		octopus_caught = true
+	elif fish == "bone_fish":
+		bone_fish_caught = true
 
 # Increases the amount of fish the player has
 func update_count_plus(fish: String) -> void:
@@ -74,6 +83,10 @@ func update_count_plus(fish: String) -> void:
 		high_fin_banded_shark_count += 1
 	elif fish == "sea_spider":
 		sea_spider_count += 1
+	elif fish == "octopus":
+		octopus_count += 1
+	elif fish == "bone_fish":
+		bone_fish_count += 1
 
 # Decreases the amount of fish the player has
 func update_count_minus(fish: String) -> void:

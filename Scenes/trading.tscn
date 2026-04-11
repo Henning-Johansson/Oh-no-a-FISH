@@ -1,11 +1,26 @@
-[gd_scene load_steps=10 format=3 uid="uid://oqqxsv7hfuef"]
+[gd_scene load_steps=25 format=3 uid="uid://oqqxsv7hfuef"]
 
 [ext_resource type="Texture2D" uid="uid://ccckt635p8mff" path="res://Assets/Customs/Book.png" id="1_06bqx"]
 [ext_resource type="Script" uid="uid://clmkd4itiyh8w" path="res://Scripts/trading.gd" id="1_nsbn4"]
 [ext_resource type="Texture2D" uid="uid://d0h4ngqc4sbaf" path="res://Assets/Customs/Fish_Coin.png" id="2_n4thm"]
 [ext_resource type="Texture2D" uid="uid://crvucigfr0mqd" path="res://Assets/Customs/arrow.png" id="3_480k0"]
-[ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/fishing_free/global_free_recoloured.png" id="3_aokyf"]
-[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/fishing_icon_pack/fishing_gear.png" id="6_netrb"]
+[ext_resource type="Texture2D" uid="uid://ddj5pos1xo1cu" path="res://Assets/Fishing/Fish/global_free_recoloured.png" id="3_aokyf"]
+[ext_resource type="Texture2D" uid="uid://b1wco5ersia8y" path="res://Assets/Fishing/Fish/fishing_gear.png" id="6_netrb"]
+[ext_resource type="Texture2D" uid="uid://bm32baqde52h6" path="res://Assets/DustyGrey/1.png" id="7_jdyte"]
+[ext_resource type="Texture2D" uid="uid://dbm8654gvle0r" path="res://Assets/DustyGrey/88.png" id="8_jl6q8"]
+[ext_resource type="Texture2D" uid="uid://bftmv41ppiwbq" path="res://Assets/DustyGrey/152.png" id="9_8hoau"]
+[ext_resource type="Texture2D" uid="uid://c8qih6ayv0mnl" path="res://Assets/DustyGrey/162.png" id="10_6umvo"]
+[ext_resource type="Texture2D" uid="uid://dktesj71veeaf" path="res://Assets/DustyGrey/177.png" id="11_72tho"]
+[ext_resource type="Texture2D" uid="uid://bxp1fadbcjxxu" path="res://Assets/DustyGrey/182.png" id="12_rhf06"]
+[ext_resource type="Texture2D" uid="uid://dadxyjfu8d4dg" path="res://Assets/DustyGrey/198.png" id="13_phpxa"]
+[ext_resource type="Texture2D" uid="uid://cs2bvui6objdv" path="res://Assets/DustyGrey/201.png" id="14_0lv07"]
+[ext_resource type="Texture2D" uid="uid://bcrjfiwmk3qom" path="res://Assets/DustyGrey/205.png" id="15_dn62w"]
+[ext_resource type="Texture2D" uid="uid://cswq68u1qbtil" path="res://Assets/DustyGrey/210.png" id="16_23rbu"]
+[ext_resource type="Texture2D" uid="uid://cuu40cvqenoya" path="res://Assets/DustyGrey/138.png" id="17_7kf6c"]
+[ext_resource type="Texture2D" uid="uid://b70oxerdvfjsa" path="res://Assets/DustyGrey/149.png" id="18_et170"]
+[ext_resource type="Texture2D" uid="uid://di8xhk0ofjb5p" path="res://Assets/DustyGrey/167.png" id="19_oojcr"]
+[ext_resource type="Texture2D" uid="uid://bkq20hp4ap5md" path="res://Assets/DustyGrey/115.png" id="20_k3gf0"]
+[ext_resource type="Texture2D" uid="uid://1g4ibp78uji2" path="res://Assets/DustyGrey/229.png" id="21_cdlkv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nsbn4"]
 bg_color = Color(0, 0, 0, 0.196078)
@@ -104,6 +119,7 @@ wait_time = 1.5
 one_shot = true
 
 [node name="CommonTradning" type="Node2D" parent="."]
+visible = false
 
 [node name="Sprites" type="Node2D" parent="CommonTradning"]
 
@@ -579,6 +595,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_rc3uq")
 metadata/_edit_use_anchors_ = true
 
 [node name="RareTrading" type="Node2D" parent="."]
+visible = false
 
 [node name="Sprites" type="Node2D" parent="RareTrading"]
 
@@ -629,6 +646,148 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_netrb")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rc3uq")
 metadata/_edit_use_anchors_ = true
 
+[node name="StrangeTrading" type="Node2D" parent="."]
+
+[node name="Sprites" type="Node2D" parent="StrangeTrading"]
+
+[node name="Control" type="Control" parent="StrangeTrading/Sprites"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -400.0
+offset_top = -360.0
+offset_right = -280.0
+offset_bottom = -320.0
+scale = Vector2(2.5, 2.5)
+
+[node name="Bones" type="Control" parent="StrangeTrading/Sprites/Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bone" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("7_jdyte")
+
+[node name="Bone2" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_jl6q8")
+
+[node name="Bone3" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("9_8hoau")
+
+[node name="Bone4" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("10_6umvo")
+
+[node name="Bone5" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("11_72tho")
+
+[node name="Bone6" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("12_rhf06")
+
+[node name="Bone7" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("13_phpxa")
+
+[node name="Bone8" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("14_0lv07")
+
+[node name="Bone9" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("15_dn62w")
+
+[node name="Bone10" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("16_23rbu")
+
+[node name="Bone11" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("17_7kf6c")
+
+[node name="Bone12" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("18_et170")
+
+[node name="Bone13" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+rotation = 0.785398
+scale = Vector2(2, 2)
+texture = ExtResource("19_oojcr")
+
+[node name="Bone14" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(100, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("20_k3gf0")
+
+[node name="Bone15" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(105, 20)
+rotation = -1.5708
+scale = Vector2(2, 2)
+texture = ExtResource("21_cdlkv")
+flip_v = true
+
+[node name="Bone16" type="Sprite2D" parent="StrangeTrading/Sprites/Control/Bones"]
+position = Vector2(90, 20)
+rotation = -1.5708
+scale = Vector2(2, 2)
+texture = ExtResource("21_cdlkv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="StrangeTrading/Sprites/Control"]
+position = Vector2(60, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("3_480k0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="StrangeTrading/Sprites/Control"]
+position = Vector2(20, 20)
+texture = ExtResource("2_n4thm")
+
+[node name="Label" type="Label" parent="StrangeTrading/Sprites/Control"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 25.0
+offset_right = 28.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 9
+text = "2500"
+
+[node name="Buttons" type="Node2D" parent="StrangeTrading"]
+
+[node name="BoneButton" type="Button" parent="StrangeTrading/Buttons"]
+offset_left = -400.0
+offset_top = -360.0
+offset_right = -280.0
+offset_bottom = -320.0
+scale = Vector2(2.5, 2.5)
+theme_override_styles/hover = SubResource("StyleBoxFlat_nsbn4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_netrb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rc3uq")
+metadata/_edit_use_anchors_ = true
+
 [connection signal="timeout" from="Timers/Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="CommonTradning/Buttons/AtlanticBassButton" to="." method="_on_atlantic_bass_button_pressed"]
 [connection signal="pressed" from="CommonTradning/Buttons/ClownfishButton" to="." method="_on_clownfish_button_pressed"]
@@ -641,3 +800,4 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="CommonTradning/Buttons/HighFinBandedSharkButton" to="." method="_on_high_fin_banded_shark_button_pressed"]
 [connection signal="pressed" from="CommonTradning/Buttons/GoldenTenchButton" to="." method="_on_golden_tench_button_pressed"]
 [connection signal="pressed" from="RareTrading/Buttons/OctopusBaitButton" to="." method="_on_octopus_bait_button_pressed"]
+[connection signal="pressed" from="StrangeTrading/Buttons/BoneButton" to="." method="_on_octopus_bait_button_pressed"]

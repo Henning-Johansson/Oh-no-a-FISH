@@ -4,3 +4,9 @@ res://Scenes/trading.tscn
 res://Scripts/trading.gd
 res://Scenes/pause_menu.tscn
 res://Scripts/pause_menu.gd
+res://Scenes/village_map.tscn
+res://Scenes/player.tscn
+res://Scenes/game.tscn
+res://Scenes/inventory.tscn
+res://Scripts/fish_tracker.gd
+res://Scripts/inventory.gd

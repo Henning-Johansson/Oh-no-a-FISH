@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cdnd82kyagvd8"]
 
-[ext_resource type="Texture2D" uid="uid://cumoa5hnc0mhu" path="res://Assets/Blue_Stone_UI_Asset/BlueStoneUI_SpriteSheet.png" id="1_mmb71"]
+[ext_resource type="Texture2D" uid="uid://cumoa5hnc0mhu" path="res://Assets/UI/BlueStoneUI_SpriteSheet.png" id="1_mmb71"]
 [ext_resource type="Script" uid="uid://dawbsptbfdfy4" path="res://Scripts/guide_intro_speech.gd" id="1_v7f7k"]
-[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/Web Open Font Format (.woff)/XTypewriter-Regular.woff" id="2_q5blr"]
+[ext_resource type="FontFile" uid="uid://iq07t6bgmcvr" path="res://Assets/XTypewriter_Font_0_96/XTypewriter-Regular.woff" id="2_q5blr"]
 
 [node name="GuideIntroSpeech" type="Node2D"]
 script = ExtResource("1_v7f7k")

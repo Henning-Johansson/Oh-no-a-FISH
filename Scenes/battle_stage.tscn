@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://5wa38i60fql1" path="res://Scripts/battle_stage.gd" id="1_g0eid"]
 [ext_resource type="PackedScene" uid="uid://c1k5a0ilp0n60" path="res://Scenes/fishable_items.tscn" id="1_xa5kr"]
 [ext_resource type="Texture2D" uid="uid://cuthe33fksq6m" path="res://Assets/Characters/angler_full.png" id="3_h1yn0"]
-[ext_resource type="Texture2D" uid="uid://crfn7pf0paot6" path="res://Assets/Fishing/fishing_gear/06_fishing_gear.png" id="4_h1yn0"]
-[ext_resource type="Texture2D" uid="uid://crh64odhr0f30" path="res://Assets/Fishing/fishing_gear/05_fishing_gear.png" id="5_a0fsj"]
+[ext_resource type="Texture2D" uid="uid://crfn7pf0paot6" path="res://Assets/Fishing/Gear/06_fishing_gear.png" id="4_h1yn0"]
+[ext_resource type="Texture2D" uid="uid://crh64odhr0f30" path="res://Assets/Fishing/Gear/05_fishing_gear.png" id="5_a0fsj"]
 [ext_resource type="AudioStream" uid="uid://bvoj3sjjrj1pi" path="res://Audios/14 Battle! (Wild Pokémon).mp3" id="6_r2b17"]
 
 [sub_resource type="Animation" id="Animation_djpce"]
